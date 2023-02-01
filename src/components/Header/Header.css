@@ -1,0 +1,39 @@
+.Header {
+  width: 100vw;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  background-color: rgba(12,13,14,0.9);
+}
+
+.Header-link {
+  color: var(--palette-special--more-prominent);
+  margin: 0 2rem;
+  padding: 2rem 0;
+  text-decoration: none;
+  border-bottom: solid 5px transparent;
+}
+
+.Header-link:hover, .Header-link:active {
+  border-bottom-color: var(--palette-special--more-prominent);
+}
+
+.Header > :not(.DarkmodeToggle) {
+  color: #f7f5f5;
+}
+
+.Header > .DarkmodeToggle {
+  margin: 0 2rem;
+  padding: 2rem 0;
+}
+
+.DarkmodeToggle.light-mode {
+  color: var(--palette-special--least-prominent);
+}
+.DarkmodeToggle.dark-mode {
+  color: var(--palette-special--more-prominent);
+}
