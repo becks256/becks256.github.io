@@ -1,0 +1,50 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  background-color: var(--system-background--secondary);
+}
+
+.ProductCard {
+  min-width: 200px;
+  width: 300px;
+  min-height: 450px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.Card-imageContainer {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: var(--system-text--primary);
+  box-sizing: border-box;
+  background-color: rgb(33,33,33);
+}
+
+.Card-imageContainer img {
+  min-height: 200px;
+  max-height: 300px;
+  width: auto;
+}
+
+.Card--description {
+  font-size: 11pt;
+  margin-bottom: 6rem;
+}
+
+.Card--techStack-description {
+  font-size: 8pt;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: calc(100% - 1rem);
+}
