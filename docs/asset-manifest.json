@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.802d3d94.css",
-    "main.js": "/static/js/main.7a1ad6bc.js",
+    "main.css": "/static/css/main.539732ed.css",
+    "main.js": "/static/js/main.270c39ac.js",
     "static/js/787.03c65de6.chunk.js": "/static/js/787.03c65de6.chunk.js",
+    "static/media/meta.png": "/static/media/meta.4857e8bd3783817899ed.png",
     "static/media/soulfolio.png": "/static/media/soulfolio.14ea7a26020769a37631.png",
     "static/media/myprice.png": "/static/media/myprice.6f39c9239530708fa176.png",
     "static/media/dapper.png": "/static/media/dapper.3c92f0cf12b0c02a4139.png",
     "static/media/photoshop.png": "/static/media/photoshop.43aeb612c082b05daa05.png",
-    "static/media/meta.png": "/static/media/meta.f9da98a1e3d568993437.png",
     "static/media/pluralsight.png": "/static/media/pluralsight.1977239ae04221d17255.png",
     "static/media/cert2.png": "/static/media/cert2.3d18c12bfcd5f2a3bb42.png",
     "static/media/fcc.png": "/static/media/fcc.0a82da2031141d194086.png",
     "static/media/cert1.png": "/static/media/cert1.168e02a56b371dabad81.png",
     "static/media/cert3.png": "/static/media/cert3.c5ff0956868aef0dcf8b.png",
     "index.html": "/index.html",
-    "main.802d3d94.css.map": "/static/css/main.802d3d94.css.map",
-    "main.7a1ad6bc.js.map": "/static/js/main.7a1ad6bc.js.map",
+    "main.539732ed.css.map": "/static/css/main.539732ed.css.map",
+    "main.270c39ac.js.map": "/static/js/main.270c39ac.js.map",
     "787.03c65de6.chunk.js.map": "/static/js/787.03c65de6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.802d3d94.css",
-    "static/js/main.7a1ad6bc.js"
+    "static/css/main.539732ed.css",
+    "static/js/main.270c39ac.js"
   ]
 }
