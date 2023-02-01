@@ -32,8 +32,9 @@
 
 .Card-imageContainer img {
   min-height: 200px;
-  max-height: 300px;
-  width: auto;
+  object-fit: cover;
+  object-position: center;
+  flex: 1 1 auto;
 }
 
 .Card--description {
@@ -47,4 +48,10 @@
   bottom: 1rem;
   left: 1rem;
   width: calc(100% - 1rem);
+}
+
+@media (max-width: 899px) {
+  .ProductCard {
+    width: 100%;
+  }
 }

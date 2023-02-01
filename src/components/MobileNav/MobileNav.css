@@ -1,0 +1,107 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  background: black;
+  z-index: -1;
+}
+#hamburger-input {
+  display: none;
+}
+#hamburger-menu {
+  position: absolute;
+  left: 20px;
+  width: 35px;
+  height: auto;
+  display: flex;
+  padding-left: 12px;
+  padding: 0px;
+  margin: 0px;
+  z-index: 9;
+  transform: translateY(100%);
+}
+#hamburger-menu #sidebar-menu {
+  visibility: hidden;
+  position: absolute;
+  top: -27px;
+  left: -250px;
+  width: 200px;
+  height: 100vh;
+  background-color: var(--system-background--secondary);
+  transition: 0.3s;
+  padding: 0px 32px;
+  box-sizing: border-box;
+}
+#hamburger-menu h3 {
+  color: var(--palette-special--more-prominent);
+  font-size: 2.2rem;
+}
+#hamburger-menu ul {
+  color: var(--palette-special--more-prominent);
+  padding-left: 0px;
+}
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+#hamburger-menu li .DarkmodeToggle {
+  line-height: 0;
+  margin-top: 16px;
+}
+#hamburger-menu a {
+  color: var(--palette-special--more-prominent);
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+#hamburger-menu a:hover {
+  text-decoration: underline;
+}
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: -20px;
+}
+#hamburger-input:checked ~ .overlay {
+  visibility: visible;
+  opacity: 0.4;
+}
+#hamburger-menu span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: var(--palette-special--more-prominent);
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+#hamburger-menu section span:first-child {
+  transform-origin: 0% 0%;
+}
+#hamburger-menu section span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+#hamburger-input:checked ~ label section span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(-4.5px, 5px);
+}
+#hamburger-input:checked ~ label section span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#hamburger-input:checked ~ label section span {
+  transform: rotate(45deg) translate(-15px, -15px);
+}
+
+#hamburger-input #hamburger-menu section {
+  align-self: center;
+  padding-left: 12px;
+}

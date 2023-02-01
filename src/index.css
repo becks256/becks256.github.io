@@ -27,11 +27,22 @@ code {
   flex-shrink: 1;
 }
 
+.flex-no-grow {
+  flex-grow: 0;
+}
+
+.flex-no-shrink {
+  flex-shrink: 0;
+}
+
 .flex-row {
   flex-direction: row;
 }
 .flex-column {
   flex-direction: column;
+}
+.flex-column--reverse {
+  flex-direction: column-reverse;
 }
 
 .align-items--center {
@@ -819,9 +830,108 @@ code {
     margin-top: 100px !important;
     margin-bottom: 100px !important;
   }
+
+  .md\:mr-0 {
+    margin-right: 0px !important;
+  }
+  .md\:mr-8 {
+    margin-right: 8px !important;
+  }
+
+  .md\:mr-16 {
+    margin-right: 16px !important;
+  }
+
+  .md\:mr-24 {
+    margin-right: 24px !important;
+  }
+
+  .md\:mr-32 {
+    margin-right: 32px !important;
+  }
+
+  .md\:mr-48 {
+    margin-right: 48px !important;
+  }
+
+  .md\:mr-64 {
+    margin-right: 64px !important;
+  }
+
+  .md\:mr-72 {
+    margin-right: 72px !important;
+  }
+
+  .md\:mr-80 {
+    margin-right: 80px !important;
+  }
+
+  .md\:mr-88 {
+    margin-right: 88px !important;
+  }
+
+  .md\:mr-96 {
+    margin-right: 96px !important;
+  }
+
+  .md\:mr-100 {
+    margin-right: 100px !important;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px !important;
+  }
+  .md\:ml-8 {
+    margin-left: 8px !important;
+  }
+
+  .md\:ml-16 {
+    margin-left: 16px !important;
+  }
+
+  .md\:ml-24 {
+    margin-left: 24px !important;
+  }
+
+  .md\:ml-32 {
+    margin-left: 32px !important;
+  }
+
+  .md\:ml-48 {
+    margin-left: 48px !important;
+  }
+
+  .md\:ml-64 {
+    margin-left: 64px !important;
+  }
+
+  .md\:ml-72 {
+    margin-left: 72px !important;
+  }
+
+  .md\:ml-80 {
+    margin-left: 80px !important;
+  }
+
+  .md\:ml-88 {
+    margin-left: 88px !important;
+  }
+
+  .md\:ml-96 {
+    margin-left: 96px !important;
+  }
+
+  .md\:ml-100 {
+    margin-left: 100px !important;
+  }
 }
 @media screen and (max-width: 899px) {
   /* X-AXIS MARGIN */
+
+  .sm\:mx-0 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
 
   .sm\:mx-8 {
     margin-left: 8px !important;
@@ -880,6 +990,10 @@ code {
 
   /* Y-AXIS MARGIN */
 
+  .sm\:my-0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
   .sm\:my-8 {
     margin-top: 8px !important;
     margin-bottom: 8px !important;
@@ -930,8 +1044,102 @@ code {
     margin-bottom: 96px !important;
   }
 
-  .sm\:my-100 {
+  .sm\:mr-100 {
     margin-top: 100px !important;
     margin-bottom: 100px !important;
+  }
+
+  .sm\:mr-0 {
+    margin-right: 0px !important;
+  }
+  .sm\:mr-8 {
+    margin-right: 8px !important;
+  }
+
+  .sm\:mr-16 {
+    margin-right: 16px !important;
+  }
+
+  .sm\:mr-24 {
+    margin-right: 24px !important;
+  }
+
+  .sm\:mr-32 {
+    margin-right: 32px !important;
+  }
+
+  .sm\:mr-48 {
+    margin-right: 48px !important;
+  }
+
+  .sm\:mr-64 {
+    margin-right: 64px !important;
+  }
+
+  .sm\:mr-72 {
+    margin-right: 72px !important;
+  }
+
+  .sm\:mr-80 {
+    margin-right: 80px !important;
+  }
+
+  .sm\:mr-88 {
+    margin-right: 88px !important;
+  }
+
+  .sm\:mr-96 {
+    margin-right: 96px !important;
+  }
+
+  .sm\:mr-100 {
+    margin-right: 100px !important;
+  }
+
+  .sm\:ml-0 {
+    margin-left: 0px !important;
+  }
+  .sm\:ml-8 {
+    margin-left: 8px !important;
+  }
+
+  .sm\:ml-16 {
+    margin-left: 16px !important;
+  }
+
+  .sm\:ml-24 {
+    margin-left: 24px !important;
+  }
+
+  .sm\:ml-32 {
+    margin-left: 32px !important;
+  }
+
+  .sm\:ml-48 {
+    margin-left: 48px !important;
+  }
+
+  .sm\:ml-64 {
+    margin-left: 64px !important;
+  }
+
+  .sm\:ml-72 {
+    margin-left: 72px !important;
+  }
+
+  .sm\:ml-80 {
+    margin-left: 80px !important;
+  }
+
+  .sm\:ml-88 {
+    margin-left: 88px !important;
+  }
+
+  .sm\:ml-96 {
+    margin-left: 96px !important;
+  }
+
+  .sm\:ml-100 {
+    margin-left: 100px !important;
   }
 }

@@ -4,7 +4,7 @@ import "./Card.css"
 export const Card = ({title, description, children, href, techStack}) => {
   const headerClasses = "pb-16"
   return (
-    <div className="Card ProductCard mr-32 mb-32 overflow-hidden">
+    <div className="Card ProductCard sm:mr-0 md:mr-32 mb-32 overflow-hidden">
       <section className="Card-imageContainer">
         {children}
       </section>

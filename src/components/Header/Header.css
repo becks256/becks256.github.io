@@ -7,19 +7,21 @@
   top: 0;
   left: 0;
   box-sizing: border-box;
-  background-color: rgba(12,13,14,0.9);
+  background-color: rgba(12,13,14,0.95);
+  box-shadow: var(--shadow);
 }
 
 .Header-link {
-  color: var(--palette-special--more-prominent);
+  color: var(--palette-special--least-prominent);
   margin: 0 2rem;
   padding: 2rem 0;
   text-decoration: none;
   border-bottom: solid 5px transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .Header-link:hover, .Header-link:active {
-  border-bottom-color: var(--palette-special--more-prominent);
+  border-bottom-color: var(--palette-special--least-prominent);
 }
 
 .Header > :not(.DarkmodeToggle) {
@@ -36,4 +38,12 @@
 }
 .DarkmodeToggle.dark-mode {
   color: var(--palette-special--more-prominent);
+}
+
+@media (max-width: 900px) {
+  .Header-link {
+    font-size: 10pt;
+    margin: 0 1rem;
+    padding: 2rem 0;
+  }
 }

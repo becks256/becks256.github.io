@@ -10,7 +10,7 @@ import {
   photoshopSnip,
   myPriceSnip,
   dapperSnip,
-  metaSnip
+  metaSnip,
 } from "./assets"
 
 function App() {
@@ -18,8 +18,9 @@ function App() {
     pluralsightLink: "https://app.pluralsight.com/profile/dbecker85",
     fccLink: "https://www.freecodecamp.org/becks256",
     soulfolioLink: "https://www.soulfolioco.com",
-    metaLink: "https://www.kickstarter.com/projects/gadgetek/meta-the-microcontroller-enhanced-tablet-accessory",
-    year: (new Date()).getFullYear()
+    metaLink:
+      "https://www.kickstarter.com/projects/gadgetek/meta-the-microcontroller-enhanced-tablet-accessory",
+    year: new Date().getFullYear(),
   }
   return (
     <div className="App">
@@ -33,7 +34,14 @@ function App() {
             description="A collaborative environment for friends and family to build a unique and personalized gift, together"
             techStack="MERN"
           >
-            <a href={APP_DATA.soulfolioLink} target="_blank" rel="noreferrer">
+            <a
+              className="flex w-100"
+              href={APP_DATA.soulfolioLink}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="view larger image"
+              label="view larger image"
+            >
               <img
                 src={soulfolioSnip}
                 className="w-100"
@@ -46,7 +54,14 @@ function App() {
             description="Photoshop UXP plugin with multiple modules for optimizing files for production and a connector for the Widen DAM system"
             techStack="Adobe UXP Framework & React"
           >
-            <a href={photoshopSnip} target="_blank" rel="noreferrer">
+            <a
+              className="flex w-100"
+              href={photoshopSnip}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="view larger image"
+              label="view larger image"
+            >
               <img
                 src={photoshopSnip}
                 className="w-100"
@@ -59,7 +74,14 @@ function App() {
             description="A system of system that scrapes and aggregates data from excel spreadsheets, presents the information in an organized and accessible manner, and enables the sales force to select items and export them in the required format"
             techStack="MongoDB, EJS, Express, Node"
           >
-            <a href={myPriceSnip} target="_blank" rel="noreferrer" aria-label="view larger image" label="view larger image" >
+            <a
+              className="flex w-100"
+              href={myPriceSnip}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="view larger image"
+              label="view larger image"
+            >
               <img
                 src={myPriceSnip}
                 className="w-100"
@@ -72,7 +94,14 @@ function App() {
             description="POC MERN stack app that would enable non-developers to directly manipulate the color system and deploy theme and color changes directly to production"
             techStack="MERN"
           >
-            <a href={dapperSnip} target="_blank" rel="noreferrer" aria-label="view larger image" label="view larger image" >
+            <a
+              className="flex w-100"
+              href={dapperSnip}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="view larger image"
+              label="view larger image"
+            >
               <img
                 src={dapperSnip}
                 className="w-100"
@@ -86,7 +115,14 @@ function App() {
             techStack="C++ & Arduino IDE"
             href={APP_DATA.metaLink}
           >
-            <a href={metaSnip} target="_blank" rel="noreferrer" aria-label="view larger image" label="view larger image" >
+            <a
+              className="flex w-100"
+              href={metaSnip}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="view larger image"
+              label="view larger image"
+            >
               <img
                 src={metaSnip}
                 className="w-100"
@@ -102,7 +138,12 @@ function App() {
             description="Link to Pluralsight profile containing verified Skill IQs"
             href={APP_DATA.pluralsightLink}
           >
-            <a href={APP_DATA.pluralsightLink} target="_blank" rel="noreferrer">
+            <a
+              className="flex w-100"
+              href={APP_DATA.pluralsightLink}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src={pluralsightSnip}
                 className="w-100"
@@ -115,7 +156,7 @@ function App() {
             description="Link to freeCodeCamp profile containing certifications"
             href={APP_DATA.fccLink}
           >
-            <a href={APP_DATA.fccLink}>
+            <a className="flex w-100" href={APP_DATA.fccLink} target="_blank" rel="noreferrer">
               <img
                 src={fccSnip}
                 className="w-100"
@@ -126,9 +167,12 @@ function App() {
         </section>
       </section>
       <footer className="m-32 flex align-content--center justify-content--center">
-        <p className="font-s">All content contained herein is the property of Daniel M Becker. Copyright &copy; {APP_DATA.year}. All rights reserved.</p>
+        <p className="font-s">
+          All content contained herein is the property of Daniel M Becker.
+          Copyright &copy; {APP_DATA.year}. All rights reserved.
+        </p>
       </footer>
-    </div>  
+    </div>
   )
 }
 
