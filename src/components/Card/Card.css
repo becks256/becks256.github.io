@@ -13,6 +13,10 @@
   position: relative;
   flex-grow: 1;
 }
+.NetworkCard {
+  position: relative;
+  flex-grow: 1;
+}
 
 .Card-imageContainer {
   display: flex;
@@ -27,7 +31,6 @@
   border-style: solid;
   border-color: var(--system-text--primary);
   box-sizing: border-box;
-  background-color: rgb(33,33,33);
 }
 
 .Card-imageContainer img {
@@ -35,6 +38,16 @@
   object-fit: cover;
   object-position: center;
   flex: 1 1 auto;
+}
+
+.Card-imageContainer img.logo {
+  object-fit: cover;
+  object-position: center;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  height: 125px;
+  width: auto;
+  padding: 1rem
 }
 
 .Card--description {
