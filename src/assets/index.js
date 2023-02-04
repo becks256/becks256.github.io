@@ -8,6 +8,12 @@ import photoshopSnip from "./photoshop.png"
 import myPriceSnip from "./myprice.png"
 import dapperSnip from "./dapper.png"
 import metaSnip from "./meta.png"
+import drprepperLogo from "./drprepper.png"
+import githubLogo from "./github.svg"
+import jsfiddleLogo from "./jsfiddle.svg"
+import linkedinLogo from "./linkedin.svg"
+import npmLogo from "./npm.svg"
+import soundcloudLogo from "./soundcloud.svg"
 
 export {
   pluralsightSnip,
@@ -19,5 +25,11 @@ export {
   photoshopSnip,
   myPriceSnip,
   dapperSnip,
-  metaSnip
+  metaSnip,
+  drprepperLogo,
+  githubLogo,
+  jsfiddleLogo,
+  linkedinLogo,
+  npmLogo,
+  soundcloudLogo,
 }
