@@ -22,7 +22,7 @@
 
 .Banner--background {
   content: "";
-  background-image: url("https://source.unsplash.com/random/1920x1080/?mountain,lake");
+  background-image: url("https://source.unsplash.com/random/1920x1080/?mountain,forest");
   filter: grayscale();
   background-position: top;
   background-size: cover;
@@ -46,8 +46,10 @@
 }
 
 .Banner h2 {
+  margin-top: 2rem;
   font-size: 14pt;
   font-weight: 300;
+  max-width: 600px;
 }
 
 .Banner h1,
