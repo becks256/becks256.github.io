@@ -8,7 +8,8 @@ export const Header = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    ;/mobile/gi.test(navigator.userAgent) && setIsMobile(true)
+    /mobile/gi.test(navigator?.userAgent) && setIsMobile(true)
+    window.innerWidth < 900 && setIsMobile(true)
     window.addEventListener("resize", () => {
       let width = window.innerWidth
       setIsMobile(width < 900)
@@ -20,44 +21,23 @@ export const Header = () => {
       })
   }, [])
 
+  const LINK_DATA = [
+    { href: "#networks", innerText: "Networks" },
+    { href: "#skills", innerText: "Skills" },
+    { href: "#work", innerText: "Work" },
+    { href: "/", innerText: "Home" },
+  ]
+
   return isMobile ? (
-    <MobileNav />
+    <MobileNav links={LINK_DATA} />
   ) : (
     <nav className="Header">
       <DarkmodeToggle className="px-16 pointer flex-no-shrink" />
-      <a
-        href="https://github.com/becks256"
-        className="Header-link"
-        target="_blank"
-        rel="noreferrer"
-      >
-        @becks256
-      </a>
-      <a
-        href="https://github.com/Rebel-IST"
-        className="Header-link"
-        target="_blank"
-        rel="noreferrer"
-      >
-        @Rebel-IST
-      </a>
-      <a
-        href="https://jsfiddle.net/user/fiddles/titled/"
-        className="Header-link"
-        target="_blank"
-        rel="noreferrer"
-      >
-        JSFiddle
-      </a>
-      <a href="#skills" className="Header-link">
-        Skills
-      </a>
-      <a href="#work" className="Header-link">
-        Work
-      </a>
-      <a href="/" className="Header-link">
-        Home
-      </a>
+      {LINK_DATA.map((item, index) => (
+        <a key={`headerlink-${index}`} href={item.href} className="Header-link">
+          {item.innerText}
+        </a>
+      ))}
     </nav>
   )
 }

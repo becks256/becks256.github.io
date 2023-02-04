@@ -1,3 +1,11 @@
+:root, :root[color-mode="light"] {
+  --color: rgb(151, 82, 179);
+  --button-size: 45px;
+}
+:root[color-mode="dark"] {
+  --color: rgb(204, 122, 236);
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -31,7 +39,8 @@
   position: absolute;
   top: -27px;
   left: -250px;
-  width: 200px;
+  min-width: 200px;
+  width: 60%;
   height: 100vh;
   background-color: var(--system-background--secondary);
   transition: 0.3s;
@@ -39,11 +48,11 @@
   box-sizing: border-box;
 }
 #hamburger-menu h3 {
-  color: var(--palette-special--more-prominent);
+  color: var(--color);
   font-size: 2.2rem;
 }
 #hamburger-menu ul {
-  color: var(--palette-special--more-prominent);
+  color: var(--color);
   padding-left: 0px;
 }
 #hamburger-menu li {
@@ -55,7 +64,7 @@
   margin-top: 16px;
 }
 #hamburger-menu a {
-  color: var(--palette-special--more-prominent);
+  color: var(--color);
   font-size: 1.3rem;
   text-decoration: none;
 }
@@ -76,15 +85,28 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: var(--palette-special--more-prominent);
+  background: var(--color);
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
+#hamburger-menu section::before {
+  content: "";
+  width: var(--button-size);
+  height: var(--button-size);
+  position: absolute;
+  top: calc(calc((var(--button-size) - 23px) / 2) * -1); 
+  left: calc(calc((var(--button-size) - 32px) / 2) * -1);
+  border-radius: 0.5rem;
+  background-color: var(--system-background--primary);
+}
 #hamburger-menu section span:first-child {
+  background: var(--color);
   transform-origin: 0% 0%;
+  position: relative;
+  z-index: 0;
 }
 #hamburger-menu section span:nth-last-child(2) {
   transform-origin: 0% 100%;
