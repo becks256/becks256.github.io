@@ -12,7 +12,7 @@
 }
 :root[color-mode="dark"] {
   --system-text--primary: #f7f5f5;
-  --system-background--primary: #111;
+  --system-background--primary: #222;
   --system-background--secondary: #000;
   --palette-special--least-prominent: rgb(97, 45, 128);
   --palette-special--more-prominent: rgb(192, 125, 232);
