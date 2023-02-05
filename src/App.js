@@ -51,7 +51,7 @@ function App() {
       image: drprepperLogo,
       title: "Dr. Prepper",
       description:
-        "Dr. Prepper is a fully automated, self-healing product rendering and print production system. It is primarily a headless application with a simple React UI which enable designers to force start / stop the system. Everything else is a series of drop folders that allow any image to be rendered onto any produce and a print ready file to be generated along side the rendering.  This enables rapid deployment of artwork to the appropriate ecommerce channel. ",
+        "Dr. Prepper is a fully-automated, self-healing product rendering and print production system. It is primarily a headless application with a simple React UI, which enables designers to force start / stop the system. Everything else is a series of drop folders that allow any image to be rendered onto any product, and a print-ready file to will be generated along side the rendering.  This enables rapid deployment of artwork to the appropriate ecommerce channel. ",
       techStack: "Adobe ExtendScript, React, Express, Node, Powershell",
       alt: "dr prepper logo",
     },
