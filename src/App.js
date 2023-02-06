@@ -23,8 +23,15 @@ function App() {
       link: "https://www.soulfolioco.com",
       image: soulfolioSnip,
       title: "Soulfolio Co",
-      description:
-        "Soulfolioco.com is a collaborative web app for creating personalized gifts.  It features, among other things, a collaborative project space and an image editor for personalizing built-in and user uploaded images, which can then be purchased for manufacture and delivery to the intended recipient.",
+      description: (
+        <>
+          Soulfolioco.com is a collaborative web app for creating personalized
+          gifts. It features, among other things, a collaborative project space
+          and an image editor for personalizing built-in and user-provided
+          images. The back-end includes a print production system, which creates
+          print-ready files for manufacture after the product is purchased.
+        </>
+      ),
       techStack: "MERN",
       alt: "soulfolioco.com screenshot",
     },
@@ -32,8 +39,17 @@ function App() {
       link: undefined,
       image: photoshopSnip,
       title: "DesignerPower UXP",
-      description:
-        "Photoshop UXP plugin with multiple modules for optimizing files for production and a connector for the Widen DAM system.",
+      description: (
+        <>
+          DesignerPower is a Photoshop UXP plugin, which features several
+          modules, including those to optimize files for production and a
+          connector for the Widen DAM system. DesignerPower enables designers to
+          minimize context switching by giving them the power they need to push
+          image assets and the necessary metadata that goes with them to their
+          Digital Asset Management System, which increases adoption and
+          consistency, as well as ensures content freshness for consumers.
+        </>
+      ),
       techStack: "Adobe UXP Framework & React",
       alt: "designer power uxp plugin screenshot",
     },
@@ -41,8 +57,18 @@ function App() {
       link: undefined,
       image: myPriceSnip,
       title: "MyPrice",
-      description:
-        "MyPrice is a custom developed solution for an enterprise client whose product quotes suffered from a findability problem. This application features a file system crawler that seeks out pricing quotes in a shared network and imports the information into a database. Users are able to search the database with an intuitive front-end that features a shopping basket where they can collect price quotes for multiple different products and export them to the required format for their customer.",
+      description: (
+        <>
+          MyPrice is a custom developed solution for an enterprise client whose
+          product quotes suffered from a findability problem. This application
+          features a file system crawler that seeks out pricing quotes in a
+          shared network and imports the information into a database. Users are
+          able to search the database with an intuitive front-end that features
+          a shopping basket where they can collect price quotes for multiple
+          different products and export them to the required format for their
+          customer.
+        </>
+      ),
       techStack: "MongoDB, EJS, Express, Node",
       alt: "my price web app screenshot",
     },
@@ -50,8 +76,20 @@ function App() {
       link: undefined,
       image: drprepperLogo,
       title: "Dr. Prepper",
-      description:
-        "Dr. Prepper is a fully-automated, self-healing product rendering and print production system. It's primarily a headless application, but it does feature a simple React UI that enables non-developers (designers & sales) to initialize and stop processes. The primary interface is a series of drop folders that accept image files of any shape, size, and type, and the outputs of the system are production-ready art files along with the necessary product renderings of the provided art on the product it was dropped for. This enables rapid deployment of product and artwork to the appropriate ecommerce channels at a ~10x faster rate than could be manually accomplished.",
+      description: (
+        <>
+          Dr. Prepper is a fully-automated, self-healing product rendering and
+          print production system. It's primarily a headless application, but it
+          does feature a simple React UI that enables non-developers (designers
+          & sales) to initialize and stop processes. The primary interface is a
+          series of drop folders that accept image files of any shape, size, and
+          type, and the outputs of the system are production-ready art files
+          along with the necessary product renderings of the provided art on the
+          product it was dropped for. This enables rapid deployment of product
+          and artwork to the appropriate ecommerce channels at a ~10x faster
+          rate than could be manually accomplished.
+        </>
+      ),
       techStack: "Adobe ExtendScript, React, Express, Node, Powershell",
       alt: "dr prepper logo",
     },
@@ -59,8 +97,16 @@ function App() {
       link: undefined,
       image: dapperSnip,
       title: "Dapper",
-      description:
-        "Dapper is a POC web app that would enable non-developers to directly manipulate the base color values of the Kroger Design System's color system, and deploy modified theme and color changes directly to production. The foreseeable value in allowing for on-demand color changes rests in themeability of the banner application and the ability to accomplish it without developer assistance.",
+      description: (
+        <>
+          Dapper is a POC web app that would enable non-developers to directly
+          manipulate the base color values of the Kroger Design System's color
+          system, and deploy modified theme and color changes directly to
+          production. The foreseeable value in allowing for on-demand color
+          changes rests in themeability of the banner application and the
+          ability to accomplish it without developer assistance.
+        </>
+      ),
       techStack: "MERN",
       alt: "dapper web app screenshot",
     },
@@ -68,8 +114,16 @@ function App() {
       link: "https://www.kickstarter.com/projects/gadgetek/meta-the-microcontroller-enhanced-tablet-accessory",
       image: metaSnip,
       title: "META - The Microcontroller Enhanced Tablet Accessory",
-      description:
-        "META was the first ever tablet case to feature an advanced embedded microcontroller with user configurability.  It was aimed at the Surface Pro line of Microsoft tablet computers and enabled users to work more efficiently in a keyboard-less configuration by introducing programmable buttons that could be mapped to any keyboard shortcut and attached to the device in an elegant and unobtrusive manner.",
+      description: (
+        <>
+          META was the first ever tablet case to feature an advanced embedded
+          microcontroller with user configurability. It was aimed at the Surface
+          Pro line of Microsoft tablet computers and enabled users to work more
+          efficiently in a keyboard-less configuration by introducing
+          programmable buttons that could be mapped to any keyboard shortcut and
+          attached to the device in an elegant and unobtrusive manner.
+        </>
+      ),
       techStack: "C++ & Arduino IDE",
       alt: "meta product screenshot",
     },
