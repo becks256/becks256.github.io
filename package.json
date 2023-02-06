@@ -15,8 +15,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run build-app && rm -rf docs && mv build docs ",
-    "build-app": "react-scripts build",
+    "build": "npm run prebuild:pages && git add . && git commit -m \"chore: deploy new build\" && git push",
+    "prebuild:pages": "npm run prebuild:react && rm -rf docs && mv build docs ",
+    "prebuild:react": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
