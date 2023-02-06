@@ -24,7 +24,7 @@ function App() {
       image: soulfolioSnip,
       title: "Soulfolio Co",
       description:
-        "Souldfolioco.com is a collaborative web app for creating personalized gifts.  It features, among other things, a collaborative project space and an image editor for personalizing built-in and user uploaded images, which can then be purchased for manufacture and delivery to the intended recipient.",
+        "Soulfolioco.com is a collaborative web app for creating personalized gifts.  It features, among other things, a collaborative project space and an image editor for personalizing built-in and user uploaded images, which can then be purchased for manufacture and delivery to the intended recipient.",
       techStack: "MERN",
       alt: "soulfolioco.com screenshot",
     },
@@ -42,7 +42,7 @@ function App() {
       image: myPriceSnip,
       title: "MyPrice",
       description:
-        "A system of system that scrapes and aggregates data from excel spreadsheets, presents the information in an organized and accessible manner, and enables the sales force to select items and export them in the required format",
+        "MyPrice is a custom developed solution for an enterprise client whose product quotes suffered from a findability problem. This application features a file system crawler that seeks out pricing quotes in a shared network and imports the information into a database. Users are able to search the database with an intuitive front-end that features a shopping basket where they can collect price quotes for multiple different products and export them to the required format for their customer.",
       techStack: "MongoDB, EJS, Express, Node",
       alt: "my price web app screenshot",
     },
@@ -51,7 +51,7 @@ function App() {
       image: drprepperLogo,
       title: "Dr. Prepper",
       description:
-        "Dr. Prepper is a fully-automated, self-healing product rendering and print production system. It's primarily a headless application, but it does feature a simple React UI that enables non-developers (designers & sales) to initialize and stop processes. The primary interface is a series of drop folders that accept image files of any shape, size, and type, and the outputs of the system are production-ready art files along with the necessary product renderings of the provided art on the product it was dropped for. This enabled rapid deployment of product and artwork to the appropriate ecommerce channels at a ~10x faster rate than could be manually accomplished. ",
+        "Dr. Prepper is a fully-automated, self-healing product rendering and print production system. It's primarily a headless application, but it does feature a simple React UI that enables non-developers (designers & sales) to initialize and stop processes. The primary interface is a series of drop folders that accept image files of any shape, size, and type, and the outputs of the system are production-ready art files along with the necessary product renderings of the provided art on the product it was dropped for. This enables rapid deployment of product and artwork to the appropriate ecommerce channels at a ~10x faster rate than could be manually accomplished.",
       techStack: "Adobe ExtendScript, React, Express, Node, Powershell",
       alt: "dr prepper logo",
     },
@@ -60,7 +60,7 @@ function App() {
       image: dapperSnip,
       title: "Dapper",
       description:
-        "Dapper is a POC web app that would enable non-developers to directly manipulate the color system and deploy theme and color changes directly to production. The foreseeable value in allowing for on-demand color changes rests in themeability of the banner application.",
+        "Dapper is a POC web app that would enable non-developers to directly manipulate the base color values of the Kroger Design System's color system, and deploy modified theme and color changes directly to production. The foreseeable value in allowing for on-demand color changes rests in themeability of the banner application and the ability to accomplish it without developer assistance.",
       techStack: "MERN",
       alt: "dapper web app screenshot",
     },
@@ -80,14 +80,14 @@ function App() {
       link: "https://app.pluralsight.com/profile/dbecker85",
       image: pluralsightSnip,
       title: "Pluralsight",
-      description: "Link to Pluralsight profile containing verified Skill IQs",
+      description: "See my SkillIQ on Pluralsight.",
       alt: "pluralsight user profile screenshot",
     },
     {
       link: "https://www.freecodecamp.org/becks256",
       image: fccSnip,
       title: "freeCodeCamp",
-      description: "Link to freeCodeCamp profile containing certifications",
+      description: "View my freeCodeCamp.org public profile.",
       alt: "freeCodeCamp user profile screenshot",
     },
   ]
@@ -97,37 +97,42 @@ function App() {
       link: "https://github.com/becks256",
       image: githubLogo,
       title: "GitHub @becks256",
-      description: "",
+      description: "Check out my personal profile on GitHub.",
       alt: "becks256 github public profile",
     },
     {
       link: "https://github.com/Rebel-IST",
       image: githubLogo,
       title: "GitHub @Rebel-IST",
-      alt: "rebel internet systems and technologies github public profile",
+      description: "Check out my contractor profile on GitHub",
+      alt: "rebel internet systems and technologies github public profile.",
     },
     {
       link: "https://jsfiddle.net/user/becks256/fiddles",
       image: jsfiddleLogo,
       title: "JSFiddle",
+      description: "Check out my random javascript experiments on JSFiddle.",
       alt: "becks256 js fiddle public profile",
     },
     {
       link: "https://www.npmjs.com/~becks256",
       image: npmLogo,
       title: "npm",
+      description: "See the few random things I've published to npm.",
       alt: "becks256 npm public profile",
     },
     {
       link: "https://www.linkedin.com/in/becks256/",
       image: linkedinLogo,
       title: "LinkedIn",
+      description: "Visit my LinkedIn profile.",
       alt: "Dan Becker LinkedIn public profile",
     },
     {
       link: "https://soundcloud.com/becks256",
       image: soundcloudLogo,
       title: "SoundCloud",
+      description: "Have a listen to some noise I've created on SoundCloud.",
       alt: "becks256 soundcloud public profile",
     },
   ]
@@ -142,7 +147,9 @@ function App() {
       <section className="md:mx-96 sm:mx-16 my-96">
         <h1 id="work">Work</h1>
         <section className="flex flex-wrap mb-64 gap-32">
-          {WORK_DATA.sort((a, b) => a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1).map((item, index) => (
+          {WORK_DATA.sort((a, b) =>
+            a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1
+          ).map((item, index) => (
             <Card
               key={`work-card-${index}`}
               title={item.title}
@@ -171,7 +178,9 @@ function App() {
         </section>
         <h1 id="skills">Skills</h1>
         <section className="flex flex-wrap mb-64 gap-32">
-          {SKILLS_DATA.sort((a, b) => a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1).map((item, index) => (
+          {SKILLS_DATA.sort((a, b) =>
+            a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1
+          ).map((item, index) => (
             <Card
               key={`work-card-${index}`}
               title={item.title}
@@ -200,7 +209,9 @@ function App() {
         </section>
         <h1 id="networks">Networks</h1>
         <section className="flex flex-wrap mb-64 gap-32">
-        {NETWORK_DATA.sort((a, b) => a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1).map((item, index) => (
+          {NETWORK_DATA.sort((a, b) =>
+            a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1
+          ).map((item, index) => (
             <Card
               key={`work-card-${index}`}
               title={item.title}
@@ -217,11 +228,7 @@ function App() {
                 aria-label="view larger image"
                 label="view larger image"
               >
-                <img
-                  src={item.image}
-                  className="logo"
-                  alt={item.alt}
-                />
+                <img src={item.image} className="logo" alt={item.alt} />
               </a>
             </Card>
           ))}
