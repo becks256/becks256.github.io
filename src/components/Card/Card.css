@@ -8,14 +8,13 @@
 }
 
 .ProductCard {
-  width: 32rem;
-  min-height: 28rem;
+  min-height: 24rem;
   position: relative;
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex: 1 1 28rem;
 }
 
 .NetworkCard {
+  width: 14rem;
   position: relative;
   flex-grow: 1;
 }
@@ -56,10 +55,6 @@
   font-size: 11pt;
   margin-bottom: 6rem;
   max-width: 37.5rem;
-}
-
-.NetworkCard .Card--description {
-  max-width: 13rem;
 }
 
 .Card--techStack-description {
