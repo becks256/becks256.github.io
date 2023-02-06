@@ -55,6 +55,10 @@
   margin-bottom: 6rem;
 }
 
+.NetworkCard.Card--description {
+  max-width: 225px;
+}
+
 .Card--techStack-description {
   font-size: 8pt;
   position: absolute;
