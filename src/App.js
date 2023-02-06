@@ -33,7 +33,7 @@ function App() {
       image: photoshopSnip,
       title: "DesignerPower UXP",
       description:
-        "Photoshop UXP plugin with multiple modules for optimizing files for production and a connector for the Widen DAM system",
+        "Photoshop UXP plugin with multiple modules for optimizing files for production and a connector for the Widen DAM system.",
       techStack: "Adobe UXP Framework & React",
       alt: "designer power uxp plugin screenshot",
     },
@@ -69,7 +69,7 @@ function App() {
       image: metaSnip,
       title: "META - The Microcontroller Enhanced Tablet Accessory",
       description:
-        "META was the first ever tablet case to feature an advanced embedded microcontroller with user configurability.  It was aimed at the Surface Pro line of Microsoft tablet computers and enabled users to work more efficiently in a keyboard-less configuration by introducing programmable buttons that could be mapped to any keyboard shortcut and attached to the device in an elegant and unobtrusive manner",
+        "META was the first ever tablet case to feature an advanced embedded microcontroller with user configurability.  It was aimed at the Surface Pro line of Microsoft tablet computers and enabled users to work more efficiently in a keyboard-less configuration by introducing programmable buttons that could be mapped to any keyboard shortcut and attached to the device in an elegant and unobtrusive manner.",
       techStack: "C++ & Arduino IDE",
       alt: "meta product screenshot",
     },
@@ -104,7 +104,7 @@ function App() {
       link: "https://github.com/Rebel-IST",
       image: githubLogo,
       title: "GitHub @Rebel-IST",
-      description: "Check out my contractor profile on GitHub",
+      description: "Check out my contractor profile on GitHub.",
       alt: "rebel internet systems and technologies github public profile.",
     },
     {
@@ -125,8 +125,8 @@ function App() {
       link: "https://www.linkedin.com/in/becks256/",
       image: linkedinLogo,
       title: "LinkedIn",
-      description: "Visit my LinkedIn profile.",
-      alt: "Dan Becker LinkedIn public profile",
+      description: "See my work experience and history on LinkedIn.",
+      alt: "Dan Becker's LinkedIn public profile",
     },
     {
       link: "https://soundcloud.com/becks256",
