@@ -117,8 +117,8 @@ code {
   text-overflow: ellipsis !important;
 }
 
-.gap-32 {
-  gap: 0 2rem;
+.gap-48 {
+  gap: 3rem;
 }
 /* X-AXIS PADDING */
 
