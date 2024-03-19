@@ -1,0 +1,36 @@
+.icon {
+  display: flex;
+}
+
+.icon svg {
+  fill: currentColor;
+}
+
+.icon-xs {
+  width: 12px !important;
+  height: 12px !important;
+}
+.icon-s {
+  height: 18px !important;
+  width: 18px !important;
+}
+.icon-m {
+  width: 24px !important;
+  height: 24px !important;
+}
+.icon-l {
+  width: 36px !important;
+  height: 36px !important;
+}
+.icon-xl {
+  width: 48px !important;
+  height: 48px !important;
+}
+.icon-xxl {
+  width: 96px !important;
+  height: 96px !important;
+}
+.icon-xxxl {
+  width: 144px !important;
+  height: 144px !important;
+}
