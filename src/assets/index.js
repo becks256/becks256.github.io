@@ -14,6 +14,10 @@ import jsfiddleLogo from "./jsfiddle.svg"
 import linkedinLogo from "./linkedin.svg"
 import npmLogo from "./npm.svg"
 import soundcloudLogo from "./soundcloud.svg"
+import websiteGraderSnip from "./websiteGraderSnip.jpg"
+import designSystemVersioningStrategy from "./designSystemVersioningStrategy.png"
+import logoDesignExamples from "./logoDesignExamples.png"
+import youTubeLogo from "./youTubeLogo.svg"
 
 export {
   pluralsightSnip,
@@ -32,4 +36,8 @@ export {
   linkedinLogo,
   npmLogo,
   soundcloudLogo,
+  websiteGraderSnip,
+  designSystemVersioningStrategy,
+  logoDesignExamples,
+  youTubeLogo
 }
