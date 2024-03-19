@@ -1,0 +1,26 @@
+:root {
+  --message-info-background: #d8ecff;
+  --message-info-color: #679ecc;
+}
+
+.message {
+  min-width: 3rem;
+  max-width: 24rem;
+  min-height: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.75rem;
+  font-size: 10pt;
+  gap: 0.5rem;
+}
+
+.message--info {
+  background-color: var(--message-info-background);
+  border-color: var(--message-info-color);
+}
+
+.message--info .icon {
+  color: var(--message-info-color);
+}
