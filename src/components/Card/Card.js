@@ -14,8 +14,8 @@ export const Card = ({
   return (
     <div
       className={clsnx(
-        { ProductCard: type === "product", NetworkCard: type === "network" },
-        "Card mb-32 overflow-hidden"
+        { ProductCard: type === "product", NetworkCard: type === "network", PublicationCard: type === "publication" },
+        "Card overflow-hidden"
       )}
     >
       <section className="Card-imageContainer">{children}</section>
@@ -28,7 +28,7 @@ export const Card = ({
           </h3>
         )}
         {!!!href && <h3 className={headerClasses}>{title}</h3>}
-        <p className="Card--description">{description}</p>
+        <div className="Card--description">{description}</div>
         {techStack && (
           <p className="Card--techStack-description">
             <span className="underline">Tech Stack</span>: {techStack}

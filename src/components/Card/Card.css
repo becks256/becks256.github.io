@@ -4,19 +4,20 @@
   border-radius: 1rem;
   box-shadow: var(--shadow);
   background-color: var(--system-background--secondary);
-  border: solid 1px var(--border-color)
+  border: solid 1px var(--border-color);
 }
 
-.ProductCard {
+.ProductCard,
+.PublicationCard {
   min-height: 24rem;
   position: relative;
-  flex: 1 1 28rem;
+  flex: 1 1 24rem;
 }
 
 .NetworkCard {
   width: 14rem;
   position: relative;
-  flex-grow: 1;
+  flex: 1 0 14rem;
 }
 
 .Card-imageContainer {
@@ -48,7 +49,7 @@
   box-sizing: border-box;
   height: 8rem;
   width: auto;
-  padding: 1rem
+  padding: 1rem;
 }
 
 .Card--description {
@@ -65,8 +66,17 @@
   width: calc(100% - 4rem);
 }
 
-@media (max-width: 899px) {
-  .ProductCard {
+@media (max-width: 900px) {
+  .ProductCard,
+  .PublicationCard {
     width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1410px) {
+  .ProductCard:last-of-type,
+  .PublicationCard:last-of-type {
+    max-width: calc(50% - 1.5rem);
   }
 }
