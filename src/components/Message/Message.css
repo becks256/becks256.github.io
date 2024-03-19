@@ -1,6 +1,6 @@
 :root {
-  --message-info-background: #d8ecff;
-  --message-info-color: #679ecc;
+  --message-info-background: var(--palette-informative--most-subtle)
+  --message-info-color: var(--palette-informative--most-prominent);
 }
 
 .message {
@@ -17,10 +17,10 @@
 }
 
 .message--info {
-  background-color: var(--message-info-background);
-  border-color: var(--message-info-color);
+  background-color: var(--palette-informative--most-subtle);
+  border-color: var(--palette-informative--more-prominent);
 }
 
 .message--info .icon {
-  color: var(--message-info-color);
+  color: var(--palette-informative--more-prominent);
 }
