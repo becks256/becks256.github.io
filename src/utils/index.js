@@ -16,6 +16,7 @@ import {
   designSystemVersioningStrategy,
   youTubeLogo,
   logoDesignExamples,
+  codeWheelSnip,
 } from "../assets"
 
 import React from "react"
@@ -130,6 +131,18 @@ export const WORK_DATA = [
     techStack: "C++ & Arduino IDE",
     alt: "meta product screenshot",
   },
+  {
+    link: "https://www.kickstarter.com/projects/1944993710/890789663?ref=duf72x&token=8ff33972",
+    image: codeWheelSnip,
+    title: "The Code Wheel Project",
+    description: (
+      <>
+        This never launched (but maybe still someday) KickStarter project dating back to 2013 (!) was an invention of mine that aimed to enhance the QR code to store more data than a traditional one. The idea was to use a circular QR code with a limited color palette to encode more data than the binary black and white palette could could. For those unfamiliar, a QR code simply encodes data in binary and presents that as a block of black and white squares. Black squares typically represent 1 and whites squares 0.  The goal of the color wheel project was to have colors in addition to black and white that could represent combinations of 0 and 1, for example, red could represent _00_, green 01, blue 10, and yellow 11, allowing for 4x the data to be encoded in the same space as a traditional QR code.
+      </>
+    ),
+    techStack: "TBD",
+    alt: "code wheel concept art screenshot",
+  },
 ]
 
 export const DESIGN_WORK_DATA = [
@@ -138,7 +151,10 @@ export const DESIGN_WORK_DATA = [
     title: "Logo Design Examples",
     description: (
       <>
-        I'm formally educated as a graphic designer and spent 13 years in the home decor industry as a designer turned software engineer, and as a freelance designer. Here are a few examples of logos I've designed over the years.
+        I'm formally educated as a graphic designer and spent 13 years in the
+        home decor industry as a designer turned software engineer, and as a
+        freelance designer. Here are a few examples of logos I've designed over
+        the years.
       </>
     ),
     alt: "logo design examples",
@@ -174,7 +190,8 @@ export const NETWORK_DATA = [
     link: "https://github.com/Rebel-IST",
     image: githubLogo,
     title: "GitHub @Rebel-IST",
-    description: "Check out some things I developed under contract for Rebel-IST on GitHub",
+    description:
+      "Check out some things I developed under contract for Rebel-IST on GitHub",
     alt: "rebel internet systems and technologies github public profile.",
   },
   {
@@ -208,10 +225,11 @@ export const NETWORK_DATA = [
   {
     link: "https://youtu.be/1puvTPIDgPo?feature=shared",
     title: "YouTube",
-    description: "Watch this timelapse of my wife and I painting a massive mural on the side of a barn",
+    description:
+      "Watch this timelapse of my wife and I painting a massive mural on the side of a barn",
     alt: "becks256 youtube public profile",
     image: youTubeLogo,
-  }
+  },
 ]
 
 export const APP_DATA = {
@@ -224,12 +242,14 @@ export const PUBLICATION_DATA = [
     title: "How I Scored 100 on HubSpot's Website Grader",
     description: (
       <>
-        Here I chronicled my journey of scoring 100 on HubSpot's Website Grader. this post details the technical and non-technical steps taken to achieve a perfect score. It's a great read for anyone looking to improve a site's performance, particularly if hosted with IIS.
-
+        Here I chronicled my journey of scoring 100 on HubSpot's Website Grader.
+        this post details the technical and non-technical steps taken to achieve
+        a perfect score. It's a great read for anyone looking to improve a
+        site's performance, particularly if hosted with IIS.
         <Message kind="info" className="my-16">
           This post was originally published in 2016. The business that acquired
-          rebel-ist moved all content to a WordPress site, effectively
-          rewriting the publication history.
+          rebel-ist moved all content to a WordPress site, effectively rewriting
+          the publication history.
         </Message>
       </>
     ),
@@ -239,8 +259,14 @@ export const PUBLICATION_DATA = [
     title: "Design System Unified Versioning Strategy",
     description: (
       <>
-        This is a design system versioning strategy that I wrote for the
-        Kroger Design System. It details tiers of support from design down through component library implementation, as well as the bundling of platform libraries into a single package for deployment where all align on a common version number and release cadence.  It also entertains the idea of adopting <code>calver</code> as the version numbering scheme, which would enable the system to be more predictable, and to be able to communicate the nature of the changes in a more meaningful way.
+        This is a design system versioning strategy that I wrote for the Kroger
+        Design System. It details tiers of support from design down through
+        component library implementation, as well as the bundling of platform
+        libraries into a single package for deployment where all align on a
+        common version number and release cadence. It also entertains the idea
+        of adopting <code>calver</code> as the version numbering scheme, which
+        would enable the system to be more predictable, and to be able to
+        communicate the nature of the changes in a more meaningful way.
       </>
     ),
     image: designSystemVersioningStrategy,

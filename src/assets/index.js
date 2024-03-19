@@ -18,6 +18,7 @@ import websiteGraderSnip from "./websiteGraderSnip.jpg"
 import designSystemVersioningStrategy from "./designSystemVersioningStrategy.png"
 import logoDesignExamples from "./logoDesignExamples.png"
 import youTubeLogo from "./youTubeLogo.svg"
+import codeWheelSnip from "./codeWheel.jpg"
 
 export {
   pluralsightSnip,
@@ -39,5 +40,6 @@ export {
   websiteGraderSnip,
   designSystemVersioningStrategy,
   logoDesignExamples,
-  youTubeLogo
+  youTubeLogo,
+  codeWheelSnip,
 }
