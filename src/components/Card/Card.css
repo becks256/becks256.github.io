@@ -52,6 +52,12 @@
   padding: 1rem;
 }
 
+:root[color-mode="dark"] {
+  img.logo.inverse {
+    filter: invert(1);
+  }
+}
+
 .Card--description {
   font-size: 11pt;
   margin-bottom: 6rem;
