@@ -1,9 +1,26 @@
-import "./App.css"
-import { Banner, Card } from "./components"
+import React from "react"
 import { clsnx } from "@becks256/clsnx"
-import { APP_DATA, DESIGN_WORK_DATA, NETWORK_DATA, PUBLICATION_DATA, SKILLS_DATA, WORK_DATA } from "./utils"
+import { DARK_MODE, useColorMode } from "react-darkmode-hook"
+
+import { Banner, Card } from "./components"
+import {
+  APP_DATA,
+  DESIGN_WORK_DATA,
+  NETWORK_DATA,
+  PUBLICATION_DATA,
+  SKILLS_DATA,
+  WORK_DATA,
+} from "./utils"
+
+import "./App.css"
 
 function App() {
+  const { colorMode, setColorMode } = useColorMode()
+
+  React.useEffect(() => {
+    setColorMode()
+  })
+
   const cardSectionClasses = "flex flex-wrap mb-64 gap-48"
   return (
     <div className="App">
@@ -11,34 +28,40 @@ function App() {
       <section className="main-content sm:mx-16 my-96">
         <h1 id="work">Work</h1>
         <section className={cardSectionClasses}>
-          {[WORK_DATA, DESIGN_WORK_DATA].map(group => group.sort((a, b) =>
-            a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1
-          ).map((item, index) => (
-            <Card
-              key={`work-card-${index}`}
-              title={item.title}
-              href={item.link}
-              description={item.description}
-              techStack={item.techStack}
-            >
-              <a
-                className={clsnx("flex", {
-                  "w-100": !/prepper/gi.test(item.title),
-                })}
-                href={item.link || item.image}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="view larger image"
-                label="view larger image"
-              >
-                <img
-                  src={item.image}
-                  className={clsnx({ "w-100": !/prepper/gi.test(item.title) })}
-                  alt={item.alt}
-                />
-              </a>
-            </Card>
-          )))}
+          {[WORK_DATA, DESIGN_WORK_DATA].map((group) =>
+            group
+              .sort((a, b) =>
+                a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1
+              )
+              .map((item, index) => (
+                <Card
+                  key={`work-card-${index}`}
+                  title={item.title}
+                  href={item.link}
+                  description={item.description}
+                  techStack={item.techStack}
+                >
+                  <a
+                    className={clsnx("flex", {
+                      "w-100": !/prepper/gi.test(item.title),
+                    })}
+                    href={item.link || item.image}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="view larger image"
+                    label="view larger image"
+                  >
+                    <img
+                      src={item.image}
+                      className={clsnx({
+                        "w-100": !/prepper/gi.test(item.title),
+                      })}
+                      alt={item.alt}
+                    />
+                  </a>
+                </Card>
+              ))
+          )}
         </section>
         <h1 id="skills">Skills</h1>
         <section className={cardSectionClasses}>
@@ -92,7 +115,13 @@ function App() {
                 aria-label="view larger image"
                 label="view larger image"
               >
-                <img src={item.image} className="logo" alt={item.alt} />
+                <img
+                  src={item.image}
+                  className={clsnx("logo", {
+                    inverse: colorMode === DARK_MODE && /github/gi.test(item.title),
+                  })}
+                  alt={item.alt}
+                />
               </a>
             </Card>
           ))}
