@@ -166,7 +166,7 @@ export const SKILLS_DATA = [
     link: "https://app.pluralsight.com/profile/dbecker85",
     image: pluralsightSnip,
     title: "Pluralsight",
-    description: "See my SkillIQ on Pluralsight.",
+    description: "See my Skill IQs on Pluralsight, most notably the expert level rankings of 94th, 97th, and 98th percentiles for JavaScript, HTML, and CSS respectively as of 2022.",
     alt: "pluralsight user profile screenshot",
   },
   {
