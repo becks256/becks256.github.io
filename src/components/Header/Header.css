@@ -7,8 +7,15 @@
   top: 0;
   left: 0;
   box-sizing: border-box;
-  background-color: rgba(12,13,14,0.95);
   box-shadow: var(--shadow);
+}
+
+:root[color-mode="dark"] .Header {
+  background-color: var(--system-background--primary);
+}
+
+:root[color-mode="light"] .Header {
+  background-color: var(--system-background--primary-inverse);
 }
 
 .Header-link {
