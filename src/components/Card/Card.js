@@ -10,16 +10,20 @@ export const Card = ({
   techStack,
   type = "product",
 }) => {
-  const headerClasses = "py-16"
+  const headerClasses = ""
   return (
     <div
       className={clsnx(
-        { ProductCard: type === "product", NetworkCard: type === "network", PublicationCard: type === "publication" },
+        {
+          ProductCard: type === "product",
+          NetworkCard: type === "network",
+          PublicationCard: type === "publication",
+        },
         "Card overflow-hidden"
       )}
     >
       <section className="Card-imageContainer">{children}</section>
-      <section className="px-32">
+      <section className="px-48">
         {!!href && (
           <h3 className={headerClasses}>
             <a href={href} target="_blank" rel="noreferrer">

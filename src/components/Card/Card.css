@@ -5,6 +5,7 @@
   box-shadow: var(--shadow);
   background-color: var(--system-background--secondary);
   border: solid 1px var(--border-color);
+  row-gap: 2.5rem;
 }
 
 .ProductCard,
@@ -52,16 +53,16 @@
   padding: 1rem;
 }
 
-:root[color-mode="dark"] {
-  img.logo.inverse {
-    filter: invert(1);
-  }
+:root[color-mode="dark"] img.logo.inverse {
+  filter: invert(1);
 }
 
 .Card--description {
-  font-size: 11pt;
+  font-size: 12pt;
   margin-bottom: 6rem;
   max-width: 37.5rem;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 .Card--techStack-description {
