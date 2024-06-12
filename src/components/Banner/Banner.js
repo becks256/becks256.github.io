@@ -8,13 +8,13 @@ export const Banner = () => {
       <section className="Banner">
         <Header />
         <div className="Banner--icon">
-          <span class="chevron orange"></span>
-          <span class="chevron red"></span>
-          <span class="chevron lt-purple"></span>
-          <span class="chevron purple"></span>
-          <span class="chevron white"></span>
+          <span className="chevron orange"></span>
+          <span className="chevron red"></span>
+          <span className="chevron lt-purple"></span>
+          <span className="chevron purple"></span>
+          <span className="chevron white"></span>
         </div>
-        <section className="flex flex-column">
+        <section className="Banner--content flex flex-column">
           <h1>Hi!</h1>
           <h1>I'm Dan</h1>
           <h2>
