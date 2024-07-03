@@ -4,6 +4,7 @@
   --animation-timing: 1.25s;
   --animation-repeat: 1;
   --chevron-size: 100px;
+  --animation-timing: 1.25s;
 }
 
 .Banner {
@@ -23,8 +24,8 @@
   z-index: 2;
 }
 
-.Banner .Banner--content, .Banner .Banner--icon {
-  animation: blur 1s ease-in-out reverse;
+.Banner .Banner--content {
+  animation: blurNscale var(--animation-timing) ease-in-out reverse;
 }
 
 .Banner--icon {
@@ -32,9 +33,9 @@
   bottom: 5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: var(--chevron-size);
-  height: var(--chevron-size);
   z-index: -1;
+  fill: currentColor;
+  animation: blur var(--animation-timing) ease-in-out reverse;
 }
 
 .chevron {
@@ -169,8 +170,7 @@
   top: 0;
   left: 0;
   z-index: 1;
-  animation: blur 1s ease-in-out forwards;
-}
+  animation: blurNscale var(--animation-timing) ease-in-out forwards;
 
 @keyframes blur {
   0% {
