@@ -11,6 +11,22 @@ code {
     monospace;
 }
 
+.heading-s {
+  font-size: 1.5rem;
+}
+
+.heading-m {
+  font-size: 2rem;
+}
+
+.heading-l {
+  font-size: 3rem;
+}
+
+.heading-xl {
+  font-size: 4rem;
+}
+
 .flex {
   display: flex;
 }
@@ -117,12 +133,16 @@ code {
   text-overflow: ellipsis !important;
 }
 
+.gap-8 {
+  gap: 0.5rem !important;
+}
+
 .gap-32 {
-  gap: 0 2rem;
+  gap: 0 2rem !important;
 }
 
 .gap-48 {
-  gap: 3rem;
+  gap: 3rem !important;
 }
 /* X-AXIS PADDING */
 
@@ -709,18 +729,25 @@ code {
 }
 
 .underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .overflow-hidden {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .pointer {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .font-s {
-  font-size: 8pt;
+  font-size: 8pt !important;
+}
+.font-m {
+  font-size: 10pt !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
 }
 
 @media screen and (min-width: 900px) {
