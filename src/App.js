@@ -15,13 +15,21 @@ import {
 import "./App.css"
 
 function App() {
-  const { colorMode, setColorMode } = useColorMode()
+  const [filter, setFilter] = React.useState([])
 
   React.useEffect(() => {
     setColorMode()
   })
 
-  const cardSectionClasses = "flex flex-wrap mb-64 gap-48"
+  const filterHandler = (e) => {
+    const text = e.currentTarget.innerText.replace(/(\W)/g, "\\$1")
+    if (filter.some((item) => item === text)) {
+      setFilter(filter.filter((item) => item !== text))
+      return
+    }
+    setFilter([...filter, text])
+  }
+
   return (
     <div className="App">
       <Banner />
