@@ -34,14 +34,13 @@ function App() {
     <div className="App">
       <Banner />
       <section className="main-content sm:mx-16 my-96">
-        <h1 id="work">Work</h1>
+        <h1 className={headerClasses} id="networks">
+          Networks
+        </h1>
+        <p>Follow my work or connect with me on social media!</p>
         <section className={cardSectionClasses}>
-          {[WORK_DATA, DESIGN_WORK_DATA].map((group) =>
-            group
-              .sort((a, b) =>
-                a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1
-              )
-              .map((item, index) => (
+          <SocialIconBar />
+        </section>
                 <Card
                   key={`work-card-${index}`}
                   title={item.title}
