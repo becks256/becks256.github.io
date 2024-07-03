@@ -2,7 +2,8 @@ import pluralsightSnip from "./pluralsight.png"
 import certOne from "./cert1.png"
 import certTwo from "./cert2.png"
 import certThree from "./cert3.png"
-import fccSnip from "./fcc.png"
+// import fccSnip from "./fcc.png"
+import fccIcon from "./fcc_icon.svg"
 import soulfolioSnip from "./soulfolio.png"
 import photoshopSnip from "./photoshop.png"
 import myPriceSnip from "./myprice.png"
@@ -11,7 +12,8 @@ import metaSnip from "./meta.png"
 import drprepperLogo from "./drprepper.png"
 import githubLogo from "./github.svg"
 import jsfiddleLogo from "./jsfiddle.svg"
-import linkedinLogo from "./linkedin.svg"
+// import linkedinLogo from "./linkedin.svg"
+import linkedinLogo from "./linkedin-icon.svg"
 import npmLogo from "./npm.svg"
 import soundcloudLogo from "./soundcloud.svg"
 import websiteGraderSnip from "./websiteGraderSnip.jpg"
@@ -25,7 +27,7 @@ export {
   certOne,
   certTwo,
   certThree,
-  fccSnip,
+  // fccSnip,
   soulfolioSnip,
   photoshopSnip,
   myPriceSnip,
@@ -42,4 +44,5 @@ export {
   logoDesignExamples,
   youTubeLogo,
   codeWheelSnip,
+  fccIcon,
 }
