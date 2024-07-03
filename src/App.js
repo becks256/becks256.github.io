@@ -1,12 +1,11 @@
 import React from "react"
 import { clsnx } from "@becks256/clsnx"
-import { DARK_MODE, useColorMode } from "react-darkmode-hook"
+import { useColorMode } from "react-darkmode-hook"
 
-import { Banner, Card } from "./components"
+import { Banner, Card, SocialIconBar, Tag } from "./components"
 import {
   APP_DATA,
   DESIGN_WORK_DATA,
-  NETWORK_DATA,
   PUBLICATION_DATA,
   SKILLS_DATA,
   WORK_DATA,
