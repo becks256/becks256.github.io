@@ -15,6 +15,7 @@ import {
 import "./App.css"
 
 function App() {
+  const { setColorMode } = useColorMode()
   const [filter, setFilter] = React.useState([])
 
   React.useEffect(() => {
