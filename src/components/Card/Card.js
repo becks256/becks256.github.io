@@ -1,6 +1,8 @@
 import { clsnx } from "@becks256/clsnx"
 import React from "react"
 import "./Card.css"
+import { Tag } from "../"
+import { ExternalLinkIcon } from "../Icon/Icons/ExternalLinkIcon"
 
 export const Card = ({
   title,
@@ -9,34 +11,50 @@ export const Card = ({
   href,
   techStack,
   type = "product",
+  cta,
 }) => {
   const headerClasses = ""
+
+  const isPublication = type === "publication"
+  const isNetwork = type === "network"
+  const isProduct = type === "product"
+
   return (
     <div
       className={clsnx(
         {
-          ProductCard: type === "product",
-          NetworkCard: type === "network",
-          PublicationCard: type === "publication",
+          ProductCard: isProduct,
+          NetworkCard: isNetwork,
+          PublicationCard: isPublication,
         },
-        "Card overflow-hidden"
+        "Card overflow-hidden pb-48 pt-24"
       )}
     >
+      <section className="px-48">
+        <h3 className={headerClasses}>{title}</h3>
+      </section>
       <section className="Card-imageContainer">{children}</section>
       <section className="px-48">
-        {!!href && (
-          <h3 className={headerClasses}>
-            <a href={href} target="_blank" rel="noreferrer">
-              {title}
-            </a>
-          </h3>
-        )}
-        {!!!href && <h3 className={headerClasses}>{title}</h3>}
         <div className="Card--description">{description}</div>
-        {techStack && (
-          <p className="Card--techStack-description">
-            <span className="underline">Tech Stack</span>: {techStack}
-          </p>
+        {href && (
+          <a
+            className="font-bold flex gap-8 mb-24"
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {cta || "View Project"}
+            <ExternalLinkIcon />
+          </a>
+        )}
+        {techStack?.length && (
+          <div className="Card--techStack">
+            {techStack.map((tech, index) => (
+              <Tag kind="special" key={index}>
+                {tech}
+              </Tag>
+            ))}
+          </div>
         )}
       </section>
     </div>
