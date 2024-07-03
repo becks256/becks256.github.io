@@ -41,12 +41,43 @@ function App() {
         <section className={cardSectionClasses}>
           <SocialIconBar />
         </section>
+        <h1 className={headerClasses} id="projects">
+          Projects
+        </h1>
+        <section className="Card pb-24 flex-column px-24 mb-24 pt-8 gap-8">
+          <p>Filter work by technology</p>
+          <section className="flex flex-row gap-8 flex-wrap">
+            {Array.from(techItems)
+              .sort((a, b) => (a.toLowerCase() > b.toLowerCase() ? 1 : -1))
+              .map((techItem, index) => (
+                <Tag
+                  kind={
+                    filter.some((item) => item.replace(/\\/g, "") === techItem)
+                      ? "special"
+                      : ""
+                  }
+                  key={`tag-${index}`}
+                  onClick={filterHandler}
+                  className="pointer"
+                >
+                  {techItem}
+                </Tag>
+              ))}
+          </section>
+        </section>
+        <p className="font-m font-bold">
+          {filteredWork.length} Projects match the selected filters
+        </p>
+        <section className={clsnx(cardSectionClasses, "grid-section")}>
+          {filteredWork.length > 0 &&
+            filteredWork.map((item, index) => (
                 <Card
                   key={`work-card-${index}`}
                   title={item.title}
                   href={item.link}
                   description={item.description}
                   techStack={item.techStack}
+                cta={item.cta}
                 >
                   <a
                     className={clsnx("flex", {
@@ -67,8 +98,7 @@ function App() {
                     />
                   </a>
                 </Card>
-              ))
-          )}
+            ))}
         </section>
         <h1 id="skills">Skills</h1>
         <section className={cardSectionClasses}>
