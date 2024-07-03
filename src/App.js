@@ -93,33 +93,33 @@ function App() {
         <section className={clsnx(cardSectionClasses, "grid-section")}>
           {filteredWork.length > 0 &&
             filteredWork.map((item, index) => (
-                <Card
-                  key={`work-card-${index}`}
-                  title={item.title}
-                  href={item.link}
-                  description={item.description}
-                  techStack={item.techStack}
+              <Card
+                key={`work-card-${index}`}
+                title={item.title}
+                href={item.link}
+                description={item.description}
+                techStack={item.techStack}
                 cta={item.cta}
+              >
+                <a
+                  className={clsnx("flex", {
+                    "w-100": !/prepper/gi.test(item.title),
+                  })}
+                  href={item.link || item.image}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="view larger image"
+                  label="view larger image"
                 >
-                  <a
-                    className={clsnx("flex", {
+                  <img
+                    src={item.image}
+                    className={clsnx({
                       "w-100": !/prepper/gi.test(item.title),
                     })}
-                    href={item.link || item.image}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="view larger image"
-                    label="view larger image"
-                  >
-                    <img
-                      src={item.image}
-                      className={clsnx({
-                        "w-100": !/prepper/gi.test(item.title),
-                      })}
-                      alt={item.alt}
-                    />
-                  </a>
-                </Card>
+                    alt={item.alt}
+                  />
+                </a>
+              </Card>
             ))}
         </section>
         <h1 className={headerClasses} id="skills">
