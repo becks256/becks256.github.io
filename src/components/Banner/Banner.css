@@ -171,7 +171,9 @@
   left: 0;
   z-index: 1;
   animation: blurNscale var(--animation-timing) ease-in-out forwards;
-
+  overflow: hidden;
+  clip-path: border-box;
+}
 @keyframes blur {
   0% {
     filter: blur(0);
