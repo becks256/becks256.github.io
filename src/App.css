@@ -72,6 +72,14 @@ a:hover {
 
 @media screen and (min-width: 1200px) {
   .main-content {
-    margin: 18rem;
+    margin: 16rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .main-content {
+    margin: 24rem;
+  }
+}
   }
 }
