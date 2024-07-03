@@ -1,36 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.28b842fa.css",
-    "main.js": "/static/js/main.8782c5d3.js",
+    "main.css": "/static/css/main.9317d38d.css",
+    "main.js": "/static/js/main.db1dca62.js",
     "static/js/787.03c65de6.chunk.js": "/static/js/787.03c65de6.chunk.js",
     "static/media/meta.png": "/static/media/meta.4857e8bd3783817899ed.png",
     "static/media/soulfolio.png": "/static/media/soulfolio.14ea7a26020769a37631.png",
+    "static/media/bannerImage.png": "/static/media/bannerImage.2755a56d3607d6da0c2a.png",
     "static/media/myprice.png": "/static/media/myprice.6f39c9239530708fa176.png",
     "static/media/designSystemVersioningStrategy.png": "/static/media/designSystemVersioningStrategy.06c8c95c19ee4243c1b1.png",
     "static/media/dapper.png": "/static/media/dapper.3c92f0cf12b0c02a4139.png",
     "static/media/photoshop.png": "/static/media/photoshop.43aeb612c082b05daa05.png",
+    "static/media/pluralsight.png": "/static/media/pluralsight.5591f676e24c55f2bd0a.png",
     "static/media/logoDesignExamples.png": "/static/media/logoDesignExamples.5666f3ce68305c6e690b.png",
     "static/media/codeWheel.jpg": "/static/media/codeWheel.d22f0deb522c98ca4d0f.jpg",
-    "static/media/pluralsight.png": "/static/media/pluralsight.1977239ae04221d17255.png",
     "static/media/cert2.png": "/static/media/cert2.3d18c12bfcd5f2a3bb42.png",
-    "static/media/fcc.png": "/static/media/fcc.0a82da2031141d194086.png",
     "static/media/cert1.png": "/static/media/cert1.168e02a56b371dabad81.png",
     "static/media/cert3.png": "/static/media/cert3.c5ff0956868aef0dcf8b.png",
     "static/media/websiteGraderSnip.jpg": "/static/media/websiteGraderSnip.90d6654b395bb8113681.jpg",
     "static/media/drprepper.png": "/static/media/drprepper.bd0ef74b680147b93f1f.png",
     "static/media/soundcloud.svg": "/static/media/soundcloud.2b8c698bdea7de7c761491854c2b08a4.svg",
-    "static/media/linkedin.svg": "/static/media/linkedin.19c2fbe97beb6c9dc72d1ecb392277a3.svg",
     "static/media/github.svg": "/static/media/github.eab7c7af88d1e13a91a0a74eb70397ce.svg",
     "static/media/jsfiddle.svg": "/static/media/jsfiddle.cc4a11c7b91b32229436c9cb5075d907.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.9bd7e6453c3131532672b02aba2bcf26.svg",
+    "static/media/fcc_icon.svg": "/static/media/fcc_icon.e730264a7128bf7fe7c6ac4ae3e88c16.svg",
     "static/media/npm.svg": "/static/media/npm.5ffdebd296c4738c80773ac16f800a6a.svg",
     "index.html": "/index.html",
     "static/media/youTubeLogo.svg": "/static/media/youTubeLogo.324828582481bf7bcc4d81465869897a.svg",
-    "main.28b842fa.css.map": "/static/css/main.28b842fa.css.map",
-    "main.8782c5d3.js.map": "/static/js/main.8782c5d3.js.map",
+    "main.9317d38d.css.map": "/static/css/main.9317d38d.css.map",
+    "main.db1dca62.js.map": "/static/js/main.db1dca62.js.map",
     "787.03c65de6.chunk.js.map": "/static/js/787.03c65de6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28b842fa.css",
-    "static/js/main.8782c5d3.js"
+    "static/css/main.9317d38d.css",
+    "static/js/main.db1dca62.js"
   ]
 }
