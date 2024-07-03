@@ -81,5 +81,10 @@ a:hover {
     margin: 24rem;
   }
 }
+
+@media screen and (min-width: 1921px) {
+  .grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
