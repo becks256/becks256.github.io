@@ -1,0 +1,18 @@
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5em;
+  font-size: 0.75rem;
+  border: 1px solid;
+  border-color: var(--system-text--primary);
+  background-color: var(--system-background--primary);
+  color: var(--system-text--primary);
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.tag.tag--special {
+  border-color: var(--palette-special--more-prominent);
+  background-color: var(--palette-special--more-subtle);
+  color: var(--palette-special--more-prominent);
+}
