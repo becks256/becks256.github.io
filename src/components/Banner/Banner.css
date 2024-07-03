@@ -174,6 +174,18 @@
   overflow: hidden;
   clip-path: border-box;
 }
+
+@keyframes blurNscale {
+  0% {
+    filter: blur(0);
+    transform: scaleX(1)
+  }
+  100% {
+    filter: blur(1rem);
+    transform: scaleX(1.1);
+  }
+
+}
 @keyframes blur {
   0% {
     filter: blur(0);
