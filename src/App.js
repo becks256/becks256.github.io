@@ -30,6 +30,9 @@ function App() {
     setFilter([...filter, text])
   }
 
+  const headerClasses = "heading-m"
+  const cardSectionClasses = "flex flex-wrap mb-96 gap-48"
+
   const techItems = WORK_DATA.reduce((acc, item) => {
     if (!item.techStack?.length) return acc
     item.techStack.forEach((techItem) => {
