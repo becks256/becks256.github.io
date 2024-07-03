@@ -191,7 +191,7 @@
     filter: blur(0);
   }
   100% {
-    filter: blur(0.5rem);
+    filter: blur(1rem);
   }
 
 }
