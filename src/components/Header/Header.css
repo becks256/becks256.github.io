@@ -1,3 +1,10 @@
+:root {
+  --link-padding: 2rem 0;
+  --link-padding--condensed: 0.875rem 0;
+  --link-font-size: 14pt;
+  --link-font-size--condensed: 12pt;
+  --transition: all 0.2s ease-in-out;
+}
 .Header {
   width: 100vw;
   padding: 0 0.5rem;
@@ -8,6 +15,7 @@
   left: 0;
   box-sizing: border-box;
   box-shadow: var(--shadow);
+  gap: 2rem;
 }
 
 :root[color-mode="dark"] .Header {
@@ -20,11 +28,16 @@
 
 .Header-link {
   color: var(--palette-special--least-prominent);
-  margin: 0 2rem;
-  padding: 2rem 0;
+  padding: var(--link-padding);
   text-decoration: none;
   border-bottom: solid 5px transparent;
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
+  font-size: var(--link-font-size);
+}
+
+.Header--condensed .Header-link {
+  padding: var(--link-padding--condensed);
+  font-size: var(--link-font-size--condensed);
 }
 
 .Header-link:hover, .Header-link:active {
@@ -36,8 +49,14 @@
 }
 
 .Header > .DarkmodeToggle {
-  margin: 0 2rem;
-  padding: 2rem 0;
+  margin-right: 2rem;
+  padding: var(--link-padding);
+  transition: var(--transition);
+}
+
+.Header--condensed > .DarkmodeToggle {
+  margin-right: 2rem;
+  padding: var(--link-padding--condensed);
 }
 
 .DarkmodeToggle.light-mode {
@@ -45,12 +64,4 @@
 }
 .DarkmodeToggle.dark-mode {
   color: var(--palette-special--more-prominent);
-}
-
-@media (max-width: 900px) {
-  .Header-link {
-    font-size: 10pt;
-    margin: 0 1rem;
-    padding: 2rem 0;
-  }
 }

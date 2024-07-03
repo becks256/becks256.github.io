@@ -22,6 +22,16 @@ export const Header = () => {
       })
   }, [])
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > window.innerHeight - 90) {
+        ref.current.classList.add("Header--condensed")
+      } else {
+        ref.current.classList.remove("Header--condensed")
+      }
+    })
+  }, [])
+
   const clickHandler = (e, item) => {
     e.preventDefault()
 
@@ -51,9 +61,9 @@ export const Header = () => {
 
   const LINK_DATA = [
     { href: "#publications", innerText: "Publications" },
-    { href: "#networks", innerText: "Networks" },
     { href: "#skills", innerText: "Skills" },
-    { href: "#work", innerText: "Work" },
+    { href: "#projects", innerText: "Projects" },
+    { href: "#networks", innerText: "Networks" },
     { href: "/", innerText: "Home" },
   ]
 
