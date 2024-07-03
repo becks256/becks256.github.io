@@ -2,15 +2,17 @@
 
 :root,
 :root[color-mode="light"] {
+  --border-radius: 0.5rem;
   --system-text--primary: #333;
   --system-background--primary: #f7f5f5;
   --system-background--primary-inverse: #222;
   --system-background--secondary: #fff;
   --palette-special--more-prominent: rgb(97, 45, 128);
   --palette-special--least-prominent: rgb(192, 125, 232);
-  --shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  --border-color: #cacaca;
+  --palette-special--more-subtle: rgb(232, 202, 250);
+  --shadow: rgba(50, 50, 93, 0.15) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.2) 0px 4px 8px -4px;
+  --border-color: #dddddd;
   --palette-informative--most-prominent: #003366;
   --palette-informative--more-prominent: #094e97;
   --palette-informative--less-prominent: #3477c0;
@@ -25,10 +27,11 @@
   --system-background--primary: #141415;
   --system-background--primary-inverse: #f7f5f5;
   --system-background--secondary: #202027;
+  --palette-special--more-subtle: rgb(56, 35, 68);
   --palette-special--least-prominent: rgb(97, 45, 128);
   --palette-special--more-prominent: rgb(192, 125, 232);
-  --shadow: rgba(0, 0, 0, 0.5) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+  --shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.5) 0px 4px 8px -4px;
   --border-color: #2b2b2b;
   --palette-informative--most-subtle: #003366;
   --palette-informative--more-subtle: #094e97;
