@@ -30,6 +30,25 @@ function App() {
     setFilter([...filter, text])
   }
 
+  const techItems = WORK_DATA.reduce((acc, item) => {
+    if (!item.techStack?.length) return acc
+    item.techStack.forEach((techItem) => {
+      acc.add(techItem)
+    })
+    return acc
+  }, new Set())
+
+  const filteredWork = [WORK_DATA, DESIGN_WORK_DATA]
+    .map((group) =>
+      group.filter((item) => {
+        if (!filter.length) return true
+        return item.techStack?.some((name) =>
+          name.match(new RegExp(filter || ".*?", "i"))
+        )
+      })
+    )
+    .flat()
+
   return (
     <div className="App">
       <Banner />
