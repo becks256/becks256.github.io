@@ -6,7 +6,7 @@ import {
   dapperSnip,
   metaSnip,
   pluralsightSnip,
-  fccSnip,
+  fccIcon,
   githubLogo,
   jsfiddleLogo,
   npmLogo,
@@ -23,9 +23,11 @@ import React from "react"
 
 import { Message } from "../components"
 
+const MERN = ["MongoDB", "Express.js", "React", "Node"]
+
 export const WORK_DATA = [
   {
-    link: "https://www.soulfolioco.com",
+    link: "https://www.soulfolioco.com/design",
     image: soulfolioSnip,
     title: "Soulfolio Co",
     description: (
@@ -37,8 +39,9 @@ export const WORK_DATA = [
         print-ready files for manufacture after the product is purchased.
       </>
     ),
-    techStack: "MERN",
+    techStack: MERN,
     alt: "soulfolioco.com screenshot",
+    cta: "View Site",
   },
   {
     link: undefined,
@@ -55,7 +58,7 @@ export const WORK_DATA = [
         ensures content freshness for consumers.
       </>
     ),
-    techStack: "Adobe UXP Framework & React",
+    techStack: ["Adobe UXP Framework", "React"],
     alt: "designer power uxp plugin screenshot",
   },
   {
@@ -73,7 +76,7 @@ export const WORK_DATA = [
         products and export them to the required format for their customer.
       </>
     ),
-    techStack: "MongoDB, EJS, Express, Node",
+    techStack: ["MongoDB", "EJS", "Express.js", "Node"],
     alt: "my price web app screenshot",
   },
   {
@@ -94,7 +97,13 @@ export const WORK_DATA = [
         be manually accomplished.
       </>
     ),
-    techStack: "Adobe ExtendScript, React, Express, Node, Powershell",
+    techStack: [
+      "Adobe ExtendScript",
+      "React",
+      "Express.js",
+      "Node",
+      "ASP.NET"
+    ],
     alt: "dr prepper logo",
   },
   {
@@ -111,7 +120,7 @@ export const WORK_DATA = [
         to accomplish it without developer assistance.
       </>
     ),
-    techStack: "MERN",
+    techStack: MERN,
     alt: "dapper web app screenshot",
   },
   {
@@ -128,8 +137,9 @@ export const WORK_DATA = [
         the device in an elegant and unobtrusive manner.
       </>
     ),
-    techStack: "C++ & Arduino IDE",
+    techStack: ["C++", "Arduino IDE"],
     alt: "meta product screenshot",
+    cta: "View Project",
   },
   {
     link: "https://www.kickstarter.com/projects/1944993710/890789663?ref=duf72x&token=8ff33972",
@@ -137,11 +147,23 @@ export const WORK_DATA = [
     title: "The Code Wheel Project",
     description: (
       <>
-        This never launched (but maybe still someday) KickStarter project dating back to 2013 (!) was an invention of mine that aimed to enhance the QR code to store more data than a traditional one. The idea was to use a circular QR code with a limited color palette to encode more data than the binary black and white palette could could. For those unfamiliar, a QR code simply encodes data in binary and presents that as a block of black and white squares. Black squares typically represent 1 and whites squares 0.  The goal of the color wheel project was to have colors in addition to black and white that could represent combinations of 0 and 1, for example, red could represent _00_, green 01, blue 10, and yellow 11, allowing for 4x the data to be encoded in the same space as a traditional QR code.
+        This never launched (but maybe still someday) KickStarter project dating
+        back to 2013 (!) was an invention of mine that aimed to enhance the QR
+        code to store more data than a traditional one. The idea was to use a
+        circular QR code with a limited color palette to encode more data than
+        the binary black and white palette could could. For those unfamiliar, a
+        QR code simply encodes data in binary and presents that as a block of
+        black and white squares. Black squares typically represent 1 and whites
+        squares 0. The goal of the color wheel project was to have colors in
+        addition to black and white that could represent combinations of 0 and
+        1, for example, red could represent 00, green 01, blue 10, and yellow
+        11, allowing for 4x the data to be encoded in the same space as a
+        traditional QR code.
       </>
     ),
-    techStack: "TBD",
+    techStack: null,
     alt: "code wheel concept art screenshot",
+    cta: "View Project",
   },
 ]
 
@@ -166,15 +188,10 @@ export const SKILLS_DATA = [
     link: "https://app.pluralsight.com/profile/dbecker85",
     image: pluralsightSnip,
     title: "Pluralsight",
-    description: "See my Skill IQs on Pluralsight, most notably the expert level rankings of 94th, 97th, and 98th percentiles for JavaScript, HTML, and CSS respectively as of 2022.",
+    description:
+      "See my Skill IQs on Pluralsight, most notably the expert level rankings of 94th, 97th, and 98th percentiles for JavaScript, HTML, and CSS respectively as of 2022.",
     alt: "pluralsight user profile screenshot",
-  },
-  {
-    link: "https://www.freecodecamp.org/becks256",
-    image: fccSnip,
-    title: "freeCodeCamp",
-    description: "View my freeCodeCamp.org public profile.",
-    alt: "freeCodeCamp user profile screenshot",
+    cta: "View Profile",
   },
 ]
 
@@ -185,14 +202,6 @@ export const NETWORK_DATA = [
     title: "GitHub @becks256",
     description: "Check out my personal profile on GitHub.",
     alt: "becks256 github public profile",
-  },
-  {
-    link: "https://github.com/Rebel-IST",
-    image: githubLogo,
-    title: "GitHub @Rebel-IST",
-    description:
-      "Check out some things I developed under contract for Rebel-IST on GitHub",
-    alt: "rebel internet systems and technologies github public profile.",
   },
   {
     link: "https://jsfiddle.net/user/becks256/fiddles",
@@ -230,6 +239,13 @@ export const NETWORK_DATA = [
     alt: "becks256 youtube public profile",
     image: youTubeLogo,
   },
+  {
+    link: "https://www.freecodecamp.org/becks256",
+    title: "freeCodeCamp",
+    description: "View my freeCodeCamp.org public profile.",
+    alt: "becks256 freeCodeCamp public profile",
+    image: fccIcon,
+  },
 ]
 
 export const APP_DATA = {
@@ -254,6 +270,7 @@ export const PUBLICATION_DATA = [
       </>
     ),
     image: websiteGraderSnip,
+    cta: "View Post",
   },
   {
     title: "Design System Unified Versioning Strategy",
