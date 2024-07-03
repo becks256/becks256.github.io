@@ -122,8 +122,10 @@ function App() {
                 </Card>
             ))}
         </section>
-        <h1 id="skills">Skills</h1>
-        <section className={cardSectionClasses}>
+        <h1 className={headerClasses} id="skills">
+          Skills
+        </h1>
+        <section className={clsnx(cardSectionClasses, "grid-section")}>
           {SKILLS_DATA.sort((a, b) =>
             a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1
           ).map((item, index) => (
@@ -133,6 +135,7 @@ function App() {
               href={item.link}
               description={item.description}
               techStack={item.techStack}
+              cta={item.cta}
             >
               <a
                 className={clsnx("flex", {
@@ -153,40 +156,10 @@ function App() {
             </Card>
           ))}
         </section>
-        <h1 id="networks">Networks</h1>
-        <section className={cardSectionClasses}>
-          {NETWORK_DATA.sort((a, b) =>
-            a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1
-          ).map((item, index) => (
-            <Card
-              key={`work-card-${index}`}
-              title={item.title}
-              href={item.link}
-              description={item.description}
-              techStack={item.techStack}
-              type="network"
-            >
-              <a
-                className="flex"
-                href={item.link || item.image}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="view larger image"
-                label="view larger image"
-              >
-                <img
-                  src={item.image}
-                  className={clsnx("logo", {
-                    inverse: colorMode === DARK_MODE && /github/gi.test(item.title),
-                  })}
-                  alt={item.alt}
-                />
-              </a>
-            </Card>
-          ))}
-        </section>
-        <h1 id="publications">Publications</h1>
-        <section className={cardSectionClasses}>
+        <h1 className={headerClasses} id="publications">
+          Publications
+        </h1>
+        <section className={clsnx(cardSectionClasses, "grid-section")}>
           {PUBLICATION_DATA.map((item, index) => (
             <Card
               key={`work-card-${index}`}
@@ -194,6 +167,7 @@ function App() {
               href={item.link}
               description={item.description}
               type="publication"
+              cta={item.cta}
             >
               <a
                 className="flex w-100"
