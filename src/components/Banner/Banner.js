@@ -1,20 +1,20 @@
 import React from "react"
-import { Header } from "../"
+import { Header, MobileNav } from "../"
 import "./Banner.css"
 import { CaretDownIcon } from "../Icon/Icons/CaretDownIcon"
 
-export const Banner = () => {
+export const Banner = ({ isMobile }) => {
   return (
     <>
       <section className="Banner">
-        <Header />
+        {isMobile ? <MobileNav /> : <Header />}
         {/* <div className="Banner--icon">
           <span className="chevron orange"></span>
           <span className="chevron red"></span>
           <span className="chevron lt-purple"></span>
           <span className="chevron purple"></span>
           <span className="chevron white"></span>
-        </div> */}
+          </div> */}
         <section className="Banner--content flex flex-column">
           <h1>Hi!</h1>
           <h1>I'm Dan</h1>
@@ -26,7 +26,9 @@ export const Banner = () => {
         </section>
         <CaretDownIcon className="Banner--icon" fill={"#fff"} />
       </section>
-      <section className="Banner--background"></section>
+      <div className="Banner-backgroundWrapper">
+        <section className="Banner--background"></section>
+      </div>
     </>
   )
 }
