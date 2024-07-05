@@ -91,3 +91,13 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.App {
+  max-width: 100%!important;
+  overflow-x: hidden;
+  clip-path: view-box;
+}
+
+* {
+  box-sizing: border-box;
+}
