@@ -97,13 +97,7 @@ export const WORK_DATA = [
         be manually accomplished.
       </>
     ),
-    techStack: [
-      "Adobe ExtendScript",
-      "React",
-      "Express.js",
-      "Node",
-      "ASP.NET"
-    ],
+    techStack: ["Adobe ExtendScript", "React", "Express.js", "Node", "ASP.NET"],
     alt: "dr prepper logo",
   },
   {
@@ -289,3 +283,11 @@ export const PUBLICATION_DATA = [
     image: designSystemVersioningStrategy,
   },
 ]
+
+export const debounce = (func, wait) => {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+};
