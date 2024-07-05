@@ -5,6 +5,7 @@ import "./SocialIconBar.css"
 
 export const SocialIconBar = () => {
   const [hoveredItem, setHoveredItem] = React.useState(false)
+  const [tooltipHeight, setTooltipHeight] = React.useState(0)
 
   const handleMouseEnter = (e) => setHoveredItem(e.currentTarget.title)
   const handleMouseLeave = () => setHoveredItem(null)
@@ -23,7 +24,7 @@ export const SocialIconBar = () => {
           title={title}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          ref={ref => ref && ref.title === title && ref.style.setProperty('--hover-height', ref.offsetHeight + 100 + 'px')}
+          style={{ "--hover-height": `${tooltipHeight}px` }}
         >
           <span className="sr-only">{title}</span>
           <img
@@ -34,6 +35,12 @@ export const SocialIconBar = () => {
             alt={alt}
           />
           <span
+            ref={(ref) => {
+              ref &&
+                setTooltipHeight((prev) =>
+                  ref.scrollHeight + 75 > prev ? ref.scrollHeight + 75 : prev
+                )
+            }}
             className={clsnx("social-icon-tooltip", {
               visible: hoveredItem === title,
             })}
