@@ -52,6 +52,7 @@
   margin-right: 2rem;
   padding: var(--link-padding);
   transition: var(--transition);
+  box-sizing: content-box;
 }
 
 .Header--condensed > .DarkmodeToggle {
