@@ -9,6 +9,7 @@ import {
   PUBLICATION_DATA,
   SKILLS_DATA,
   WORK_DATA,
+  debounce,
 } from "./utils"
 
 import "./App.css"
@@ -16,10 +17,30 @@ import "./App.css"
 function App() {
   const { setColorMode } = useColorMode()
   const [filter, setFilter] = React.useState([])
+  const [isMobile, setIsMobile] = React.useState(false)
 
   React.useEffect(() => {
     setColorMode()
   })
+
+  React.useEffect(() => {
+    const checkIsMobile = () => {
+      const width = window.innerWidth
+      setIsMobile(/mobile/gi.test(navigator?.userAgent) || width < 900)
+    }
+
+    checkIsMobile() // Initial check
+
+    const handleResize = debounce(() => {
+      checkIsMobile()
+    }, 100)
+
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
 
   const filterHandler = (e) => {
     const text = e.currentTarget.innerText.replace(/(\W)/g, "\\$1")
@@ -54,7 +75,7 @@ function App() {
 
   return (
     <div className="App">
-      <Banner />
+      <Banner isMobile={isMobile} />
       <section className="main-content sm:mx-16 my-96">
         <h1 className={headerClasses} id="networks">
           Networks
