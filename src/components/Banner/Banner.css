@@ -1,10 +1,9 @@
 :root {
   --red: rgb(190, 20, 20);
   --orange: rgb(255, 120, 0);
-  --animation-timing: 1.25s;
+  --animation-timing: 2.5s;
   --animation-repeat: 1;
   --chevron-size: 100px;
-  --animation-timing: 1.25s;
 }
 
 .Banner {
@@ -159,13 +158,20 @@
   }
 }
 
+.Banner--backgroundWrapper {
+  position: relative;
+  overflow: hidden; /* Ensure the wrapper hides any overflow */
+  width: 100%;
+  height: 100vh;
+}
+
 .Banner--background {
   content: "";
   background-image: url("../../assets/bannerImage.png");
   background-position: top;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -184,6 +190,17 @@
     filter: blur(1rem);
     transform: scaleX(1.1);
   }
+}
+
+@keyframes blurNscaleM {
+  0% {
+    filter: blur(0);
+    transform: scaleX(1)
+  }
+  100% {
+    filter: blur(1rem);
+    transform: scaleX(1.05);
+  }
 
 }
 @keyframes blur {
@@ -191,7 +208,7 @@
     filter: blur(0);
   }
   100% {
-    filter: blur(1rem);
+    filter: blur(0.75rem);
   }
 
 }
@@ -217,4 +234,13 @@
 .Banner h1,
 .Banner h2 {
   color: #f7f5f5;
+}
+
+@media screen and (max-width: 1200px) {
+  .Banner--background {
+    animation: blur var(--animation-timing) ease-in-out forwards;
+  }
+  .Banner .Banner--content {
+    animation: blurNscaleM var(--animation-timing) ease-in-out reverse;
+  }
 }
