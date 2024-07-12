@@ -6,6 +6,7 @@ export { Message } from "./Message/Message"
 export { InfoIcon } from "./Icon/Icons/InfoIcon"
 export { Tag } from "./Tag/Tag"
 export { SocialIconBar } from "./SocialIconBar/SocialIconBar"
+export { default as WebGLBanner } from "./WebGLBanner"
 
 export const LINK_DATA = [
   { href: "#publications", innerText: "Publications" },
