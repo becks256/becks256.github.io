@@ -16,3 +16,8 @@
   background-color: var(--palette-special--more-subtle);
   color: var(--palette-special--more-prominent);
 }
+.tag.tag--info {
+  border-color: var(--palette-informative--more-prominent);
+  background-color: var(--palette-informative--more-subtle);
+  color: var(--palette-informative--more-prominent);
+}
