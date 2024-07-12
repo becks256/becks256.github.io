@@ -236,7 +236,7 @@ export const NETWORK_DATA = [
   {
     link: "https://www.freecodecamp.org/becks256",
     title: "freeCodeCamp",
-    description: "View my freeCodeCamp.org public profile.",
+    description: "View my free code camp public profile.",
     alt: "becks256 freeCodeCamp public profile",
     image: fccIcon,
   },
