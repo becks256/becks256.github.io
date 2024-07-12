@@ -14,15 +14,18 @@
   top: 0;
   left: 0;
   box-sizing: border-box;
-  box-shadow: var(--shadow);
   gap: 2rem;
 }
 
-:root[color-mode="dark"] .Header {
+.Header--condensed {
+  box-shadow: var(--shadow);
+}
+
+:root[color-mode="dark"] .Header--condensed {
   background-color: var(--system-background--primary);
 }
 
-:root[color-mode="light"] .Header {
+:root[color-mode="light"] .Header--condensed {
   background-color: var(--system-background--primary-inverse);
 }
 

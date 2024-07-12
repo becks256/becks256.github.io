@@ -52,6 +52,7 @@ export const Banner = ({ isMobile }) => {
         {/* <section className="Banner--background"></section> */}
         <WebGLBanner />
       </div>
+      <div style={{width: "100%", height: "100vh", backgroundColor: "rgb(40,40,40)", position: "absolute", top: 0, left: 0, zIndex: -3}}></div>
     </>
   )
 }
