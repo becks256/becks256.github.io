@@ -88,7 +88,7 @@ function App() {
           Projects
         </h1>
         <section className="Card pb-24 flex-column px-24 mb-24 pt-8 gap-8">
-          <p>Filter work by technology</p>
+          <p className="font-bold">Filter work by technology</p>
           <section className="flex flex-row gap-8 flex-wrap">
             {Array.from(techItems)
               .sort((a, b) => (a.toLowerCase() > b.toLowerCase() ? 1 : -1))
@@ -108,9 +108,12 @@ function App() {
               ))}
           </section>
         </section>
-        <p className="font-m font-bold">
-          {filteredWork.length} Projects match the selected filters
-        </p>
+        <div className="mt-8 mb-24 pl-16">
+          <p className="font-m font-bold gap-8">
+            <Tag kind="info" className="font-bold mr-8">{filteredWork.length}</Tag>
+            Projects match the selected filters
+          </p>
+        </div>
         <section className={clsnx(cardSectionClasses, "grid-section")}>
           {filteredWork.length > 0 &&
             filteredWork.map((item, index) => (
