@@ -9,7 +9,6 @@
 .Banner {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: row;
   align-items: left;
@@ -243,4 +242,42 @@
   .Banner .Banner--content {
     animation: blurNscaleM var(--animation-timing) ease-in-out reverse;
   }
+}
+
+.Banner--tooltip {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  background-color: var(--system-background--primary);
+  color: var(--system-text--primary);
+  padding: 1.5rem;
+  border-radius: 5px;
+  max-width: 250px;
+  z-index: 15;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.5;
+}
+
+.Banner--info-icon {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 15;
+  padding: 20px 0 0 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .Banner--tooltip {
+    max-width: 500px;
+    bottom: 80px;
+    right: 100px;
+  }
+
+  .Banner--info-icon {
+    bottom: 60px;
+    right: 80px;
+    padding: 0px
+  }
+  
 }

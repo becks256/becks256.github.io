@@ -1,12 +1,34 @@
 import React from "react"
-import { Header, MobileNav } from "../"
-import "./Banner.css"
+import { Header, MobileNav, WebGLBanner } from "../"
+import { InfoIcon } from "../Icon/Icons/InfoIcon"
 import { CaretDownIcon } from "../Icon/Icons/CaretDownIcon"
+import "./Banner.css"
 
 export const Banner = ({ isMobile }) => {
+  const [showTooltip, setShowTooltip] = React.useState(false)
   return (
     <>
       <section className="Banner">
+        <div className="Banner--info-icon"
+          onClick={() => {
+            console.log("clicked")
+            setShowTooltip(!showTooltip)
+          }}
+          onMouseOver={() => setShowTooltip(true)}
+          onMouseOut={() => setShowTooltip(false)}
+        >
+          <InfoIcon fill="#FFFFFF" />
+        </div>
+        {showTooltip && (
+          <div
+            className="Banner--tooltip"
+          >
+            These linear elements represent the intersections of human
+            experiences, inspired by my studies of Josef Albers' color theory.
+            Each line symbolizes a journey, with intersections marking moments
+            of shared experience and growth.
+          </div>
+        )}
         {isMobile ? <MobileNav /> : <Header />}
         {/* <div className="Banner--icon">
           <span className="chevron orange"></span>
@@ -26,8 +48,9 @@ export const Banner = ({ isMobile }) => {
         </section>
         <CaretDownIcon className="Banner--icon" fill={"#fff"} />
       </section>
-      <div className="Banner-backgroundWrapper">
-        <section className="Banner--background"></section>
+      <div style={{ position: "absolute", top: 0, left: 0, zIndex: -1 }}>
+        {/* <section className="Banner--background"></section> */}
+        <WebGLBanner />
       </div>
     </>
   )
