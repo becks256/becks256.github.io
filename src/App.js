@@ -71,13 +71,6 @@ function App() {
             return filter.every((f) =>
               item.techStack?.some((name) => name.match(new RegExp(f, "i")))
             )
-            // return item.techStack?.some((name) => {
-            //   console.log("group", group)
-            //   console.log("item", item)
-            //   console.log("name", name)
-            //   console.log("filter", filter)
-            //   return name.match(new RegExp(filter, "i"))
-            // })
           })
         )
         .flat(),
