@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useMemo } from "react"
 import { clsnx } from "@becks256/clsnx"
 import { useColorMode } from "react-darkmode-hook"
 
@@ -62,16 +62,27 @@ function App() {
     return acc
   }, new Set())
 
-  const filteredWork = [WORK_DATA, DESIGN_WORK_DATA]
-    .map((group) =>
-      group.filter((item) => {
-        if (!filter.length) return true
-        return item.techStack?.some((name) =>
-          name.match(new RegExp(filter || ".*?", "i"))
+  const filteredWork = useMemo(
+    () =>
+      [WORK_DATA, DESIGN_WORK_DATA]
+        .map((group) =>
+          group.filter((item) => {
+            if (!filter.length) return true
+            return filter.every((f) =>
+              item.techStack?.some((name) => name.match(new RegExp(f, "i")))
+            )
+            // return item.techStack?.some((name) => {
+            //   console.log("group", group)
+            //   console.log("item", item)
+            //   console.log("name", name)
+            //   console.log("filter", filter)
+            //   return name.match(new RegExp(filter, "i"))
+            // })
+          })
         )
-      })
-    )
-    .flat()
+        .flat(),
+    [filter]
+  )
 
   return (
     <div className="App">
@@ -110,7 +121,9 @@ function App() {
         </section>
         <div className="mt-8 mb-24 pl-16">
           <p className="font-m font-bold gap-8">
-            <Tag kind="info" className="font-bold mr-8">{filteredWork.length}</Tag>
+            <Tag kind="info" className="font-bold mr-8">
+              {filteredWork.length}
+            </Tag>
             Projects match the selected filters
           </p>
         </div>
