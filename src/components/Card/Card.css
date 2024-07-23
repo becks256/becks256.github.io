@@ -79,3 +79,9 @@
   flex-shrink: 0;
 }
 
+.Card--date {
+  font-size: 10pt;
+  font-weight: 400;
+  color: var(--system-text--secondary);
+  margin: 0;
+}

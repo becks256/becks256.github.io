@@ -130,6 +130,7 @@ function App() {
                 description={item.description}
                 techStack={item.techStack}
                 cta={item.cta}
+                date={item.date}
               >
                 <a
                   className={clsnx("flex", {

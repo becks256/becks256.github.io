@@ -12,6 +12,7 @@ export const Card = ({
   techStack,
   type = "product",
   cta,
+  date
 }) => {
   const headerClasses = ""
 
@@ -30,8 +31,9 @@ export const Card = ({
         "Card overflow-hidden pb-48 pt-24"
       )}
     >
-      <section className="px-48">
+      <section className="px-48 flex align-items--center justify-content--between">
         <h3 className={headerClasses}>{title}</h3>
+        {date && <p className="Card--date">{date}</p>}
       </section>
       <section className="Card-imageContainer">{children}</section>
       <section className="px-48">
@@ -47,6 +49,7 @@ export const Card = ({
             <ExternalLinkIcon />
           </a>
         )}
+        
         {techStack?.length && (
           <div className="Card--techStack">
             {techStack.map((tech, index) => (
