@@ -21,6 +21,7 @@ import designSystemVersioningStrategy from "./designSystemVersioningStrategy.png
 import logoDesignExamples from "./logoDesignExamples.png"
 import youTubeLogo from "./youTubeLogo.svg"
 import codeWheelSnip from "./codeWheel.jpg"
+import lookseeSnip from "./looksee.png"
 
 export {
   pluralsightSnip,
@@ -45,4 +46,5 @@ export {
   youTubeLogo,
   codeWheelSnip,
   fccIcon,
+  lookseeSnip,
 }
