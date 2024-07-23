@@ -102,6 +102,24 @@ export const WORK_DATA = [
   },
   {
     link: undefined,
+    image: lookseeSnip,
+    title: "Looksee",
+    description: (
+      <>
+        Looksee was a web app that featured a simple interface to gather
+        feedback from prospective buyers on artwork and product designs. Images
+        were curated into collections by merchandising associates and then
+        shared with a select group of customers. Customers could then heart
+        images and add comments to them, which would be used to inform the
+        merchandising team on how to move forward with designs, whether that be
+        change requests or as-is for prospective sale.
+      </>
+    ),
+    techStack: ["MongoDB", "EJS", "Express.js", "Node"],
+    alt: "looksee web app screenshot",
+  },
+  {
+    link: undefined,
     image: dapperSnip,
     title: "Dapper",
     description: (
