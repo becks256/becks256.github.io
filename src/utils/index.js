@@ -17,6 +17,7 @@ import {
   youTubeLogo,
   logoDesignExamples,
   codeWheelSnip,
+  lookseeSnip,
 } from "../assets"
 
 import React from "react"
@@ -42,6 +43,7 @@ export const WORK_DATA = [
     techStack: MERN,
     alt: "soulfolioco.com screenshot",
     cta: "View Site",
+    date: "2022-2023",
   },
   {
     link: undefined,
@@ -60,6 +62,7 @@ export const WORK_DATA = [
     ),
     techStack: ["Adobe UXP Framework", "React"],
     alt: "designer power uxp plugin screenshot",
+    date: "2023-2024",
   },
   {
     link: undefined,
@@ -78,6 +81,7 @@ export const WORK_DATA = [
     ),
     techStack: ["MongoDB", "EJS", "Express.js", "Node"],
     alt: "my price web app screenshot",
+    date: "2020-2021",
   },
   {
     link: undefined,
@@ -99,6 +103,7 @@ export const WORK_DATA = [
     ),
     techStack: ["Adobe ExtendScript", "React", "Express.js", "Node", "ASP.NET"],
     alt: "dr prepper logo",
+    date: "2015-2018",
   },
   {
     link: undefined,
@@ -117,6 +122,7 @@ export const WORK_DATA = [
     ),
     techStack: ["MongoDB", "EJS", "Express.js", "Node"],
     alt: "looksee web app screenshot",
+    date: "2019-2020",
   },
   {
     link: undefined,
@@ -134,6 +140,7 @@ export const WORK_DATA = [
     ),
     techStack: MERN,
     alt: "dapper web app screenshot",
+    date: "2021",
   },
   {
     link: "https://www.kickstarter.com/projects/gadgetek/meta-the-microcontroller-enhanced-tablet-accessory",
@@ -152,6 +159,7 @@ export const WORK_DATA = [
     techStack: ["C++", "Arduino IDE"],
     alt: "meta product screenshot",
     cta: "View Project",
+    date: "2015-2016",
   },
   {
     link: "https://www.kickstarter.com/projects/1944993710/890789663?ref=duf72x&token=8ff33972",
@@ -176,6 +184,7 @@ export const WORK_DATA = [
     techStack: null,
     alt: "code wheel concept art screenshot",
     cta: "View Project",
+    date: "2013",
   },
 ]
 
@@ -303,9 +312,9 @@ export const PUBLICATION_DATA = [
 ]
 
 export const debounce = (func, wait) => {
-  let timeout;
+  let timeout
   return (...args) => {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(this, args), wait);
-  };
-};
+    clearTimeout(timeout)
+    timeout = setTimeout(() => func.apply(this, args), wait)
+  }
+}
