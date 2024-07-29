@@ -106,23 +106,31 @@ export const WORK_DATA = [
     date: "2015-2018",
   },
   {
-    link: undefined,
+    link: "https://clumsy-salty-cloth.glitch.me/",
     image: lookseeSnip,
     title: "Looksee",
     description: (
       <>
-        Looksee was a web app that featured a simple interface to gather
-        feedback from prospective buyers on artwork and product designs. Images
-        were curated into collections by merchandising associates and then
-        shared with a select group of customers. Customers could then heart
-        images and add comments to them, which would be used to inform the
-        merchandising team on how to move forward with designs, whether that be
-        change requests or as-is for prospective sale.
+        <p>
+          Looksee was a web app that featured a simple interface to gather
+          feedback from prospective buyers on artwork and product designs.
+          Images were curated into collections by merchandising associates and
+          then shared with a select group of customers. Customers could then
+          heart images and add comments to them, which would be used to inform
+          the merchandising team on how to move forward with designs, whether
+          that be change requests or as-is for prospective sale.
+        </p>
+        <p>
+          The initial POC featured an even simpler UI, similar to a dating app,
+          where users could thumbs up or thumbs down images, and the
+          merchandising team could see the results in real-time.
+        </p>
       </>
     ),
     techStack: ["MongoDB", "EJS", "Express.js", "Node"],
     alt: "looksee web app screenshot",
     date: "2019-2020",
+    cta: "View Demo App"
   },
   {
     link: undefined,
