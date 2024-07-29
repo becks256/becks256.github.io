@@ -1,4 +1,4 @@
-import React, { useMemo } from "react"
+import React, { useMemo, useState, useEffect } from "react"
 import { clsnx } from "@becks256/clsnx"
 import { useColorMode } from "react-darkmode-hook"
 
@@ -18,9 +18,11 @@ export const ModalContext = React.createContext()
 
 function App() {
   const { setColorMode } = useColorMode()
+  const [filter, setFilter] = useState([])
+  const [isMobile, setIsMobile] = useState(false)
   const [modalHidden, setModalHidden] = useState(true)
 
-  React.useEffect(() => {
+  useEffect(() => {
     setColorMode()
   })
 
@@ -33,6 +35,7 @@ function App() {
     }
   }, [modalHidden])
 
+  useEffect(() => {
     const checkIsMobile = () => {
       const width = window.innerWidth
       setIsMobile(/mobile/gi.test(navigator?.userAgent) || width < 900)
