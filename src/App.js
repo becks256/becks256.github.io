@@ -135,35 +135,8 @@ function App() {
         </div>
         <section className={clsnx(cardSectionClasses, "grid-section")}>
           {filteredWork.length > 0 &&
-            filteredWork.map((item, index) => (
-              <Card
-                key={`work-card-${index}`}
-                title={item.title}
-                href={item.link}
-                description={item.description}
-                techStack={item.techStack}
-                cta={item.cta}
-                date={item.date}
-              >
-                <a
-                  className={clsnx("flex", {
-                    "w-100": !/prepper/gi.test(item.title),
-                  })}
-                  href={item.link || item.image}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="view larger image"
-                  label="view larger image"
-                >
-                  <img
-                    src={item.image}
-                    className={clsnx({
-                      "w-100": !/prepper/gi.test(item.title),
-                    })}
-                    alt={item.alt}
-                  />
-                </a>
-              </Card>
+                .map((item, index) => (
+                  <Card key={`work-card-${index}`} data={item} />
             ))}
         </section>
         <h1 className={headerClasses} id="skills">
@@ -173,31 +146,7 @@ function App() {
           {SKILLS_DATA.sort((a, b) =>
             a.title.toLowerCase() < b.title.toLowerCase() ? -1 : 1
           ).map((item, index) => (
-            <Card
-              key={`work-card-${index}`}
-              title={item.title}
-              href={item.link}
-              description={item.description}
-              techStack={item.techStack}
-              cta={item.cta}
-            >
-              <a
-                className={clsnx("flex", {
-                  "w-100": !/prepper/gi.test(item.title),
-                })}
-                href={item.link || item.image}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="view larger image"
-                label="view larger image"
-              >
-                <img
-                  src={item.image}
-                  className={clsnx({ "w-100": !/prepper/gi.test(item.title) })}
-                  alt={item.alt}
-                />
-              </a>
-            </Card>
+              <Card key={`work-card-${index}`} data={item} />
           ))}
         </section>
         <h1 className={headerClasses} id="publications">
@@ -205,25 +154,7 @@ function App() {
         </h1>
         <section className={clsnx(cardSectionClasses, "grid-section")}>
           {PUBLICATION_DATA.map((item, index) => (
-            <Card
-              key={`work-card-${index}`}
-              title={item.title}
-              href={item.link}
-              description={item.description}
-              type="publication"
-              cta={item.cta}
-            >
-              <a
-                className="flex w-100"
-                href={item.link || item.image}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="view larger image"
-                label="view larger image"
-              >
-                <img src={item.image} className="w-100" alt={item.alt} />
-              </a>
-            </Card>
+              <Card key={`work-card-${index}`} data={item} type="publication" />
           ))}
         </section>
       </section>
