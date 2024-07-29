@@ -1,0 +1,68 @@
+.App-image-modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 3;
+  justify-content: center;
+}
+
+.App-image-modal--dialogue {
+  align-self: center;
+  justify-self: center;
+  box-sizing: border-box;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: var(--border-radius);
+  filter: drop-shadow(10px 10px 12px rgba(0,0,0,0.2));
+  display: flex;
+  gap: 1rem;
+  flex-direction: row-reverse;;
+}
+
+.App-image-modal--close-btn {
+  color: white;
+  stroke: white !important;
+  stroke-width: 6px;
+}
+
+.App-image-modal--close-btn:hover {
+  color: rgb(192, 125, 232);
+  stroke: rgb(192, 125, 232)!important;
+}
+
+.App-image-modal--header {
+  position: relative;
+  width: 100%;
+}
+
+.App-modal--header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  font-size: 18pt;
+  color: var(--border-color);
+  font-weight: 700;
+}
+
+.App-modal--header p {
+  margin: 0;
+  padding: 0;
+  max-width: 80%;
+}
+
+.App-modal--content {
+  width: auto;
+  box-sizing: border-box;
+}
+.App-modal--content img {
+  border-radius: var(--border-radius);
+  border: solid 1px var(--border-color);
+  max-height: calc(100%);
+  max-width: 80vw;
+}

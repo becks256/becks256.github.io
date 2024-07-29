@@ -3,6 +3,8 @@ import React from "react"
 import "./Card.css"
 import { Tag } from "../"
 import { ExternalLinkIcon } from "../Icon/Icons/ExternalLinkIcon"
+import { Modal } from "../Modal/Modal"
+import { ModalContext } from "../../App"
 
 export const Card = ({
   title,
@@ -10,17 +12,32 @@ export const Card = ({
   children,
   href,
   techStack,
-  type = "product",
-  cta,
-  date
-}) => {
-  const headerClasses = ""
-
+  const { setModalHidden } = React.useContext(ModalContext)
+  const [showModal, setShowModal] = React.useState(false)
+  const showModalHandler = (e) => {
+    setShowModal(true)
+    setModalHidden(false)
+  }
+  const closeModalHandler = (e) => {
+    setShowModal(false)
+    setModalHidden(true)
+  }
   const isPublication = type === "publication"
   const isNetwork = type === "network"
   const isProduct = type === "product"
 
   return (
+    <>
+      {showModal && (
+        <Modal
+          title="Image Preview"
+          contentClassName="flex flex-column"
+          closeHandler={closeModalHandler}
+        >
+          <img src={image} alt={alt} />
+        </Modal>
+      )}
+
     <div
       className={clsnx(
         {

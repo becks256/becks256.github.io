@@ -14,16 +14,25 @@ import {
 
 import "./App.css"
 
+export const ModalContext = React.createContext()
+
 function App() {
   const { setColorMode } = useColorMode()
-  const [filter, setFilter] = React.useState([])
-  const [isMobile, setIsMobile] = React.useState(false)
+  const [modalHidden, setModalHidden] = useState(true)
 
   React.useEffect(() => {
     setColorMode()
   })
 
   React.useEffect(() => {
+    console.log(modalHidden)
+    if (modalHidden) {
+      document.documentElement.removeAttribute("style")
+    } else if (!modalHidden) {
+      document.documentElement.style.overflow = "hidden"
+    }
+  }, [modalHidden])
+
     const checkIsMobile = () => {
       const width = window.innerWidth
       setIsMobile(/mobile/gi.test(navigator?.userAgent) || width < 900)
@@ -78,6 +87,7 @@ function App() {
   )
 
   return (
+    <ModalContext.Provider value={{ modalHidden, setModalHidden }}>
     <div className="App">
       <Banner isMobile={isMobile} />
       <section className="main-content sm:mx-16 my-96">
@@ -221,6 +231,7 @@ function App() {
         </p>
       </footer>
     </div>
+    </ModalContext.Provider>
   )
 }
 
