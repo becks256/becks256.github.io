@@ -219,8 +219,8 @@
   text-shadow: 3px 3px var(--palette-special--least-prominent),
     6px 6px var(--palette-special--more-prominent), 8px 8px var(--red),
     10px 10px var(--orange);
-  -webkit-text-stroke: black;
-  -webkit-text-stroke-width: 1px;
+  /* -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 1px; */
 }
 
 .Banner h2 {
