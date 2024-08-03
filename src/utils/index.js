@@ -18,6 +18,7 @@ import {
   logoDesignExamples,
   codeWheelSnip,
   lookseeSnip,
+  headshot,
 } from "../assets"
 
 import React from "react"
@@ -130,7 +131,7 @@ export const WORK_DATA = [
     techStack: ["MongoDB", "EJS", "Express.js", "Node"],
     alt: "looksee web app screenshot",
     date: "2019-2020",
-    cta: "View Demo App"
+    cta: "View Demo App",
   },
   {
     link: undefined,
@@ -325,4 +326,43 @@ export const debounce = (func, wait) => {
     clearTimeout(timeout)
     timeout = setTimeout(() => func.apply(this, args), wait)
   }
+}
+
+export const ABOUT_ME_DATA = {
+  title: "About Me",
+  image: headshot,
+  description: (
+    <div className="lg:px-48 mb-24 mt-32">
+      <p>
+        I'm a software engineer with a BFA in graphic design and a deep passion
+        for pushing the boundaries of product innovation. I've been working as a
+        software engineer for the past {new Date().getFullYear() - 2015} years,
+        and designing for over 20. The bulk of my software engineering work
+        centers around image automation and generation and have only recently
+        discovered that I was an early pioneer of generative AI. Though I
+        never implemented machine learning or neural networks, my vision was
+        always to achieve the same outcome as the prominent GenAI players today;
+        being able to generate images that look like art and not like a digital
+        filter.
+      </p>
+      <p>
+        I am a genuinely curious person, I love to learn new things, and most
+        importantly, I love to invent. I consider myself to only be limited by
+        my mindset and imagination, and when I get an idea, I can't help but see
+        it through to completion. I am a self-starter and a self-teacher, and I
+        am always looking for new ways to challenge myself and grow.
+      </p>
+      <p>
+        I'm a big fan of the MERN stack, and I'm always looking for new
+        technologies to learn. My latest academic pursuit is a certification in
+        AI and Machine Learning through Harvard University Online.
+      </p>
+      <p>
+        I'm also a big fan of music. Just like my technologist side, I'm always
+        looking for new ways to create and innovate with sound. I've been
+        playing guitar for over 20 years, and I've been producing ambient
+        instrumental music for {new Date().getFullYear() - 2011} years.
+      </p>
+    </div>
+  ),
 }
