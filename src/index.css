@@ -24,11 +24,13 @@ code {
   }
 }
 
+.rounded-full {
+  border-radius: 625rem;
+}
+
 .cursor-zoom {
   cursor: zoom-in;
 }
-
-
 
 .heading-s {
   font-size: 1.5rem;
@@ -150,6 +152,10 @@ code {
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
+}
+
+.gap-0 {
+  gap: 0 !important;
 }
 
 .gap-8 {
@@ -980,6 +986,13 @@ code {
 }
 @media screen and (max-width: 899px) {
   /* X-AXIS MARGIN */
+
+  .sm\:flex-column {
+    flex-direction: column!important;
+  }
+  .sm\:flex-column--reverse {
+    flex-direction: column-reverse!important;
+  }
 
   .sm\:mx-0 {
     margin-left: 0px !important;
