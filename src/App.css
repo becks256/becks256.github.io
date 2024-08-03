@@ -81,7 +81,7 @@ a:hover {
 
 @media screen and (min-width: 1600px) {
   .main-content {
-    margin: 24rem;
+    margin: 20rem;
   }
 }
 
@@ -89,6 +89,10 @@ a:hover {
   .grid-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .main-content {
+    margin: 24rem;
   }
 }
 
