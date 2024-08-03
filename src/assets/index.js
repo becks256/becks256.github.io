@@ -22,6 +22,7 @@ import logoDesignExamples from "./logoDesignExamples.png"
 import youTubeLogo from "./youTubeLogo.svg"
 import codeWheelSnip from "./codeWheel.jpg"
 import lookseeSnip from "./looksee.png"
+import headshot from "./headshot.png"
 
 export {
   pluralsightSnip,
@@ -47,4 +48,5 @@ export {
   codeWheelSnip,
   fccIcon,
   lookseeSnip,
+  headshot
 }
