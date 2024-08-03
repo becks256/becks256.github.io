@@ -9,6 +9,7 @@ import {
   PUBLICATION_DATA,
   SKILLS_DATA,
   WORK_DATA,
+  ABOUT_ME_DATA,
   debounce,
 } from "./utils"
 
@@ -27,7 +28,6 @@ function App() {
   })
 
   React.useEffect(() => {
-    console.log(modalHidden)
     if (modalHidden) {
       document.documentElement.removeAttribute("style")
     } else if (!modalHidden) {
@@ -94,6 +94,18 @@ function App() {
       <div className="App">
         <Banner isMobile={isMobile} />
         <section className="main-content sm:mx-16 my-96">
+          {/* <h1 className={headerClasses} id="about">
+            About Me
+          </h1> */}
+          <section className="Card mb-96">
+            <div className="Card--description about-me-card m-0 p-0 flex">
+                <div className="about-me-card-image"></div>
+                <div className="about-me-text">
+                  <h2 className="about-me-header" id="about">About Me</h2>
+                  {ABOUT_ME_DATA.description}
+                </div>
+            </div>
+          </section>
           <h1 className={headerClasses} id="networks">
             Networks
           </h1>
