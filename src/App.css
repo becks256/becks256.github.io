@@ -101,3 +101,59 @@ a:hover {
 * {
   box-sizing: border-box;
 }
+.about-me-card {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.about-me-card-image {
+  background-image: url(./assets/headshot-dither.png);
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-me-text {
+  position: relative;
+  padding: 2rem;
+}
+
+.about-me-text div {
+  margin-top: 150px !important
+}
+
+.about-me-header {
+  position: absolute;
+  left: -7.5rem;
+  top: 0;
+  font-size: 100px;
+  margin: 0;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .about-me-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-me-card-image {
+    height: 300px;
+  }
+
+  .about-me-header {
+    display: flex;
+    position: unset;
+    font-size: 50px;
+  }
+
+  .about-me-text div {
+    margin-top: 0 !important
+  }
+}
+@media (min-width: 1921px) {
+  .about-me-card {
+    grid-template-columns: 0.25fr 1fr;
+  }
+}
