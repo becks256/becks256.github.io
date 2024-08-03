@@ -23,8 +23,8 @@
   box-sizing: border-box;
   overflow: hidden;
   border-radius: var(--border-radius);
-  border: solid 1px var(--border-color);
-  box-shadow: var(--shadow);
+  /* border: solid 1px var(--border-color);
+  box-shadow: var(--shadow); */
   align-items: center;
 }
 

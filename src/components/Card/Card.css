@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
   background-color: var(--system-background--secondary);
-  border: solid 1px var(--border-color);
+  /* border: solid 1px var(--border-color); */
   row-gap: 1.5rem;
   box-sizing: border-box;
   flex: 1 1 50%;
@@ -84,4 +84,7 @@
   font-weight: 400;
   color: var(--system-text--secondary);
   margin: 0;
+  text-decoration: wavy underline;
+  text-decoration-color: rgb(235, 91, 65);
+  font-weight: 700;
 }
