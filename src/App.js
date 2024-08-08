@@ -2,7 +2,7 @@ import React, { useMemo, useState, useEffect } from "react"
 import { clsnx } from "@becks256/clsnx"
 import { useColorMode } from "react-darkmode-hook"
 
-import { Banner, Card, SocialIconBar, Tag } from "./components"
+import { Banner, Card, SocialIconBar, Tag, WorkWithMeSection } from "./components"
 import {
   APP_DATA,
   DESIGN_WORK_DATA,
@@ -93,19 +93,22 @@ function App() {
     <ModalContext.Provider value={{ modalHidden, setModalHidden }}>
       <div className="App">
         <Banner isMobile={isMobile} />
-        <section className="main-content sm:mx-16 my-96">
-          {/* <h1 className={headerClasses} id="about">
-            About Me
-          </h1> */}
+        <section className="main-content sm:px-16 my-96">
           <section className="Card mb-96">
             <div className="Card--description about-me-card m-0 p-0 flex">
-                <div className="about-me-card-image"></div>
-                <div className="about-me-text">
-                  <h2 className="about-me-header" id="about">About Me</h2>
-                  {ABOUT_ME_DATA.description}
-                </div>
+              <div className="about-me-card-image"></div>
+              <div className="about-me-text">
+                <h2 className="about-me-header" id="about">
+                  About Me
+                </h2>
+                {ABOUT_ME_DATA.description}
+              </div>
             </div>
           </section>
+          <WorkWithMeSection />
+          <h1 className="my-work-headline">
+            My Work
+          </h1>
           <h1 className={headerClasses} id="networks">
             Networks
           </h1>
