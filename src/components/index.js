@@ -9,6 +9,7 @@ export { Tag } from "./Tag/Tag"
 export { SocialIconBar } from "./SocialIconBar/SocialIconBar"
 export { default as WebGLBanner } from "./WebGLBanner"
 export { Modal } from "./Modal/Modal"
+export { WorkWithMeSection } from "./WorkWithMeSection"
 
 export const LINK_DATA = [
   { href: "#publications", innerText: "Publications" },
