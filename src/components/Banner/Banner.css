@@ -1,9 +1,20 @@
 :root {
-  --red: rgb(190, 20, 20);
-  --orange: rgb(255, 120, 0);
+  --banner-primary-ink: #be1414;
+  --banner-secondary-ink: #ff7800;
+  --banner-text-shadow: 3px 3px var(--palette-special--least-prominent),
+    6px 6px var(--palette-special--more-prominent),
+    8px 8px var(--banner-primary-ink), 10px 10px var(--banner-secondary-ink);
   --animation-timing: 2.5s;
   --animation-repeat: 1;
   --chevron-size: 100px;
+}
+
+:root[color-mode="dark"] {
+  --banner-primary-ink: #41ebeb;
+  --banner-secondary-ink: #0087ff;
+  --banner-text-shadow: 3px 3px var(--palette-special--more-subtle),
+    6px 6px var(--palette-special--least-prominent),
+    8px 8px var(--banner-primary-ink), 10px 10px var(--banner-secondary-ink);
 }
 
 .Banner {
@@ -89,14 +100,14 @@
 
 .chevron.red:before,
 .chevron.red:after {
-  background: var(--red);
+  background: var(--banner-primary-ink);
   animation: bounce var(--animation-timing) ease-out var(--animation-repeat)
     0.6s;
 }
 
 .chevron.orange:before,
 .chevron.orange:after {
-  background: var(--orange);
+  background: var(--banner-secondary-ink);
   animation: bounce var(--animation-timing) ease-out var(--animation-repeat)
     0.8s;
 }
@@ -183,7 +194,7 @@
 @keyframes blurNscale {
   0% {
     filter: blur(0);
-    transform: scaleX(1)
+    transform: scaleX(1);
   }
   100% {
     filter: blur(1rem);
@@ -194,13 +205,12 @@
 @keyframes blurNscaleM {
   0% {
     filter: blur(0);
-    transform: scaleX(1)
+    transform: scaleX(1);
   }
   100% {
     filter: blur(1rem);
     transform: scaleX(1.05);
   }
-
 }
 @keyframes blur {
   0% {
@@ -209,16 +219,13 @@
   100% {
     filter: blur(0.75rem);
   }
-
 }
 
 .Banner h1 {
   font-size: 48pt;
   font-weight: 900;
   margin: -0.5rem 0;
-  text-shadow: 3px 3px var(--palette-special--least-prominent),
-    6px 6px var(--palette-special--more-prominent), 8px 8px var(--red),
-    10px 10px var(--orange);
+  text-shadow: var(--banner-text-shadow);
   /* -webkit-text-stroke: black;
   -webkit-text-stroke-width: 1px; */
 }
@@ -248,8 +255,8 @@
   position: absolute;
   bottom: 60px;
   right: 60px;
-  background-color: var(--system-background--primary);
-  color: var(--system-text--primary);
+  background-color: var(--system-background--primary-inverse);
+  color: var(--system-text--primary-inverse);
   padding: 1.5rem;
   border-radius: 5px;
   max-width: 250px;
@@ -277,7 +284,6 @@
   .Banner--info-icon {
     bottom: 60px;
     right: 80px;
-    padding: 0px
+    padding: 0px;
   }
-  
 }
