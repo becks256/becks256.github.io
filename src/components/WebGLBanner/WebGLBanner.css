@@ -1,3 +1,10 @@
+:root {
+  --webgl-banner-overlay: #3c1e3f;
+}
+
+:root[color-mode="dark"] {
+  --webgl-banner-overlay: #2b332a;
+}
 
 .Banner-overlay {
   position: absolute;
@@ -12,7 +19,7 @@
   animation: blur 3s ease-in-out forwards;
   overflow: hidden;
   clip-path: border-box;
-  background-color: rgb(60, 30, 63);
+  background-color: var(--webgl-banner-overlay);
 }
 
 @keyframes blur {
@@ -20,7 +27,7 @@
     filter: blur(0.1rem);
   }
   100% {
-    filter: blur(0.75rem);
+    filter: blur(0.5rem);
   }
 }
 
