@@ -328,22 +328,32 @@ export const debounce = (func, wait) => {
   }
 }
 
+export const getElapsedYears = (year) => new Date().getFullYear() - year
+
 export const ABOUT_ME_DATA = {
   title: "About Me",
   image: headshot,
   description: (
     <div className="lg:px-48 mb-24 mt-32">
       <p>
-        I'm a software engineer with a BFA in graphic design and a deep passion
-        for pushing the boundaries of product innovation. I've been working as a
-        software engineer for the past {new Date().getFullYear() - 2015} years,
-        and designing for over 20. The bulk of my software engineering work
-        centers around image automation and generation and have only recently
-        discovered that I was an early pioneer of generative AI. Though I
-        never implemented machine learning or neural networks, my vision was
-        always to achieve the same outcome as the prominent GenAI players today;
-        being able to generate images that look like art and not like a digital
-        filter.
+        I'm a software engineer with a BFA in graphic design, as well as
+        certifications in innovation engineering and human-centered design. As a
+        result, I have a deep passion for pushing the boundaries of my
+        imagination, particularly within the domains of software and process
+        automation, but consumer electronics and commodities are certainly
+        within the scope of my capabilities and experience.
+      </p>
+      <p>
+        I've been working as a software engineer for the past{" "}
+        {getElapsedYears(2015)} years, and creating digital art and mastering
+        the Adobe Creative Suite for over {getElapsedYears(2000)} years. The
+        bulk of my software engineering work centers around image automation &
+        generation, and only have I recently discovered that I was an early
+        pioneer of generative AI. Though I never implemented machine learning or
+        neural networks, I learned to develop software in the pursuit of
+        achieving a similar outcome as the prominent GenAI players today; being
+        able to generate images that are indistinguishable from hand painted
+        art.
       </p>
       <p>
         I am a genuinely curious person, I love to learn new things, and most
@@ -360,9 +370,162 @@ export const ABOUT_ME_DATA = {
       <p>
         I'm also a big fan of music. Just like my technologist side, I'm always
         looking for new ways to create and innovate with sound. I've been
-        playing guitar for over 20 years, and I've been producing ambient
-        instrumental music for {new Date().getFullYear() - 2011} years.
+        playing guitar for over {getElapsedYears(2000)} years, and I've been
+        producing ambient instrumental music for {getElapsedYears(2011)} years.
       </p>
     </div>
   ),
 }
+
+export const FEEDBACK_DATA = [
+  {
+    name: "Amelia Y.",
+    feedback:
+      "Dan is a highly collaborative developer who enjoys interacting with others and sharing ideas. He's talented with both engineering and design, and this allows him to execute with a high level of thoughtfulness and consistent excellence. He shows an enthusiasm for web development that is refreshing to work with. He's a great communicator with a friendly personality, and would be an excellent leader.",
+  },
+  {
+    name: "Amy D.",
+    feedback:
+      "Dan demonstrated his innovative and strategic thinking and passion for innovation at Katalyst. I had the pleasure of getting to know him via Katalyst and he was a great team player that pushed the team to think bigger.",
+  },
+  {
+    name: "Andy G.",
+    feedback:
+      "Dan is a critical thinker who has served the KDS Site team well by providing clear strategic direction. He excels at breaking large projects down into workable chunks and has helped the site team produce very accurate estimates for the work. This positive influence led the Site team to achieve all of our committed objectives and key results in Q2. Dan works well with others and has been an incredible help coaching and developing some of the junior members of the site team.",
+  },
+  {
+    name: "Andy G.",
+    feedback:
+      "Dan works well with others, communicates clearly, and helps coach and develop others by sharing best practices and pairing with junior developers. He is one of the most productive members of the team and does so with a positive attitude that radiates an uplifting atmosphere.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "A big part of being on a team like KDS, providing and maintaining a system with such extensive reach across the organization, is effective communication. Dan has been doing an awesome job of communicating upcoming KDS changes and new capabilities at web guild and through Teams.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan Becker stands out as a highly valuable member of our team. His openness in sharing ideas is one of his key strengths. Dan's proactive approach to tasks is admirable. He's quick to take initiative and ensures that everyone is informed and on the same page. His updates during team meetings are clear and thorough, which helps in keeping the team aligned and focused.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan has absolutely done an exceptional job these last two quarters. With the departure of [the previous engineering lead], Dan was tasked to lead the team updating KDS-react to the new color system, as well as performing all the work to update Esperanto's codebase to work with the new color system. Through Dan's leadership, the new KDS CX support team was able to complete all of their work and hit almost all of their deadlines with little setbacks. He has been communicative, supportive, and diligent in fulfilling the team's goal of delivering the color system and has followed through with determination and skill.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan has an outsized positive influence on our small team, by his positive leadership and expertise in the KDS web space. He's very approachable and always willing to share knowledge or troubleshoot a problem.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan has been great at collaborating with our team, and flexing to provide us something to use sooner by breaking down bigger problems into smaller steps. He makes us feel seen and like we're important team members.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan is a great communicator who is approachable, relatable, and excellent at describing current status and blockers to progress in status meetings. I've noticed him anticipate KDS consumer needs ahead of time while working on the color system conversion.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan is able to communicate clearly and effectively. During a recent project that impacted numerous teams, Dan worked with other groups to ensure all parties involved understood the impact of the changes he worked on. Dan has been willing to answer questions, help coach others not as familiar in the space, and clearly puts the customer first.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan is an excellent communicator who contributes to most conversations, is genuinely interested in everyone’s input and opinions, and is able to understand others’ concerns and work that into his solutions. He’s always willing to jump in where he thinks he can assist and will offer insights from his broad experience to help the team achieve a resolution.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan is highly creative and excellent at identifying and developing innovative ideas, and he takes the customer into consideration when developing new concepts. He's action-oriented and focused in a way that's motivating and inspiring to others, but he's also willing to slow down and explain concepts and decisions and seek feedback from the team.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan is highly motivated and proactive about identifying work to be done, and about suggesting ways to improve processes and team interactions. He’s able to plan and execute a course of action efficiently and is attentive to priorities while taking note of issues that may need to be addressed later.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan is passionate about his work and consistently delivers meaningful results. He can regularly be found in pairing and mobbing sessions. He seeks feedback and guidance and makes strong attempts to resolve conflict and consider all differences and perspectives.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "Dan uses his broad knowledge of innovation principles to generate solutions and evaluate problems. He has been effective in collaborating with designers and NGPOS to expand the UI customization that we offer through themes.",
+  },
+  {
+    name: "Anonymous",
+    feedback:
+      "I was and continue to be happy to have Dan on the team and focused on system objectives. His open, honest, and empathetic nature has helped bring the web devs together during a time of great change. Dan's experience as both a team leader and individual contributor, in combination with his skills in listening, understanding, reiterating, and communicating, have created a kind of bolstering around and within collaborative efforts.",
+  },
+  {
+    name: "Anthony I.",
+    feedback:
+      "Dan has far exceeded normal expectations of an engineer at his level. He has been highly effective on several different projects, which I credit to his solid technical skills, ability to apply useful patterns of thinking to problems, openness to feedback, and outstanding productivity habits. Dan has been a team member who workstream leads can rely on to push a project forward.",
+  },
+  {
+    name: "Brandon M.",
+    feedback:
+      "Dan has been a key leader and an amazing team member on the new color system implementation project. He has led the web team to success and has assisted the native teams as well. His updates are always clear and concise, and he provides clear and strategic direction.",
+  },
+  {
+    name: "Christopher W.",
+    feedback:
+      "Dan was a fantastic partner during the Kroger Katalyst workshop, contributing excellent ideas and critical thought. He helped evaluate and reimagine our idea more than once. Dan also agreed to be our 'pitch man', singularly delivering the presentation for our proposed solution.",
+  },
+  {
+    name: "Elizabeth R.",
+    feedback:
+      "The token approach strategy that Dan documented was thorough and thoughtful. He reached out to connect on design deliverables and timing - he was proactive and easy to collaborate with.",
+  },
+  {
+    name: "Gerald F.",
+    feedback:
+      "Dan does everything right. He is humble, yet forthcoming. Polite in his directness. Effective at communication in a variety of forums. He delivers high-quality code and has come to understand the depth and breadth of KDS offerings. His expertise in innovation and leadership were essential to our experimentation with NGPOS and large format touch theme capabilities.",
+  },
+  {
+    name: "Heather K.",
+    feedback:
+      "Dan is an impressive associate! Dan persisted and truly led the team to broaden their thinking and explore alternative outcomes. He listened to everyone's viewpoints, he synthesized the information, and he influenced without being dominant. Within a short timeframe, the strong personalities started to listen and were open to new ideas.",
+  },
+  {
+    name: "Jacob S.",
+    feedback:
+      "Dan has done a great job of helping out our team, particularly with the shoppable weekly ad. He was a big part of finding and executing a short-term and long-term plan for getting the bold Nunito font available in Esperanto.",
+  },
+  {
+    name: "Jake S.",
+    feedback:
+      "Dan excels in leading through positive influence and coaching others. He values others' opinions and encourages team discussions, even if it goes against what others are saying.",
+  },
+  {
+    name: "Jeremiah B.",
+    feedback:
+      "Dan exhibits the KLM behaviors by proactively initiating ongoing collaborative meetings and seeking to strengthen our offering to the customer. He has partnered with other design leaders to make our connection between the Figma libraries and what is in the KDS code as tight as possible.",
+  },
+  {
+    name: "Justin N.",
+    feedback:
+      "Dan is always actively looking into something new, voicing opinions, and asking questions. He has proven himself to be an asset to the team. Dan was instrumental in the success of the KDS web core team this year, quickly completing work and suggesting improvements along the way.",
+  },
+  {
+    name: "Orville B.",
+    feedback:
+      "Dan is a good communicator and able to share his ideas in a clear, organized fashion. He achieves results through teamwork, always ready and willing to pair with others, help out, and offer suggestions to get past or improve upon an idea. His work is of high quality and he sweats the details, even spellchecking code before submitting it.",
+  },
+  {
+    name: "Paul C.",
+    feedback:
+      "Dan is a high performer, executes with excellence, is flexible, and a huge asset to the team. When Dan speaks up, he always contributes in a positive way to help move things forward for the team.",
+  },
+]
+
+
+export const getRandomNumberBetween = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
