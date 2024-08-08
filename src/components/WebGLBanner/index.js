@@ -1,6 +1,8 @@
-import React, { useRef, useEffect } from "react"
+import React, { useRef, useEffect, useState } from "react"
+import { useColorMode, LIGHT_MODE } from "react-darkmode-hook"
 import { mat4 } from "./utils"
 import "./WebGLBanner.css"
+import { getRandomNumberBetween } from "../../utils"
 
 const vertexShaderSource = `
   attribute vec4 a_position;
@@ -39,6 +41,35 @@ function createProgram(gl, vertexShader, fragmentShader) {
 const WebGLBanner = () => {
   const canvasRef = useRef(null)
   const mouseRef = useRef({ x: 0, y: 0 })
+  const { colorMode } = useColorMode()
+  const [currentMode, setMode] = useState(colorMode)
+
+  useEffect(() => {
+    // Define the callback function to handle attribute changes
+    const handleAttributeChange = (mutationsList) => {
+      for (let mutation of mutationsList) {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "color-mode"
+        ) {
+          setMode(document.documentElement.getAttribute("color-mode"))
+        }
+      }
+    }
+
+    // Create a MutationObserver instance and pass the callback function
+    const observer = new MutationObserver(handleAttributeChange)
+
+    // Set up the observer to watch for attribute changes on documentElement
+    observer.observe(document.documentElement, {
+      attributes: true, // Listen for attribute changes
+    })
+
+    // Clean up the observer when the component unmounts
+    return () => {
+      observer.disconnect()
+    }
+  }, [])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -77,31 +108,37 @@ const WebGLBanner = () => {
     gl.enableVertexAttribArray(positionAttributeLocation)
     gl.enableVertexAttribArray(colorAttributeLocation)
     const elements = []
-    const colors = [
-      [0.9, 0.2, 0.5], // fuchsia
-      [0.9, 0.1, 0.1], // Red
-      // [0, 1, 0], // Green
-      // [0, 0, 1], // Blue
-      // [1, 1, 0], // Yellow
-      [1, 0, 1], // Magenta
-      // [0, 1, 1], // Cyan
-      // [1, 0.5, 0.5], // Orange
-      [0.5, 0, 1], // Purple
-      // [0, 1, 0.5], // Lime
-    ]
+    const colors =
+      currentMode === LIGHT_MODE
+        ? [
+            // #ff4f3e as 0 point floats
+            [1, 0.3, 0.2],
+            // #ff83cb as 0 point floats
+            [1, 0.5, 0.8],
+            // #1d91f3 as 0 point floats
+            [0.1, 0.6, 0.9],
+          ]
+        : [
+            // #00b0c1 as 0 point floats
+            [0, 0.7, 0.8],
+            // #007c34 as 0 point floats
+            [0, 0.5, 0.2],
+            // #96d0d6 as 0 point floats
+            [0.6, 0.8, 0.8],
+          ]
 
     // Increase the number of elements
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < getRandomNumberBetween(25, 40); i++) {
       const isLine = Math.random() > 0.4
       const color = colors[Math.floor(Math.random() * colors.length)]
       let positions
 
       if (isLine) {
-        const length = Math.random() * 1000 + 0.5 // Increased max length
+        const length = Math.random() * 8000 + 0.5 // Increased max length
         positions = [-length / 2, 0, 0, length / 2, 0, 0]
       } else {
         const width = Math.random() * 2 + 0.1 // Increased max width
-        const height = Math.random() * 1000 + 0.5 // Increased max height
+        const height = Math.random() * 8000 + 0.5 // Increased max height
         const topWidth = width * (Math.random() * 0.5 + 0.5)
         positions = [
           -width / 2,
@@ -221,7 +258,7 @@ const WebGLBanner = () => {
       window.removeEventListener("mousemove", handleMouseMove)
       window.removeEventListener("resize", handleResize)
     }
-  }, [])
+  }, [currentMode])
 
   return (
     <>
