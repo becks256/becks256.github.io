@@ -1,9 +1,6 @@
-:root, :root[color-mode="light"] {
-  --color: rgb(151, 82, 179);
-  --button-size: 45px;
-}
-:root[color-mode="dark"] {
-  --color: rgb(204, 122, 236);
+:root {
+  --mobile-nav-ink: var(--palette-special--more-prominent);
+  --mobile-nav-button-size: 45px;
 }
 
 .overlay {
@@ -48,11 +45,11 @@
   box-sizing: border-box;
 }
 #hamburger-menu h3 {
-  color: var(--color);
+  color: var(--mobile-nav-ink);
   font-size: 2.2rem;
 }
 #hamburger-menu ul {
-  color: var(--color);
+  color: var(--mobile-nav-ink);
   padding-left: 0px;
 }
 #hamburger-menu li {
@@ -64,7 +61,7 @@
   margin-top: 16px;
 }
 #hamburger-menu a {
-  color: var(--color);
+  color: var(--mobile-nav-ink);
   font-size: 1.3rem;
   text-decoration: none;
 }
@@ -85,7 +82,7 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: var(--color);
+  background: var(--mobile-nav-ink);
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -94,16 +91,16 @@
 }
 #hamburger-menu section::before {
   content: "";
-  width: var(--button-size);
-  height: var(--button-size);
+  width: var(--mobile-nav-button-size);
+  height: var(--mobile-nav-button-size);
   position: absolute;
-  top: calc(calc((var(--button-size) - 23px) / 2) * -1); 
-  left: calc(calc((var(--button-size) - 32px) / 2) * -1);
+  top: calc(calc((var(--mobile-nav-button-size) - 23px) / 2) * -1); 
+  left: calc(calc((var(--mobile-nav-button-size) - 32px) / 2) * -1);
   border-radius: 0.5rem;
   background-color: var(--system-background--primary);
 }
 #hamburger-menu section span:first-child {
-  background: var(--color);
+  background: var(--mobile-nav-ink);
   transform-origin: 0% 0%;
   position: relative;
   z-index: 0;
