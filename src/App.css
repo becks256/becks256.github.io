@@ -4,6 +4,7 @@
 :root[color-mode="light"] {
   --border-radius: 0.5rem;
   --system-text--primary: #333;
+  --system-text--primary-inverse: #f7f5f5;
   --system-background--primary: #f7f5f5;
   --system-background--primary-inverse: #222;
   --system-background--secondary: #fff;
@@ -21,15 +22,17 @@
   --palette-informative--less-subtle: #a6cbf3;
   --palette-informative--more-subtle: #c8dff7;
   --palette-informative--most-subtle: #ecf5ff;
+  --background-image: url(./assets/headshot-dither.png)
 }
 :root[color-mode="dark"] {
   --system-text--primary: #f7f5f5;
+  --system-text--primary-inverse: #333;
   --system-background--primary: #141415;
   --system-background--primary-inverse: #f7f5f5;
   --system-background--secondary: #202027;
-  --palette-special--more-subtle: rgb(56, 35, 68);
-  --palette-special--least-prominent: rgb(97, 45, 128);
-  --palette-special--more-prominent: rgb(192, 125, 232);
+  --palette-special--more-subtle: #48752e;
+  --palette-special--least-prominent: #83b466;
+  --palette-special--more-prominent: #c7dcbb;
   --shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.5) 0px 4px 8px -4px;
   --border-color: #2b2b2b;
@@ -41,6 +44,7 @@
   --palette-informative--less-prominent: #a6cbf3;
   --palette-informative--more-prominent: #c8dff7;
   --palette-informative--most-prominent: #ecf5ff;
+  --background-image: url(./assets/headshot-dither-inverse.png)
 }
 
 html,
@@ -69,19 +73,19 @@ a:hover {
 
 @media screen and (min-width: 900px) {
   .main-content {
-    margin: 8rem;
+    padding: 0 8rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-content {
-    margin: 16rem;
+    padding: 0 16rem;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .main-content {
-    margin: 20rem;
+    padding: 0 20rem;
   }
 }
 
@@ -92,7 +96,7 @@ a:hover {
   }
 
   .main-content {
-    margin: 24rem;
+    padding: 0 24rem;
   }
 }
 
@@ -113,7 +117,7 @@ a:hover {
 }
 
 .about-me-card-image {
-  background-image: url(./assets/headshot-dither.png);
+  background-image: var(--background-image);
   background-position: center right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,9 +136,12 @@ a:hover {
   position: absolute;
   left: -7.5rem;
   top: 0;
-  font-size: 100px;
   margin: 0;
   z-index: 1;
+}
+
+.my-work-headline, .about-me-header {
+  font-size: 6.25rem;
 }
 
 @media (max-width: 768px) {
@@ -149,9 +156,10 @@ a:hover {
   .about-me-header {
     display: flex;
     position: unset;
-    font-size: 50px;
   }
-
+  .my-work-headline, .about-me-header {
+    font-size: 3.125rem;
+  }
   .about-me-text div {
     margin-top: 0 !important
   }
