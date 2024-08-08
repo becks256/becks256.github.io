@@ -9,7 +9,8 @@ export const Banner = ({ isMobile }) => {
   return (
     <>
       <section className="Banner">
-        <div className="Banner--info-icon"
+        <div
+          className="Banner--info-icon"
           onClick={() => {
             console.log("clicked")
             setShowTooltip(!showTooltip)
@@ -20,13 +21,16 @@ export const Banner = ({ isMobile }) => {
           <InfoIcon fill="#FFFFFF" />
         </div>
         {showTooltip && (
-          <div
-            className="Banner--tooltip"
-          >
-            These linear elements represent the intersections of human
-            experiences, inspired by my studies of Josef Albers' color theory.
-            Each line symbolizes a journey, with intersections marking moments
-            of shared experience and growth.
+          <div className="Banner--tooltip">
+            During my first year in art school, I was fascinated with color
+            theory and the works of Josef Albers. I created a large study of
+            color interactions inspired by his work, but my approach was also
+            intended to explore the connections between people and the shared
+            experiences that shape us. This notion was embodied in a visual form
+            represented by linear elements intersecting and having effects on
+            one another, while also generally exploring the world of color
+            interaction . This banner is a my first deep dive into WebGL and a
+            digital recreation of that study.
           </div>
         )}
         {isMobile ? <MobileNav /> : <Header />}
@@ -48,11 +52,29 @@ export const Banner = ({ isMobile }) => {
         </section>
         <CaretDownIcon className="Banner--icon" fill={"#fff"} />
       </section>
-      <div style={{ position: "absolute", top: 0, left: 0, zIndex: -1 }}>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          zIndex: -1,
+          width: "100vw",
+        }}
+      >
         {/* <section className="Banner--background"></section> */}
         <WebGLBanner />
       </div>
-      <div style={{width: "100%", height: "100vh", backgroundColor: "rgb(40,40,40)", position: "absolute", top: 0, left: 0, zIndex: -3}}></div>
+      <div
+        style={{
+          width: "100vw",
+          height: "100vh",
+          backgroundColor: "rgb(40,40,40)",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          zIndex: -3,
+        }}
+      ></div>
     </>
   )
 }
