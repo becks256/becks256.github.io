@@ -1,0 +1,117 @@
+:root {
+  --work-with-me-primary-ink: #ff4f3e;
+  --work-with-me-accent-ink: #ff83cb;
+  --work-with-me-secondary-ink: #692f29;
+  --work-with-me-max-width: 800px;
+  --work-with-me-max-width--headline: 1200px;
+}
+
+:root[color-mode="dark"] {
+  --work-with-me-primary-ink: #00b0c1;
+  --work-with-me-accent-ink: #007c34;
+  --work-with-me-secondary-ink: #eee8b5;
+}
+
+.work-with-me {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background-color: var(--work-with-me-primary-ink);
+  min-height: 100px;
+  position: relative;
+}
+
+.work-with-me::after {
+/* 2 Large vertical bars skewed at 45 degree angles and overflow hidden */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(45deg, var(--work-with-me-accent-ink) 60%, var(--work-with-me-primary-ink) 40%);
+  background-size: 100% 100%;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.work-with-me::before {
+/* 2 Large vertical bars skewed at 45 degree angles and overflow hidden */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(45deg, var(--work-with-me-primary-ink) 60%, var(--work-with-me-accent-ink) 40%);
+  background-size: 100% 100%;
+  z-index: 1;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.work-with-me--headline {
+  font-size: 6.25rem;
+  color: var(--work-with-me-accent-ink);
+  max-width: var(--work-with-me-max-width--headline);
+}
+
+.work-with-me--paragraph {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--system-text--work-with-me-primary-ink-inverse);
+}
+
+.work-with-me--author {
+  text-align: right;
+  transition: all 0.3s ease-in-out;
+}
+
+.work-with-me--feedback {
+  border-left: solid 0.5rem var(--work-with-me-secondary-ink);
+  height: min-content;
+  transition: opacity 0.2s, transform 0.5s;
+  line-height: 1.25;
+}
+
+.work-with-me--comment {
+  line-height: 1.2
+}
+
+.work-with-me--comment, .work-with-me--feedback {
+  color: var(--work-with-me-secondary-ink);
+  font-size: 1.25rem;
+  padding-left: 1rem;
+}
+
+.skill-item {
+  text-transform: capitalize;
+}
+
+.typing::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .work-with-me--headline {
+    font-size: 3.125rem;
+    text-align: left;
+  }
+
+  .work-with-me--paragraph {
+    font-size: 1.25rem;
+    color: var(--system-text--work-with-me-primary-ink-inverse);
+  }
+
+  .work-with-me--feedback {
+    height: 375px;
+  }
+}
