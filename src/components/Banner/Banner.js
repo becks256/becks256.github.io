@@ -62,7 +62,10 @@ export const Banner = ({ isMobile }) => {
         }}
       >
         {/* <section className="Banner--background"></section> */}
-        <WebGLBanner />
+        <WebGLBanner
+          minLines={isMobile ? 12 : 18}
+          maxLines={isMobile ? 18 : 32}
+        />
       </div>
       <div
         style={{
