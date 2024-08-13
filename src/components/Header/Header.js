@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import { DarkmodeToggle } from "react-darkmode-hook"
-import { MobileNav } from "../"
 import { LINK_DATA } from "../"
 
 import "./Header.css"
