@@ -126,7 +126,7 @@ const WebGLBanner = ({ minLines, maxLines }) => {
           start[0] === -1 ? 0 : start[0] === 1 ? 1 : start[1] === -1 ? 2 : 3
         ),
         color: colorPalette[Math.floor(Math.random() * colorPalette.length)],
-        weight: getRandomNumberBetween(10, 1000),
+        weight: getRandomNumberBetween(10, 50),
         speed: Math.random() * 0.01 + 0.005,
         progress: 0,
         state: "drawing",
