@@ -336,42 +336,42 @@ export const ABOUT_ME_DATA = {
   description: (
     <div className="lg:px-48 mb-24 mt-32">
       <p>
-        I'm a software engineer with a BFA in graphic design, as well as
-        certifications in innovation engineering and human-centered design. As a
-        result, I have a deep passion for pushing the boundaries of my
-        imagination, particularly within the domains of software and process
-        automation, but consumer electronics and commodities are certainly
-        within the scope of my capabilities and experience.
+        Hi, I’m a software engineer with a BFA in graphic design, blending
+        creativity with technology to push boundaries in web development and
+        process automation. My journey has evolved, and I’m now steering toward
+        a future as an AI researcher. Actively engaged in AI/ML projects, I’ve
+        recently earned a certificate in AI development with Python, gaining
+        hands-on experience in deep learning and computer vision. I’m also
+        awaiting acceptance into an AI Master’s program, furthering my
+        commitment to this exciting field.
       </p>
       <p>
-        I've been working as a software engineer for the past{" "}
-        {getElapsedYears(2015)} years, and creating digital art and mastering
-        the Adobe Creative Suite for over {getElapsedYears(2000)} years. The
-        bulk of my software engineering work centers around image automation &
-        generation, and only have I recently discovered that I was an early
-        pioneer of generative AI. Though I never implemented machine learning or
-        neural networks, I learned to develop software in the pursuit of
-        achieving a similar outcome as the prominent GenAI players today; being
-        able to generate images that are indistinguishable from hand painted
-        art.
+        Early in my career, I developed a program that could assemble artistic
+        compositions from labeled assets with creative randomness—recreating my
+        own artistic process in code. Though not predictive or probabilistic,
+        the work was inspired by ML projects of the time, such as “The Next
+        Rembrandt” and pix2pix. In hindsight, it had some alignment with AI in
+        terms of labeling, but was primarily instructional. Now, with a deeper
+        understanding of AI, I’m excited to continue expanding my knowledge in
+        this rapidly growing field.
       </p>
       <p>
-        I am a genuinely curious person, I love to learn new things, and most
-        importantly, I love to invent. I consider myself to only be limited by
-        my mindset and imagination, and when I get an idea, I can't help but see
-        it through to completion. I am a self-starter and a self-teacher, and I
-        am always looking for new ways to challenge myself and grow.
+        Curiosity and invention drive everything I do. Whether it’s creating a
+        web application, automating a process, or experimenting with AI models,
+        I love the challenge of bringing new ideas to life and constantly
+        pushing myself to learn more.
       </p>
       <p>
-        I'm a big fan of the MERN stack, and I'm always looking for new
-        technologies to learn. My latest academic pursuit is a certification in
-        AI and Machine Learning through Harvard University Online.
+        While I’m well-versed in the MERN stack, I’m always exploring new
+        technologies and methodologies. My current focus is on advancing my AI
+        expertise, but I remain passionate about delivering impactful software
+        solutions and staying at the forefront of innovation.
       </p>
       <p>
-        I'm also a big fan of music. Just like my technologist side, I'm always
-        looking for new ways to create and innovate with sound. I've been
-        playing guitar for over {getElapsedYears(2000)} years, and I've been
-        producing ambient instrumental music for {getElapsedYears(2011)} years.
+        Outside of tech, I’ve been playing guitar for over{" "}
+        {getElapsedYears(2000)} years and producing ambient music for{" "}
+        {getElapsedYears(2011)} years. Creativity in all its forms fuels me,
+        whether it’s coding or composing soundscapes.
       </p>
     </div>
   ),
@@ -525,7 +525,6 @@ export const FEEDBACK_DATA = [
   },
 ]
 
-
 export const getRandomNumberBetween = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
