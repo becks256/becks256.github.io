@@ -233,13 +233,13 @@ export const NETWORK_DATA = [
     description: "Check out my personal profile on GitHub.",
     alt: "becks256 github public profile",
   },
-  {
-    link: "https://jsfiddle.net/user/becks256/fiddles",
-    image: jsfiddleLogo,
-    title: "JSFiddle",
-    description: "Check out my random javascript experiments on JSFiddle.",
-    alt: "becks256 js fiddle public profile",
-  },
+  // {
+  //   link: "https://jsfiddle.net/user/becks256/fiddles",
+  //   image: jsfiddleLogo,
+  //   title: "JSFiddle",
+  //   description: "Check out my random javascript experiments on JSFiddle.",
+  //   alt: "becks256 js fiddle public profile",
+  // },
   {
     link: "https://www.npmjs.com/~becks256",
     image: npmLogo,
