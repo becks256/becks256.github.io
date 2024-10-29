@@ -180,9 +180,9 @@ export const WORK_DATA = [
         back to 2013 (!) was an invention of mine that aimed to enhance the QR
         code to store more data than a traditional one. The idea was to use a
         circular QR code with a limited color palette to encode more data than
-        the binary black and white palette could could. For those unfamiliar, a
+        the binary black and white palette could. For those unfamiliar, a
         QR code simply encodes data in binary and presents that as a block of
-        black and white squares. Black squares typically represent 1 and whites
+        black and white squares. Black squares typically represent 1 and white
         squares 0. The goal of the color wheel project was to have colors in
         addition to black and white that could represent combinations of 0 and
         1, for example, red could represent 00, green 01, blue 10, and yellow
