@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { FEEDBACK_DATA } from "../../utils"
 import "./WorkWithMeSection.css"
 
 export const WorkWithMeSection = () => {
   const [feedback, setFeedback] = useState(FEEDBACK_DATA[0].feedback)
   const [author, setAuthor] = useState()
-  const [displayedText, setDisplayedText] = useState()
+  const [displayedText, setDisplayedText] = useState("")
+  const typingTimeoutRef = useRef(null)
+  const intervalRef = useRef(null)
 
   useEffect(() => {
-    let typingTimeout
-    let interval
-
+    // Function to type text character by character
     const typeWriter = (text, callback) => {
       let currentIndex = -1
       setDisplayedText("")
@@ -20,7 +20,7 @@ export const WorkWithMeSection = () => {
         if (currentIndex < text.length) {
           setDisplayedText((prev) => prev + text.charAt(currentIndex))
           currentIndex++
-          typingTimeout = setTimeout(type, 30) // Adjust typing speed here
+          typingTimeoutRef.current = setTimeout(type, 30) // Adjust typing speed here
         } else {
           callback()
         }
@@ -29,6 +29,7 @@ export const WorkWithMeSection = () => {
       type()
     }
 
+    // Function to update feedback with a new random entry
     const updateFeedback = () => {
       const { name, feedback } =
         FEEDBACK_DATA[Math.floor(Math.random() * FEEDBACK_DATA.length)]
@@ -42,20 +43,23 @@ export const WorkWithMeSection = () => {
       })
     }
 
+    // Function to start the typing effect cycle
     const startTypingEffect = () => {
       updateFeedback() // Start typing effect immediately
-      interval = setInterval(() => {
+      intervalRef.current = setInterval(() => {
         updateFeedback()
       }, feedback.length * 50 + 20000) // Adjust this formula to ensure proper timing
     }
 
+    // Start the typing effect when component mounts
     startTypingEffect()
 
+    // Cleanup function to clear timeouts and intervals
     return () => {
-      clearTimeout(typingTimeout)
-      clearInterval(interval)
+      clearTimeout(typingTimeoutRef.current)
+      clearInterval(intervalRef.current)
     }
-  }, [feedback.length])
+  }, []) // Empty dependency array to run effect only once when component mounts
 
   const skills = [
     "critical thinking",
