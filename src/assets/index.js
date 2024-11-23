@@ -1,4 +1,4 @@
-import pluralsightSnip from "./pluralsight.png"
+import pluralsightSnip from "./pluralsight_II.png"
 import certOne from "./cert1.png"
 import certTwo from "./cert2.png"
 import certThree from "./cert3.png"
