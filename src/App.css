@@ -71,6 +71,11 @@ a:hover {
   color: var(--palette-special--least-prominent);
 }
 
+.grid-section {
+  position: relative;
+  z-index: 0;
+}
+
 @media screen and (min-width: 900px) {
   .main-content {
     padding: 0 8rem;
