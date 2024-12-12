@@ -86,29 +86,41 @@ export const Card = ({ type = "product", data }) => {
             />
           </span>
         </section>
-        <section className="px-48">
+        <section
+          className="px-48"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            flexGrow: 1,
+            justifyContent: "space-between",
+          }}
+        >
           <div className="Card--description">{description}</div>
-          {href && (
-            <a
-              className="font-bold flex gap-8 mb-24"
-              href={href}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {cta || "View Project"}
-              <ExternalLinkIcon />
-            </a>
-          )}
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "24px" }}
+          >
+            {href && (
+              <a
+                className="font-bold flex gap-8"
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {cta || "View Project"}
+                <ExternalLinkIcon />
+              </a>
+            )}
 
-          {techStack?.length && (
-            <div className="Card--techStack">
-              {techStack.map((tech, index) => (
-                <Tag kind="special" key={index}>
-                  {tech}
-                </Tag>
-              ))}
-            </div>
-          )}
+            {techStack?.length && (
+              <div className="Card--techStack">
+                {techStack.map((tech, index) => (
+                  <Tag kind="special" key={index}>
+                    {tech}
+                  </Tag>
+                ))}
+              </div>
+            )}
+          </div>
         </section>
       </div>
     </>
