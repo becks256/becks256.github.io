@@ -7,7 +7,7 @@
   /* border: solid 1px var(--border-color); */
   row-gap: 1.5rem;
   box-sizing: border-box;
-  flex: 1 1 50%;
+  flex: 1 1 48.114%;
 }
 
 .ProductCard,
@@ -87,4 +87,7 @@
   text-decoration: wavy underline;
   text-decoration-color: rgb(235, 91, 65);
   font-weight: 700;
+  min-width: 75px;
+  text-align: end;
+  text-wrap: nowrap;
 }

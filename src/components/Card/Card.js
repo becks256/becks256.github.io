@@ -54,9 +54,19 @@ export const Card = ({ type = "product", data }) => {
           },
           "Card overflow-hidden pb-48 pt-24"
         )}
+        style={{ gap: "24px" }}
       >
         <section className="px-48 flex align-items--center justify-content--between">
-          <h3 className={headerClasses}>{title}</h3>
+          <h3
+            className={headerClasses}
+            style={{
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+            }}
+          >
+            {title}
+          </h3>
           {date && <p className="Card--date">{date}</p>}
         </section>
         <section className="Card-imageContainer">

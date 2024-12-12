@@ -92,9 +92,9 @@ function App() {
   return (
     <ModalContext.Provider value={{ modalHidden, setModalHidden }}>
       <div className="App">
-        <Banner isMobile={isMobile} />
+        {/* <Banner isMobile={isMobile} /> */}
         <section className="main-content sm:px-16 my-96">
-          <section className="Card mb-96">
+          {/* <section className="Card mb-96">
             <div className="Card--description about-me-card m-0 p-0 flex">
               <div className="about-me-card-image"></div>
               <div className="about-me-text">
@@ -105,7 +105,7 @@ function App() {
               </div>
             </div>
           </section>
-          <WorkWithMeSection />
+          <WorkWithMeSection /> */}
           <h1 className="my-work-headline">
             My Work
           </h1>

@@ -180,13 +180,13 @@ export const WORK_DATA = [
         back to 2013 (!) was an invention of mine that aimed to enhance the QR
         code to store more data than a traditional one. The idea was to use a
         circular QR code with a limited color palette to encode more data than
-        the binary black and white palette could. For those unfamiliar, a
-        QR code simply encodes data in binary and presents that as a block of
-        black and white squares. Black squares typically represent 1 and white
-        squares 0. The goal of the color wheel project was to have colors in
-        addition to black and white that could represent combinations of 0 and
-        1, for example, red could represent 00, green 01, blue 10, and yellow
-        11, allowing for 4x the data to be encoded in the same space as a
+        the binary black and white palette could. For those unfamiliar, a QR
+        code simply encodes data in binary and presents that as a block of black
+        and white squares. Black squares typically represent 1 and white squares
+        0. The goal of the color wheel project was to have colors in addition to
+        black and white that could represent combinations of 0 and 1, for
+        example, red could represent 00, green 01, blue 10, and yellow 11,
+        allowing for 4x the data to be encoded in the same space as a
         traditional QR code.
       </>
     ),
@@ -227,10 +227,17 @@ export const SKILLS_DATA = [
 
 export const NETWORK_DATA = [
   {
+    link: "https://github.com/daniel-becker-kr",
+    image: githubLogo,
+    title: "GitHub @daniel-becker-kr",
+    description: "GitHub (personal)",
+    alt: "daniel-becker-kr github public profile",
+  },
+  {
     link: "https://github.com/becks256",
     image: githubLogo,
     title: "GitHub @becks256",
-    description: "Check out my personal profile on GitHub.",
+    description: "GitHub (work)",
     alt: "becks256 github public profile",
   },
   // {
@@ -244,35 +251,34 @@ export const NETWORK_DATA = [
     link: "https://www.npmjs.com/~becks256",
     image: npmLogo,
     title: "npm",
-    description: "See the few random things I've published to npm.",
+    description: "npm",
     alt: "becks256 npm public profile",
   },
   {
     link: "https://www.linkedin.com/in/becks256/",
     image: linkedinLogo,
     title: "LinkedIn",
-    description: "See my work experience and history on LinkedIn.",
+    description: "LinkedIn",
     alt: "Dan Becker's LinkedIn public profile",
   },
   {
     link: "https://soundcloud.com/becks256",
     image: soundcloudLogo,
     title: "SoundCloud",
-    description: "Have a listen to some noise I've created on SoundCloud.",
+    description: "SoundCloud",
     alt: "becks256 soundcloud public profile",
   },
   {
     link: "https://youtu.be/1puvTPIDgPo?feature=shared",
     title: "YouTube",
-    description:
-      "Watch this timelapse of my wife and I painting a massive mural on the side of a barn",
+    description: "YouTube",
     alt: "becks256 youtube public profile",
     image: youTubeLogo,
   },
   {
     link: "https://www.freecodecamp.org/becks256",
     title: "freeCodeCamp",
-    description: "View my free code camp public profile.",
+    description: "freeCodeCamp",
     alt: "becks256 freeCodeCamp public profile",
     image: fccIcon,
   },
