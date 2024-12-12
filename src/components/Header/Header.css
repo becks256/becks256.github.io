@@ -15,18 +15,12 @@
   left: 0;
   box-sizing: border-box;
   gap: 2rem;
+  z-index: 1;
 }
 
 .Header--condensed {
   box-shadow: var(--shadow);
-}
-
-:root[color-mode="dark"] .Header--condensed {
   background-color: var(--system-background--primary);
-}
-
-:root[color-mode="light"] .Header--condensed {
-  background-color: var(--system-background--primary-inverse);
 }
 
 .Header-link {
@@ -48,7 +42,7 @@
 }
 
 .Header > :not(.DarkmodeToggle) {
-  color: #f7f5f5;
+  color: var(--palette-special--more-prominent);
 }
 
 .Header > .DarkmodeToggle {
