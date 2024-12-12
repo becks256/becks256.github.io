@@ -9,7 +9,7 @@ export const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > window.innerHeight - 90) {
+      if (window.scrollY > 50) {
         ref.current?.classList.add("Header--condensed")
       } else {
         ref.current?.classList.remove("Header--condensed")
