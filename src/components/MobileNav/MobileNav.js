@@ -6,7 +6,7 @@ import "./MobileNav.css"
 
 export const MobileNav = () => {
   return (
-    <section style={{position: "fixed", top: 0, left: 0, height: "100vh"}}>
+    <section style={{position: "fixed", top: 0, left: 0, height: "100vh", zIndex: 1}}>
       <input type="checkbox" id="hamburger-input" className="burger-shower" />
       <label id="hamburger-menu" htmlFor="hamburger-input">
         <section>
