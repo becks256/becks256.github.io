@@ -16,6 +16,6 @@ export const LINK_DATA = [
   { href: "#skills", innerText: "Skills" },
   { href: "#projects", innerText: "Projects" },
   { href: "#networks", innerText: "Networks" },
-  { href: "#about", innerText: "About Me" },
-  { href: "/", innerText: "Home" },
+  // { href: "#about", innerText: "About Me" },
+  // { href: "/", innerText: "Home" },
 ]
