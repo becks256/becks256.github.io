@@ -25,6 +25,8 @@
   /* border: solid 1px var(--border-color);
   box-shadow: var(--shadow); */
   align-items: center;
+  position: relative; /* Ensures stacking context is controlled */
+  z-index: 0; /* Set to ensure it doesn't interfere with the nav */
 }
 
 .sr-only {
