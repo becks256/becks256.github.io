@@ -25,7 +25,7 @@ export const SocialIconBar = () => {
             })}
             alt={alt}
           />
-          <span className="social-icon-tooltip">{description}</span>
+          <span className="social-icon-tooltip truncate">{description}</span>
         </a>
       ))}
     </div>
