@@ -85,7 +85,7 @@
   color: var(--system-text--secondary);
   margin: 0;
   text-decoration: wavy underline;
-  text-decoration-color: rgb(235, 91, 65);
+  text-decoration-color: var(--palette-special--more-prominent);
   font-weight: 700;
   min-width: 75px;
   text-align: end;
