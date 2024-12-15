@@ -17,7 +17,7 @@ import "./App.css"
 
 export const ModalContext = React.createContext()
 
-function App() {
+const App = () => {
   const { setColorMode } = useColorMode()
   const [filter, setFilter] = useState([])
   const [isMobile, setIsMobile] = useState(false)

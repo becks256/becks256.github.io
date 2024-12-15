@@ -155,7 +155,7 @@ export const WORK_DATA = [
   {
     link: "https://www.kickstarter.com/projects/gadgetek/meta-the-microcontroller-enhanced-tablet-accessory",
     media: {
-    image: metaSnip,
+      image: metaSnip,
       video: metaVideo,
     },
     title: "META - The Microcontroller Enhanced Tablet Accessory",
