@@ -31,7 +31,7 @@ const MERN = ["MongoDB", "Express.js", "React", "Node"]
 export const WORK_DATA = [
   {
     link: "https://www.soulfolioco.com/design",
-    image: soulfolioSnip,
+    media: { image: soulfolioSnip },
     title: "Soulfolio Co",
     description: (
       <>
@@ -49,7 +49,7 @@ export const WORK_DATA = [
   },
   {
     link: undefined,
-    image: photoshopSnip,
+    media: { image: photoshopSnip },
     title: "DesignerPower UXP",
     description: (
       <>
@@ -68,7 +68,7 @@ export const WORK_DATA = [
   },
   {
     link: undefined,
-    image: myPriceSnip,
+    media: { image: myPriceSnip },
     title: "MyPrice",
     description: (
       <>
@@ -87,7 +87,7 @@ export const WORK_DATA = [
   },
   {
     link: undefined,
-    image: drprepperLogo,
+    media: { image: drprepperLogo },
     title: "Dr. Prepper",
     description: (
       <>
@@ -109,7 +109,7 @@ export const WORK_DATA = [
   },
   {
     link: "https://clumsy-salty-cloth.glitch.me/",
-    image: lookseeSnip,
+    media: { image: lookseeSnip },
     title: "Looksee",
     description: (
       <>
@@ -136,7 +136,7 @@ export const WORK_DATA = [
   },
   {
     link: undefined,
-    image: dapperSnip,
+    media: { image: dapperSnip },
     title: "Dapper",
     description: (
       <>
@@ -154,7 +154,10 @@ export const WORK_DATA = [
   },
   {
     link: "https://www.kickstarter.com/projects/gadgetek/meta-the-microcontroller-enhanced-tablet-accessory",
+    media: {
     image: metaSnip,
+      video: metaVideo,
+    },
     title: "META - The Microcontroller Enhanced Tablet Accessory",
     description: (
       <>
@@ -173,7 +176,7 @@ export const WORK_DATA = [
   },
   {
     link: "https://www.kickstarter.com/projects/1944993710/890789663?ref=duf72x&token=8ff33972",
-    image: codeWheelSnip,
+    media: { image: codeWheelSnip },
     title: "The Code Wheel Project",
     description: (
       <>
@@ -200,7 +203,7 @@ export const WORK_DATA = [
 
 export const DESIGN_WORK_DATA = [
   {
-    image: logoDesignExamples,
+    media: { image: logoDesignExamples },
     title: "Logo Design Examples",
     description: (
       <>
@@ -217,7 +220,7 @@ export const DESIGN_WORK_DATA = [
 export const SKILLS_DATA = [
   {
     link: "https://app.pluralsight.com/profile/dbecker85",
-    image: pluralsightSnip,
+    media: { image: pluralsightSnip },
     title: "Pluralsight",
     description:
       "See my Skill IQs on Pluralsight, most notably the expert level rankings of 94th, 97th, and 98th percentiles for JavaScript, HTML, and CSS respectively as of 2022.",
@@ -229,42 +232,42 @@ export const SKILLS_DATA = [
 export const NETWORK_DATA = [
   {
     link: "https://github.com/daniel-becker-kr",
-    image: githubLogo,
+    media: { image: githubLogo },
     title: "GitHub @daniel-becker-kr",
     description: "GitHub (personal)",
     alt: "daniel-becker-kr github public profile",
   },
   {
     link: "https://github.com/becks256",
-    image: githubLogo,
+    media: { image: githubLogo },
     title: "GitHub @becks256",
     description: "GitHub (work)",
     alt: "becks256 github public profile",
   },
   // {
   //   link: "https://jsfiddle.net/user/becks256/fiddles",
-  //   image: jsfiddleLogo,
+  //  media: {image: jsfiddleLogo,},
   //   title: "JSFiddle",
   //   description: "Check out my random javascript experiments on JSFiddle.",
   //   alt: "becks256 js fiddle public profile",
   // },
   {
     link: "https://www.npmjs.com/~becks256",
-    image: npmLogo,
+    media: { image: npmLogo },
     title: "npm",
     description: "npm",
     alt: "becks256 npm public profile",
   },
   {
     link: "https://www.linkedin.com/in/becks256/",
-    image: linkedinLogo,
+    media: { image: linkedinLogo },
     title: "LinkedIn",
     description: "LinkedIn",
     alt: "Dan Becker's LinkedIn public profile",
   },
   {
     link: "https://soundcloud.com/becks256",
-    image: soundcloudLogo,
+    media: { image: soundcloudLogo },
     title: "SoundCloud",
     description: "SoundCloud",
     alt: "becks256 soundcloud public profile",
@@ -274,14 +277,14 @@ export const NETWORK_DATA = [
     title: "YouTube",
     description: "YouTube",
     alt: "becks256 youtube public profile",
-    image: youTubeLogo,
+    media: { image: youTubeLogo },
   },
   {
     link: "https://www.freecodecamp.org/becks256",
     title: "freeCodeCamp",
     description: "freeCodeCamp",
     alt: "becks256 freeCodeCamp public profile",
-    image: fccIcon,
+    media: { image: fccIcon },
   },
 ]
 
@@ -306,7 +309,7 @@ export const PUBLICATION_DATA = [
         </Message>
       </>
     ),
-    image: websiteGraderSnip,
+    media: { image: websiteGraderSnip },
     cta: "View Post",
   },
   {
@@ -323,7 +326,7 @@ export const PUBLICATION_DATA = [
         communicate the nature of the changes in a more meaningful way.
       </>
     ),
-    image: designSystemVersioningStrategy,
+    media: { image: designSystemVersioningStrategy },
   },
 ]
 
@@ -339,7 +342,7 @@ export const getElapsedYears = (year) => new Date().getFullYear() - year
 
 export const ABOUT_ME_DATA = {
   title: "About Me",
-  image: headshot,
+  media: { image: headshot },
   description: (
     <div className="lg:px-48 mb-24 mt-32">
       <p>
