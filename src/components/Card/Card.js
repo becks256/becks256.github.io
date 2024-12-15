@@ -14,9 +14,10 @@ export const Card = ({ type = "product", data }) => {
     techStack,
     cta,
     date,
-    image,
+    media,
     alt = "",
   } = data
+  const { image } = media
   const { setModalHidden } = React.useContext(ModalContext)
   const [showModal, setShowModal] = React.useState(false)
   const showModalHandler = (e) => {
