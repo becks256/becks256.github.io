@@ -123,7 +123,7 @@ export const Card = ({ type = "product", data }) => {
             {techStack?.length && (
               <div className="Card--techStack">
                 {techStack.map((tech, index) => (
-                  <Tag kind="special" key={index}>
+                  <Tag kind="special" key={index} tag="span">
                     {tech}
                   </Tag>
                 ))}
