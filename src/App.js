@@ -196,10 +196,13 @@ const App = () => {
             ))}
           </section>
         </section>
-        <footer className="m-32 flex align-content--center justify-content--center">
-          <p className="font-s">
+        <footer className="m-32 flex align-content--center justify-content--center flex-column flex-wrap">
+          <p className="font-s align-self--center">
             All content contained herein is the property of Daniel M Becker.
             Copyright &copy; 2023 &mdash; {APP_DATA.year}. All rights reserved.
+          </p>
+          <p className="font-s align-self--center">
+            This site uses analytics to help me understand who visits my site.
           </p>
         </footer>
       </div>
