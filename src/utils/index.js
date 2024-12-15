@@ -234,14 +234,14 @@ export const NETWORK_DATA = [
     link: "https://github.com/daniel-becker-kr",
     media: { image: githubLogo },
     title: "GitHub @daniel-becker-kr",
-    description: "GitHub (personal)",
+    description: "GitHub (work)",
     alt: "daniel-becker-kr github public profile",
   },
   {
     link: "https://github.com/becks256",
     media: { image: githubLogo },
     title: "GitHub @becks256",
-    description: "GitHub (work)",
+    description: "GitHub (personal)",
     alt: "becks256 github public profile",
   },
   // {
