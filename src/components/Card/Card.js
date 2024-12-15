@@ -28,6 +28,11 @@ export const Card = ({ type = "product", data }) => {
     setShowModal(false)
     setModalHidden(true)
   }
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      showModalHandler(e)
+    }
+  }
 
   let headerClasses = ""
   const isPublication = type === "publication"
@@ -78,8 +83,10 @@ export const Card = ({ type = "product", data }) => {
             onClick={showModalHandler}
           >
             <img
+              tabIndex={0}
               src={image}
               onClick={showModalHandler}
+              onKeyDown={handleKeyDown}
               className={clsnx({
                 "w-100": !/prepper/gi.test(title),
               })}
