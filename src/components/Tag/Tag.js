@@ -2,10 +2,10 @@ import React from "react"
 import "./Tag.css"
 import { clsnx } from "@becks256/clsnx"
 
-export const Tag = ({ children, className, kind, ...props }) => {
+export const Tag = ({ children, className, kind, tag: Tag = 'button', ...props }) => {
   return (
-    <button className={clsnx("tag", className, kind && `tag--${kind}`)} {...props}>
+    <Tag className={clsnx("tag", className, kind && `tag--${kind}`)} {...props}>
       {children}
-    </button>
+    </Tag>
   )
 }
