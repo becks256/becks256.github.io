@@ -25,7 +25,7 @@ const App = () => {
 
   useEffect(() => {
     setColorMode()
-  })
+  }, [setColorMode])
 
   useEffect(() => {
     const rootEl = document.getElementById("root")
