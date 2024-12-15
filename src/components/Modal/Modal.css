@@ -3,13 +3,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.75);
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 3;
   justify-content: center;
+  cursor: zoom-out;
 }
 
 .App-image-modal--dialogue {
@@ -19,41 +20,40 @@
   max-width: 90%;
   max-height: 90%;
   border-radius: var(--border-radius);
-  filter: drop-shadow(10px 10px 12px rgba(0,0,0,0.2));
+  filter: drop-shadow(10px 10px 12px rgba(0, 0, 0, 0.2));
   display: flex;
   gap: 1rem;
-  flex-direction: row-reverse;;
+  flex-direction: row-reverse;
+  cursor: default
 }
 
 .App-image-modal--close-btn {
-  color: white;
-  stroke: white !important;
+  color: var(--palette-special--least-prominent);
+  stroke: var(--palette-special--least-prominent) !important;
   stroke-width: 6px;
+  position: fixed;
+  z-index: 2;
+  background-color: var(--palette-special--more-subtle);
+  border: solid 3px var(--palette-special--least-prominent);
+  padding: 0.75rem;
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 625rem;
+  top: 0.75rem;
+  right: 0.75rem;
 }
 
 .App-image-modal--close-btn:hover {
-  color: rgb(192, 125, 232);
-  stroke: rgb(192, 125, 232)!important;
+  color: var(--palette-special--more-prominent);
+  stroke: var(--palette-special--more-prominent) !important;
 }
 
 .App-image-modal--header {
   position: relative;
   width: 100%;
-}
-
-.App-modal--header {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  font-size: 18pt;
-  color: var(--border-color);
-  font-weight: 700;
-}
-
-.App-modal--header p {
-  margin: 0;
-  padding: 0;
-  max-width: 80%;
 }
 
 .App-modal--content {
