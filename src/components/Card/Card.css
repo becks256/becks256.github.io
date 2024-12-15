@@ -14,6 +14,7 @@
 .PublicationCard {
   min-height: 24rem;
   position: relative;
+  transition: height 0.5s ease-in-out; /* Added transition for height */
 }
 
 .NetworkCard {
@@ -34,11 +35,11 @@
   border-style: solid;
   border-color: var(--system-text--primary);
   box-sizing: border-box;
-  transition: height 0.3s ease-in-out;
+  transition: height 0.5s ease-in-out;
 }
 
 .Card-imageContainer:hover {
-  height: 100%;
+  height: 24rem; /* Changed to a static maximum height */
 }
 
 .Card-imageContainer img {
