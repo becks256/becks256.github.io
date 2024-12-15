@@ -5,6 +5,7 @@ import { Tag } from "../"
 import { ExternalLinkIcon } from "../Icon/Icons/ExternalLinkIcon"
 import { Modal } from "../Modal/Modal"
 import { ModalContext } from "../../App"
+import { MediaViewer } from "../MediaViewer/MediaViewer"
 
 export const Card = ({ type = "product", data }) => {
   const {
@@ -47,7 +48,7 @@ export const Card = ({ type = "product", data }) => {
           contentClassName="flex flex-column"
           closeHandler={closeModalHandler}
         >
-          <img src={image} alt={alt} />
+          <MediaViewer media={media} alt={alt} />
         </Modal>
       )}
 
