@@ -19,6 +19,7 @@ import {
   codeWheelSnip,
   lookseeSnip,
   headshot,
+  metaVideo
 } from "../assets"
 
 import React from "react"
