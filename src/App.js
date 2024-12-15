@@ -148,7 +148,7 @@ const App = () => {
           </section>
           <div className="mt-8 mb-24 pl-16">
             <p className="font-m font-bold gap-8">
-              <Tag kind="info" className="font-bold mr-8">
+              <Tag kind="info" className="font-bold mr-8" tag="span">
                 {filteredWork.length}
               </Tag>
               Projects match the selected filters
