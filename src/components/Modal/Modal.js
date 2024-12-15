@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react"
+import React, { useContext, useEffect } from "react"
 import { createPortal } from "react-dom"
 import { ModalContext } from "../../App"
 import { IconClose } from "../Icon/Icons/IconClose"
@@ -14,32 +14,45 @@ const Modal = ({
   ...props
 }) => {
   const { modalHidden, setModalHidden } = useContext(ModalContext)
-  console.log("modalHidden", modalHidden)
-  const modalRef = useRef()
 
-  const clickHandler = (e) => {
+  const closeWithButtonHandler = (e) => {
     if (closeHandler) {
       closeHandler()
       return
     }
-    setModalHidden(() => true)
+    setModalHidden(true)
   }
 
+  const closeWithBackgroundHandler = (e) => {
+    if (e.target === e.currentTarget) {
+      closeWithButtonHandler()
+    }
+  }
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        closeWithButtonHandler()
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown)
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown)
+    }
+  }, [modalHidden])
+
   const imageOnlyModalMarkup = (
-    <div {...props} ref={modalRef} className="App-image-modal fade-in">
+    <div {...props} onClick={closeWithBackgroundHandler} className="App-image-modal fade-in">
       <div className="App-image-modal--dialogue">
-        <div
-          className={`App-modal--header color-${headerTextColor || "gray-10"}`}
-        >
-          <span className="App-image-modal--close-btn">
-            <IconClose
-              size="l"
-              className="pointer"
-              //className="clickable-icon color-static-text--inverse faux-link"
-              onClick={clickHandler}
-            />
-          </span>
-        </div>
+        <button onClick={closeWithButtonHandler} className="App-image-modal--close-btn" aria-label="Close modal dialog">
+          <IconClose
+            size="m"
+            className="pointer"
+            //className="clickable-icon color-static-text--inverse faux-link"
+          />
+        </button>
         <section>
           <div
             className={`App-modal--content fade-in ${contentClassName || ""}`}
