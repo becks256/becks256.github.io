@@ -27,11 +27,14 @@ const App = () => {
     setColorMode()
   })
 
-  React.useEffect(() => {
+  useEffect(() => {
+    const rootEl = document.getElementById("root")
     if (modalHidden) {
       document.documentElement.removeAttribute("style")
-    } else if (!modalHidden) {
+      rootEl.removeAttribute("inert")
+    } else {
       document.documentElement.style.overflow = "hidden"
+      rootEl.setAttribute("inert", "true")
     }
   }, [modalHidden])
 
