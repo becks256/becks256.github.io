@@ -1,52 +1,26 @@
-import pluralsightSnip from "./pluralsight_II.png"
-import certOne from "./cert1.png"
-import certTwo from "./cert2.png"
-import certThree from "./cert3.png"
-// import fccSnip from "./fcc.png"
-import fccIcon from "./fcc_icon.svg"
-import soulfolioSnip from "./soulfolio.png"
-import photoshopSnip from "./photoshop.png"
-import myPriceSnip from "./myprice.png"
-import dapperSnip from "./dapper.png"
-import metaSnip from "./meta.png"
-import drprepperLogo from "./drprepper.png"
-import githubLogo from "./github.svg"
-import jsfiddleLogo from "./jsfiddle.svg"
-// import linkedinLogo from "./linkedin.svg"
-import linkedinLogo from "./linkedin-icon.svg"
-import npmLogo from "./npm.svg"
-import soundcloudLogo from "./soundcloud.svg"
-import websiteGraderSnip from "./websiteGraderSnip.jpg"
-import designSystemVersioningStrategy from "./designSystemVersioningStrategy.png"
-import logoDesignExamples from "./logoDesignExamples.png"
-import youTubeLogo from "./youTubeLogo.svg"
-import codeWheelSnip from "./codeWheel.jpg"
-import lookseeSnip from "./looksee.png"
-import headshot from "./headshot.png"
-
-export {
-  pluralsightSnip,
-  certOne,
-  certTwo,
-  certThree,
-  // fccSnip,
-  soulfolioSnip,
-  photoshopSnip,
-  myPriceSnip,
-  dapperSnip,
-  metaSnip,
-  drprepperLogo,
-  githubLogo,
-  jsfiddleLogo,
-  linkedinLogo,
-  npmLogo,
-  soundcloudLogo,
-  websiteGraderSnip,
-  designSystemVersioningStrategy,
-  logoDesignExamples,
-  youTubeLogo,
-  codeWheelSnip,
-  fccIcon,
-  lookseeSnip,
-  headshot
-}
+export { default as pluralsightSnip } from "./pluralsight_II.png"
+export { default as certOne } from "./cert1.png"
+export { default as certTwo } from "./cert2.png"
+export { default as certThree } from "./cert3.png"
+// export {default as fccSnip} from "./fcc.png"
+export { default as fccIcon } from "./fcc_icon.svg"
+export { default as soulfolioSnip } from "./soulfolio.png"
+export { default as photoshopSnip } from "./photoshop.png"
+export { default as myPriceSnip } from "./myprice.png"
+export { default as dapperSnip } from "./dapper.png"
+export { default as metaSnip } from "./meta.png"
+export { default as drprepperLogo } from "./drprepper.png"
+export { default as githubLogo } from "./github.svg"
+export { default as jsfiddleLogo } from "./jsfiddle.svg"
+// export {default as linkedinLogo} from "./linkedin.svg"
+export { default as linkedinLogo } from "./linkedin-icon.svg"
+export { default as npmLogo } from "./npm.svg"
+export { default as soundcloudLogo } from "./soundcloud.svg"
+export { default as websiteGraderSnip } from "./websiteGraderSnip.jpg"
+export { default as designSystemVersioningStrategy } from "./designSystemVersioningStrategy.png"
+export { default as logoDesignExamples } from "./logoDesignExamples.png"
+export { default as youTubeLogo } from "./youTubeLogo.svg"
+export { default as codeWheelSnip } from "./codeWheel.jpg"
+export { default as lookseeSnip } from "./looksee.png"
+export { default as headshot } from "./headshot.png"
+export { default as metaVideo } from "./metaVideo.mp4"
