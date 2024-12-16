@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { DarkmodeToggle } from "react-darkmode-hook"
-import { LINK_DATA } from "../"
+import { LINK_DATA } from "../../utils"
 
 import "./Header.css"
 

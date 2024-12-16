@@ -1,8 +1,8 @@
 import React from "react"
-import { NETWORK_DATA } from "../../utils"
 import { clsnx } from "@becks256/clsnx"
+import { NETWORK_DATA } from "../../utils"
+import { MediaViewer } from "../../components"
 import "./SocialIconBar.css"
-import { MediaViewer } from "../MediaViewer/MediaViewer"
 
 export const SocialIconBar = () => {
   return (

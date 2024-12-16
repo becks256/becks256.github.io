@@ -1,5 +1,6 @@
 export { Card } from "./Card/Card"
 export { Message } from "./Message/Message"
+export { MediaViewer } from "./MediaViewer/MediaViewer"
 export { InfoIcon } from "./Icon/Icons/InfoIcon"
 export { IconClose } from "./Icon/Icons/IconClose"
 export { Tag } from "./Tag/Tag"

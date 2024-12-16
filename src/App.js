@@ -2,7 +2,14 @@ import React, { useMemo, useState, useEffect } from "react"
 import { clsnx } from "@becks256/clsnx"
 import { useColorMode } from "react-darkmode-hook"
 
-import { Banner, Card, SocialIconBar, Tag, WorkWithMeSection, MobileNav, Header } from "./components"
+import { Card, Tag } from "./components"
+import {
+  Banner,
+  SocialIconBar,
+  WorkWithMeSection,
+  MobileNav,
+  Header,
+} from "./patterns"
 import {
   APP_DATA,
   DESIGN_WORK_DATA,
@@ -95,7 +102,7 @@ const App = () => {
   return (
     <ModalContext.Provider value={{ modalHidden, setModalHidden }}>
       <div className="App">
-      {isMobile ? <MobileNav /> : <Header />}
+        {isMobile ? <MobileNav /> : <Header />}
         {/* <Banner isMobile={isMobile} /> */}
         <section className="main-content sm:px-16 my-96">
           {/* <section className="Card mb-96">
@@ -110,9 +117,7 @@ const App = () => {
             </div>
           </section>
           <WorkWithMeSection /> */}
-          <h1 className="my-work-headline">
-            My Work
-          </h1>
+          <h1 className="my-work-headline">My Work</h1>
           <h1 className={headerClasses} id="networks">
             Networks
           </h1>
