@@ -36,6 +36,54 @@
   border-color: var(--system-text--primary);
   box-sizing: border-box;
   transition: height 0.5s ease-in-out;
+  position: relative;
+}
+
+.Card-imageContainer span.has-video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Card-imageContainer span.has-video::before {
+  content: "";
+  position: absolute;
+  transform: rotate(30deg) translate(0%, 20%);
+  z-index: 5;
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.75rem solid var(--system-background--primary);
+  opacity: 0.8;
+  transition: all 0.75s ease;
+}
+
+.Card-imageContainer span.has-video::after {
+  content: "";
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+  z-index: 4;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 625rem;
+  background-color: var(--palette-special--more-prominent);
+  border: solid 3px var(--system-background--primary);
+  opacity: 0.8;
+  transition: all 0.75s ease;
+}
+
+.Card-imageContainer:hover span.has-video::before {
+  transform: rotate(calc(30deg * 5)) translate(0%, 20%) scale(1.25);
+}
+.Card-imageContainer:hover span.has-video::after {
+  transform: scale(1.25);
 }
 
 .Card-imageContainer:hover {
@@ -47,6 +95,7 @@
   object-fit: cover;
   object-position: center;
   flex: 1 1 auto;
+  z-index: 3;
 }
 
 .Card-imageContainer img.logo {
