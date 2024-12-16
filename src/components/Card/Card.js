@@ -78,6 +78,12 @@ export const Card = ({ type = "product", data }) => {
         </section>
         <section className="Card-imageContainer">
           <span
+            className={clsnx({
+              "has-video": !!media?.video,
+            })}
+            inert="true"
+          />
+          <span
             className={clsnx("flex cursor-zoom", {
               "w-100": !/prepper/gi.test(title),
             })}
