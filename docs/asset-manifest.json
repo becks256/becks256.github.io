@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0698f7b6.css",
-    "main.js": "/static/js/main.ed1fac14.js",
+    "main.css": "/static/css/main.96e5aab2.css",
+    "main.js": "/static/js/main.31f797a4.js",
     "static/media/metaVideo.mp4": "/static/media/metaVideo.7a0119a29a4312ebba00.mp4",
     "static/media/looksee.png": "/static/media/looksee.dd8a6524577c1fa8ab6f.png",
     "static/media/soulfolio.png": "/static/media/soulfolio.14ea7a26020769a37631.png",
@@ -14,7 +14,6 @@
     "static/media/logoDesignExamples.png": "/static/media/logoDesignExamples.5666f3ce68305c6e690b.png",
     "static/media/pluralsight_II.png": "/static/media/pluralsight_II.d9c02e6b124b186026e4.png",
     "static/media/codeWheel.jpg": "/static/media/codeWheel.d22f0deb522c98ca4d0f.jpg",
-    "static/media/bannerImage.png": "/static/media/bannerImage.ba16580e6273815e74e3.png",
     "static/media/headshot-dither.png": "/static/media/headshot-dither.c60700d5335cfe08938c.png",
     "static/media/headshot-dither-inverse.png": "/static/media/headshot-dither-inverse.8e312e7b6c4ebe2ae4f6.png",
     "static/media/cert2.png": "/static/media/cert2.3d18c12bfcd5f2a3bb42.png",
@@ -30,11 +29,11 @@
     "index.html": "/index.html",
     "static/media/npm.svg": "/static/media/npm.5ffdebd296c4738c80773ac16f800a6a.svg",
     "static/media/youTubeLogo.svg": "/static/media/youTubeLogo.324828582481bf7bcc4d81465869897a.svg",
-    "main.0698f7b6.css.map": "/static/css/main.0698f7b6.css.map",
-    "main.ed1fac14.js.map": "/static/js/main.ed1fac14.js.map"
+    "main.96e5aab2.css.map": "/static/css/main.96e5aab2.css.map",
+    "main.31f797a4.js.map": "/static/js/main.31f797a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.0698f7b6.css",
-    "static/js/main.ed1fac14.js"
+    "static/css/main.96e5aab2.css",
+    "static/js/main.31f797a4.js"
   ]
 }
