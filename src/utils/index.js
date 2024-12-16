@@ -538,3 +538,12 @@ export const FEEDBACK_DATA = [
 export const getRandomNumberBetween = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
+
+export const LINK_DATA = [
+  { href: "#publications", innerText: "Publications" },
+  { href: "#skills", innerText: "Skills" },
+  { href: "#projects", innerText: "Projects" },
+  { href: "#networks", innerText: "Networks" },
+  // { href: "#about", innerText: "About Me" },
+  // { href: "/", innerText: "Home" },
+]
