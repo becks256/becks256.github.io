@@ -4,6 +4,7 @@
 :root[color-mode="light"] {
   --border-radius: 0.5rem;
   --system-text--primary: #333;
+  --system-text--secondary: #777;
   --system-text--primary-inverse: #f7f5f5;
   --system-background--primary: #f7f5f5;
   --system-background--primary-inverse: #222;
@@ -26,6 +27,7 @@
 }
 :root[color-mode="dark"] {
   --system-text--primary: #f7f5f5;
+  --system-text--secondary: #a7a5a5;
   --system-text--primary-inverse: #333;
   --system-background--primary: #141415;
   --system-background--primary-inverse: #f7f5f5;
