@@ -199,6 +199,9 @@ export const WORK_DATA = [
     cta: "View Project",
     date: "2013",
   },
+  // {
+  //   title: "DesignerPower Agent",
+  // }
 ]
 
 export const DESIGN_WORK_DATA = [
@@ -544,6 +547,7 @@ export const LINK_DATA = [
   { href: "#skills", innerText: "Skills" },
   { href: "#projects", innerText: "Projects" },
   { href: "#networks", innerText: "Networks" },
+  { href: "#experience", innerText: "Experience" },
   // { href: "#about", innerText: "About Me" },
   // { href: "/", innerText: "Home" },
 ]
