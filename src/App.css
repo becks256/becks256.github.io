@@ -147,7 +147,7 @@ a:hover {
   z-index: 1;
 }
 
-.my-work-headline, .about-me-header {
+.my-work-headline, .about-me-header, .my-resume-headline {
   font-size: 6.25rem;
 }
 
@@ -164,7 +164,7 @@ a:hover {
     display: flex;
     position: unset;
   }
-  .my-work-headline, .about-me-header {
+  .my-work-headline, .about-me-header, .my-resume-headline {
     font-size: 3.125rem;
   }
   .about-me-text div {
