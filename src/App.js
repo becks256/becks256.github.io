@@ -9,6 +9,7 @@ import {
   WorkWithMeSection,
   MobileNav,
   Header,
+  ResumeSection
 } from "./patterns"
 import {
   APP_DATA,
@@ -117,6 +118,13 @@ const App = () => {
             </div>
           </section>
           <WorkWithMeSection /> */}
+          <section>
+            <h1 className="my-resume-headline">Resumé</h1>
+            <h1 className={headerClasses} id="experience">
+              Professional Experience
+            </h1>
+            <ResumeSection />
+          </section>
           <h1 className="my-work-headline">My Work</h1>
           <h1 className={headerClasses} id="networks">
             Networks
