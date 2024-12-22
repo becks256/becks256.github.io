@@ -75,7 +75,7 @@ const App = () => {
   }
 
   const headerClasses = "heading-m"
-  const cardSectionClasses = "flex flex-wrap mb-96 gap-48"
+  const cardSectionClasses = "flex flex-wrap mb-96"
 
   const techItems = WORK_DATA.reduce((acc, item) => {
     if (!item.techStack?.length) return acc
@@ -119,7 +119,7 @@ const App = () => {
           </section>
           <WorkWithMeSection /> */}
           <section>
-            <h1 className="my-resume-headline">Resumé</h1>
+            <h1 className="my-resume-headline">Resume</h1>
             <h1 className={headerClasses} id="experience">
               Professional Experience
             </h1>
