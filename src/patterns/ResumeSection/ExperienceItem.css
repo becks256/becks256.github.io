@@ -1,3 +1,15 @@
+:root {
+  --exp-transition-timing: 0.3s;
+}
+
+.ResumeSection {
+  transition: all var(--exp-transition-timing) ease-in-out;
+}
+
+.ExperienceItem {
+  position: relative;
+}
+
 .ExperienceItem-title {
   margin-bottom: 0;
   color: var(--system-text--primary);
@@ -43,7 +55,7 @@
   position: relative;
   display: inline-block;
   font-weight: 600;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--exp-transition-timing) ease-in-out;
   cursor: auto;
 }
 
@@ -108,7 +120,7 @@
 /* Modify hover animation to work with clip-path */
 .ResumeBullet-highlight:hover::before {
   transform: scale(1.05, 1.25);
-  transition: transform 0.3s ease-in-out;
+  transition: transform var(--exp-transition-timing) ease-in-out;
 }
 
 /* Remove grow animation as we're using transform directly */
