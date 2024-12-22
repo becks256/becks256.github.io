@@ -2,7 +2,7 @@
 
 :root,
 :root[color-mode="light"] {
-  --border-radius: 0.5rem;
+  --border-radius: 1rem;
   --system-text--primary: #333;
   --system-text--secondary: #777;
   --system-text--primary-inverse: #f7f5f5;
