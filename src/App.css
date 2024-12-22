@@ -29,11 +29,12 @@
   --system-text--primary: #f7f5f5;
   --system-text--secondary: #a7a5a5;
   --system-text--primary-inverse: #333;
-  --system-background--primary: #141415;
+  --system-background--primary: #171b16;
   --system-background--primary-inverse: #f7f5f5;
-  --system-background--secondary: #202027;
+  --system-background--secondary: #242720;
   --palette-special--more-subtle: #384430;
   --palette-special--least-prominent: #83b466;
+  --palette-special--most-prominent: #b2f022;
   --palette-special--more-prominent: #c5f062;
   --shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.5) 0px 4px 8px -4px;
