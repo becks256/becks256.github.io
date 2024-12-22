@@ -9,9 +9,9 @@
   --system-background--primary: #f7f5f5;
   --system-background--primary-inverse: #222;
   --system-background--secondary: #fff;
-  --palette-special--more-prominent: rgb(131, 37, 150);
-  --palette-special--least-prominent: rgb(161, 105, 224);
-  --palette-special--more-subtle: rgb(254, 239, 255);
+  --palette-special--more-prominent: rgb(77, 102, 8);
+  --palette-special--least-prominent: rgb(131, 170, 23);
+  --palette-special--more-subtle: rgb(251, 255, 239);
   --shadow: rgba(50, 50, 93, 0.15) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.2) 0px 4px 8px -4px;
   --border-color: #dddddd;
