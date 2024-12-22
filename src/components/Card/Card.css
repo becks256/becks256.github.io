@@ -7,7 +7,7 @@
   /* border: solid 1px var(--border-color); */
   row-gap: 1.5rem;
   box-sizing: border-box;
-  flex: 1 1 48.114%;
+  flex: 1 1 auto;
 }
 
 .ProductCard,
