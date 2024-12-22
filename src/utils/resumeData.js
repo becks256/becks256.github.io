@@ -21,7 +21,7 @@ export const RESUME_DATA = [
         resulting in <Highlight>89% faster release times</Highlight>.
       </>,
       <>
-        Utilized graph traversal algorithms to transform Figma variables fetched
+        Utilized graph traversal algorithms to transform <Highlight>~4500</Highlight> Figma variables fetched
         via REST API into CSS token stylesheets.
       </>,
       <>
