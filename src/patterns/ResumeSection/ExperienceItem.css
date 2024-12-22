@@ -44,13 +44,13 @@
   display: inline-block;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
+  cursor: auto;
 }
 
 .ResumeBullet-highlight::before {
   content: "";
   background-color: var(--palette-special--more-prominent);
-  opacity: 0.5;
+  opacity: 0.25;
   width: 100%;
   height: 16px;
   border-radius: 0.25rem;
@@ -120,11 +120,5 @@
 }
 
 :root[color-mode="dark"] .ResumeBullet-highlight::before {
-  opacity: 1;
-  z-index: -1;
-}
-
-:root[color-mode="dark"] .ResumeBullet-highlight {
-  color: #111;
-  z-index: 0;
+  background-color: var(--palette-special--most-prominent);
 }
