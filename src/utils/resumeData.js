@@ -21,8 +21,9 @@ export const RESUME_DATA = [
         resulting in <Highlight>89% faster release times</Highlight>.
       </>,
       <>
-        Utilized graph traversal algorithms to transform <Highlight>~4500</Highlight> Figma variables fetched
-        via REST API into CSS token stylesheets.
+        Utilized graph traversal algorithms to transform{" "}
+        <Highlight>~4500</Highlight> Figma variables fetched via REST API into
+        CSS token stylesheets.
       </>,
       <>
         <Highlight>Led the development</Highlight> of a custom{" "}
@@ -202,31 +203,62 @@ export const RESUME_DATA = [
       "Entrepreneurship",
     ],
   },
-  // {
-  //   title: "COO & Executive VP",
-  //   company: "Rebel Internet Systems & Technologies",
-  //   location: "Springboro, OH",
-  //   date: "Oct 2016 – Feb 2021",
-  //   description: [
-  //     <>
-  //       Led a small team of IT technicians to manage the day-to-day operations of
-  //       a web hosting and development company.
-  //     </>,
-  //     <>
-  //       Migrated the company's web hosting infrastructure to a new data center,
-  //       reducing costs by <Highlight>30%</Highlight>.
-  //     </>,
-  //   ],
-  //   logo: rebelLogo,
-  //   url: "https://www.rebel-ist.com/",
-  //   alt: "Rebel Internet Systems & Technologies Logo",
-  //   tenure: calculateTenure(2016, 2021),
-  //   skills: [
-  //     "Leadership",
-  //     "Team Management",
-  //     "Web Hosting",
-  //     "Data Center Migration",
-  //     "Cost Reduction",
-  //   ],
-  // }
+  {
+    title: "COO & Executive VP",
+    company: "Rebel Internet Systems & Technologies",
+    location: "Springboro, OH",
+    date: "Oct 2016 – Feb 2021",
+    note: (
+      <>
+        Rebel IST was a family business and cloud services provider for web
+        hosting, email, and virtual private servers, as well as web design and
+        development services. It was acquired by my Father, Brother, and myself
+        in Oct 2016 and we identified a web services company as our opportunity
+        of choice due to our cumulative experience, passion, and desire to grow
+        professionally.
+      </>
+    ),
+    description: [
+      <>
+        Participated in full due-diligence analysis of previous business model
+        and financial records in preparation for acquisition.
+      </>,
+      <>
+        Modernized aging infrastructure and{" "}
+        <Highlight>reduced data center expenses by 50%</Highlight> through the
+        systematic migration and consolidation of data, applications, and
+        hardware from 2 racks down to a single rack with modern cluster servers
+        capable of supporting the environment.
+      </>,
+      <>
+        Led initiatives and worked hands-on to drive the development of
+        intellectual property that add value and diversity to the business
+        model. IP such as <Highlight>SendForth!</Highlight> which offered simple
+        and straightforward REST API access to an email relay built with
+        Node.js, Express.js, EJS, and MongoDB.
+      </>,
+    ],
+    logo: rebelLogo,
+    url: "https://www.rebel-ist.com/",
+    alt: "Rebel Internet Systems & Technologies Logo",
+    tenure: calculateTenure(2016, 2021),
+    skills: [
+      "Leadership",
+      "Team Management",
+      "Web Hosting",
+      "Data Center Migration",
+      "Cost Reduction",
+      "Infrastructure Modernization",
+      "Intellectual Property",
+      "Node.js",
+      "Express.js",
+      "EJS",
+      "MongoDB",
+      "REST APIs",
+      "Business Analysis",
+      "Financial Analysis",
+      "Acquisitions",
+      "Due Diligence",
+    ],
+  },
 ]
