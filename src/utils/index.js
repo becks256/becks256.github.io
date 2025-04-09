@@ -30,7 +30,6 @@ const MERN = ["MongoDB", "Express.js", "React", "Node"]
 
 export const WORK_DATA = [
   {
-    link: "https://www.soulfolioco.com/design",
     media: { image: soulfolioSnip },
     title: "Soulfolio Co",
     description: (
