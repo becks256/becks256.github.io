@@ -30,6 +30,103 @@ const MERN = ["MongoDB", "Express.js", "React", "Node"]
 
 export const WORK_DATA = [
   {
+    media: { image: mypriceAgent },
+    title: "MyPrice Agent: AI-Powered Product Intelligence",
+    description: (
+      <>
+        A predictive modeling system trained on over 120,000 product quotes to
+        instantly estimate unit pricing for manufactured goods. The TensorFlow
+        model achieved 1.45% MAPE in testing, with projected savings of 1,300+
+        hours/year and $138K in labor costs by replacing factory quote delays
+        with real-time, data-driven pricing. Though not yet deployed due to
+        shifting business priorities, the project demonstrates a scalable ML
+        pipeline with one-hot encoding, TF-IDF vectors, and log-transformed
+        regression targets.
+        <Accordion
+          summary="Read more about the data cleanup"
+          className="pt-24 text-special-primary"
+        >
+          <span className="font-m">
+            <p>
+              A major challenge in this project was reconciling messy,
+              inconsistent historical quote data. Product specs often had
+              missing values, malformed strings (e.g., "no value", "1,200 pcs
+              total"), and noisy categorical labels (e.g., factory names with
+              dozens of spelling variants).
+            </p>
+            <p>
+              To overcome this, I built a robust preprocessing pipeline that:
+              <ul>
+                <li>Standardized units and cleaned numeric fields</li>
+                <li>Applied log transformation to reduce skewness</li>
+                <li>
+                  One-hot encoded and vectorized over 100 categorical and
+                  text-based features
+                </li>
+                <li>Removed and imputed outliers and low-confidence rows</li>
+              </ul>
+              The model's 1.45% MAPE reflects performance on clean,
+              representative data — many of the larger prediction errors are
+              tied to edge-case products or incomplete feature sets, rather than
+              model performance issues.
+            </p>
+            <image src={mypriceAgentMape} />
+          </span>
+        </Accordion>
+        <Accordion
+          summary="Reverse use case: price-first product development"
+          className="pt-8 text-special-primary"
+        >
+          <span className="font-m">
+            <p>
+              While the original model was designed to predict cost from
+              detailed product specs, its architecture also supports a
+              compelling reverse workflow: using a target price and brief
+              product category to infer likely product specifications.
+            </p>
+            <p>
+              This becomes especially powerful for sales and merchandising teams
+              working closely with buyers. For instance, a buyer might say, “I’m
+              looking for something around 16×20 that retails under $24.99.”
+              While the model doesn’t directly account for retail (which is
+              customer-specific), a merchandiser who understands their account
+              could input that target cost and category, and receive spec
+              combinations drawn from past successful quotes.
+            </p>
+            <p>
+              This reverses the traditional flow — instead of spending days
+              aligning on feasible specs through multiple design and pricing
+              cycles, the merchandiser receives an informed starting point
+              backed by historical data. This shortens the feedback loop from
+              ideation to execution and removes the guesswork from early-stage
+              product development.
+            </p>
+            <p>
+              More broadly, this reframing of the model highlights a core
+              philosophy: don't just solve the problem you were given — explore
+              adjacent use cases that create exponential value across functions.
+              By thinking holistically about how people interact with tools, I
+              aim to build systems that not only perform well, but empower
+              entire workflows to move faster and smarter.
+            </p>
+          </span>
+        </Accordion>
+      </>
+    ),
+    techStack: [
+      "TensorFlow",
+      "NumPy",
+      "Pandas",
+      "Scikit-learn",
+      "Matplotlib",
+      "Keras",
+      "Python",
+    ],
+    alt: "AI Pricing Estimator model architecture screenshot",
+    cta: "View Overview",
+    date: "2024",
+  },
+  {
     media: { image: soulfolioSnip },
     title: "Soulfolio Co",
     description: (
