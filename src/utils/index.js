@@ -140,7 +140,6 @@ export const WORK_DATA = [
     ),
     techStack: MERN,
     alt: "soulfolioco.com screenshot",
-    cta: "View Site",
     date: "2022-2023",
   },
   {
