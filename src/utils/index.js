@@ -129,6 +129,50 @@ export const WORK_DATA = [
     date: "2024",
   },
   {
+    link: undefined,
+    media: { image: photoshopSnip },
+    title: "DesignerPower UXP",
+    description: (
+      <>
+        DesignerPower is a Photoshop UXP plugin built to streamline
+        design-to-production workflows. It includes modules for production prep
+        and a direct integration with the Widen DAM system, enabling designers
+        to push assets and metadata without leaving Photoshop. By reducing
+        context switching, DesignerPower increases DAM adoption, improves
+        metadata consistency, and ensures content freshness across channels.
+        <Accordion
+          summary="AI-assisted metadata tagging"
+          className="pt-24 text-special-primary"
+        >
+          <span className="font-m">
+            <p>
+              In 2025, I integrated Claude (Anthropic API) into DesignerPower,
+              allowing designers to auto-generate metadata like
+              <ul>
+                <li className="font-bold">keywords</li>
+                <li className="font-bold">categories</li>
+                <li className="font-bold">descriptions</li>
+              </ul>
+              with a single click. The system analyzes the image and returns
+              structured metadata using controlled vocabularies to ensure
+              consistency across systems.
+            </p>
+            <p>
+              This dramatically reduces manual admin work and cognitive
+              overhead, freeing designers to focus on creative output. The model
+              intelligently avoids fields that require domain context (e.g.,
+              customer or exclusivity tier) while handling the rest with speed
+              and accuracy.
+            </p>
+          </span>
+        </Accordion>
+      </>
+    ),
+    techStack: ["Adobe UXP Framework", "React", "LLM", "Claude API"],
+    alt: "DesignerPower UXP plugin screenshot",
+    date: "2023–2025",
+  },
+  {
     media: { image: soulfolioSnip },
     title: "Soulfolio Co",
     description: (
