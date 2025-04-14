@@ -29,5 +29,6 @@ export { default as ddcgLogo } from "./ddcgLogo.png"
 export { default as gadgetekLogo } from "./gadgetekLogo.png"
 export { default as rebelLogo } from "./rebelLogo.png"
 
-export { default as mypriceAgent } from "./myprice-thumbnail-2.png"
+export { default as mypriceAgent } from "./myprice-thumbnail-3.png"
 export { default as mypriceAgentMape } from "./myprice-mape.png"
+export { default as mypriceLogo } from "./myprice-logo.png"
