@@ -19,7 +19,9 @@ import {
   codeWheelSnip,
   lookseeSnip,
   headshot,
-  metaVideo
+  metaVideo,
+  mypriceAgent,
+  mypriceAgentMape,
 } from "../assets"
 
 import React from "react"
