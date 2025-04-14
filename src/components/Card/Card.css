@@ -35,8 +35,16 @@
   border-style: solid;
   border-color: var(--system-text--primary);
   box-sizing: border-box;
-  transition: height 0.5s ease-in-out;
   position: relative;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  -webkit-transition: height 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: height 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: height 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: height 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .Card-imageContainer span.has-video {
@@ -61,7 +69,15 @@
   border-right: 1rem solid transparent;
   border-top: 1.75rem solid var(--system-background--primary);
   opacity: 0.8;
-  transition: all 0.75s ease;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .Card-imageContainer span.has-video::after {
@@ -76,7 +92,15 @@
   background-color: var(--palette-special--more-prominent);
   border: solid 3px var(--system-background--primary);
   opacity: 0.8;
-  transition: all 0.75s ease;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .Card-imageContainer:hover span.has-video::before {
