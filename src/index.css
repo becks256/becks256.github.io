@@ -1236,3 +1236,16 @@ code {
     padding-right: 16px !important;
   }
 }
+
+.text-special-primary {
+  color: var(--palette-special--more-prominent) !important;
+}
+.text-special-secondary {
+  color: var(--palette-special--least-prominent) !important;
+}
+.text-informative-primary {
+  color: var(--palette-informative--more-prominent) !important;
+}
+.text-informative-secondary {
+  color: var(--palette-informative--least-prominent) !important;
+}
