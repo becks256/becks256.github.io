@@ -88,15 +88,20 @@ export const WORK_DATA = [
             </p>
             <p>
               This becomes especially powerful for sales and merchandising teams
-              working closely with buyers. For instance, a buyer might say, “I’m
-              looking for something around 16×20 that retails under $24.99.”
+              working closely with buyers. For instance, a buyer might say,
+              <blockquote className="font-italic">
+                <q>
+                  I’m looking for something around 16×20 that retails under
+                  $24.99.
+                </q>
+              </blockquote>
               While the model doesn’t directly account for retail (which is
               customer-specific), a merchandiser who understands their account
               could input that target cost and category, and receive spec
               combinations drawn from past successful quotes.
             </p>
             <p>
-              This reverses the traditional flow — instead of spending days
+              This reverses the traditional flow -- instead of spending days
               aligning on feasible specs through multiple design and pricing
               cycles, the merchandiser receives an informed starting point
               backed by historical data. This shortens the feedback loop from
@@ -105,7 +110,7 @@ export const WORK_DATA = [
             </p>
             <p>
               More broadly, this reframing of the model highlights a core
-              philosophy: don't just solve the problem you were given — explore
+              philosophy: don't just solve the problem you were given -- explore
               adjacent use cases that create exponential value across functions.
               By thinking holistically about how people interact with tools, I
               aim to build systems that not only perform well, but empower
@@ -187,25 +192,6 @@ export const WORK_DATA = [
     techStack: MERN,
     alt: "soulfolioco.com screenshot",
     date: "2022-2023",
-  },
-  {
-    link: undefined,
-    media: { image: photoshopSnip },
-    title: "DesignerPower UXP",
-    description: (
-      <>
-        DesignerPower is a Photoshop UXP plugin, which features several modules,
-        including those to optimize files for production and a connector for the
-        Widen DAM system. DesignerPower enables designers to minimize context
-        switching by giving them the power they need to push image assets and
-        the necessary metadata that goes with them to their Digital Asset
-        Management System, which increases adoption and consistency, as well as
-        ensures content freshness for consumers.
-      </>
-    ),
-    techStack: ["Adobe UXP Framework", "React"],
-    alt: "designer power uxp plugin screenshot",
-    date: "2023-2024",
   },
   {
     link: undefined,
