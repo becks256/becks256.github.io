@@ -171,9 +171,9 @@ const App = () => {
             {filteredWork.length > 0 &&
               filteredWork
                 .sort((a, b) => {
-                  // First criteria: Prioritize items with a 'link' property
-                  if (!!a.link && !b.link) return -1
-                  if (!a.link && !!b.link) return 1
+                  // // First criteria: Prioritize items with a 'link' property
+                  // if (!!a.link && !b.link) return -1
+                  // if (!a.link && !!b.link) return 1
 
                   // Second criteria: Sort by date in descending order
                   const dateA = a.date?.match("-")
