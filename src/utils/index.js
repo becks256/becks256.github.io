@@ -24,7 +24,7 @@ import {
 
 import React from "react"
 
-import { Message } from "../components"
+import { Message, Accordion } from "../components"
 
 const MERN = ["MongoDB", "Express.js", "React", "Node"]
 
